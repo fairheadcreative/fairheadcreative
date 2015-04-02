@@ -17,6 +17,8 @@ We wandered into various shops. Each time we turned a corner, we stared up at th
 <!--more-->
 One of the stores we wandered into was a small, fashionable boutique. It had lines of folded tank tops, blouses and dresses. Everything I knew nothing about. At the back of the shop stood what we believed to be the boutique owner. She didn’t appreciate the bedraggled foreigners that had just disgraced her with their presence.
 
+{% include blog-freebie.html %}
+
 We picked up a tank top and dropped it as if it were on fire. The number of zeros on its list price could make your eyes water. For plain tank top! With that, we left.
 
 The rest of the stores on the trip were much more pleasant. That one just happened to make for a fun story.
