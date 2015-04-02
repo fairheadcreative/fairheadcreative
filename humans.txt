@@ -1,0 +1,5 @@
+/* humanstxt.org */
+
+/* SITE */
+  Adam Fairhead
+  hello@fairheadcreative.com

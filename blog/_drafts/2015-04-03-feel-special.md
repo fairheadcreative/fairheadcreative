@@ -1,0 +1,137 @@
+---
+layout: blog
+title: 4 Steps to Cause Your Website Users to Feel Special
+permalink: blog/cause-your-website-users-to-feel-special/
+recommended: true
+freebie: Checklist for how to make your website’s users feel special
+freebie-url: 2015-04-20-feel-special/freebie-checklist-making-your-users-feel-special.pdf
+social: 2015-04-20-feel-special/share-4-steps-to-cause-your-website-users-to-feel-special.jpg
+infographic: 2015-04-20-feel-special/4-steps-to-cause-your-website-users-to-feel-special.png
+---
+
+Have you ever walked into a store and felt immediately awkward?
+
+I'll never forget one occasion where that happened to me. It was in Paris. When I took my wife there, we went straight into exploring without even changing. We had no map, nor had we ever studied one of Paris. We were “fun lost”.
+
+We wandered into various shops. Each time we turned a corner, we stared up at the sky. Where exactly was Eiffel Tower, anyway?
+<!--more-->
+One of the stores we wandered into was a small, fashionable boutique. It had lines of folded tank tops, blouses and dresses. Everything I knew nothing about. At the back of the shop stood what we believed to be the boutique owner. She didn’t appreciate the bedraggled foreigners that had just disgraced her with their presence.
+
+We picked up a tank top and dropped it as if it were on fire. The number of zeros on its list price could make your eyes water. For plain tank top! With that, we left.
+
+The rest of the stores on the trip were much more pleasant. That one just happened to make for a fun story.
+
+If you own a website, there's a lesson in here for you. There’s a real possibility you’re treating your customers in this exact same way.
+
+Online shopping experiences have their roots in brick and mortar experiences.
+
+![](/uploads/{{page.infographic}})
+
+Tell me: do you have any websites that you visit every single week?
+
+I do. Some of them I revisit because I can’t get enough of their content. For others, it's industry news, inspirational stuff, or what have you.
+
+My wife often visits a handful of sites just to window shop. To peruse the latest styles, and the like.
+
+What’s the difference between a website that's just “okay" and one that seems to “understand" you? One that welcomes you in, and keep you coming back for more?
+
+A few things are at play here, on the sites that manage to pull this off.
+
+They’re about understanding who your customers are as people, first of all. Then about serving them as individuals. It’s about:
+
+1. Reaching out and connecting with them
+2. Watch their habits
+3. Make things that are valuable to them
+4. Watching your competition’s movements
+
+## 1. Reaching out and connecting with them
+You may or may not have an existing relationship with your website’s visitors.
+
+If you don’t, now’s the time to start. If you do already, never stop reaching out.
+
+How how do you do this?
+
+### Email them
+If they’ve given you their email addresses for something, they’re interested in what you’ve got to offer. A personal email from the site owner will get some of them excited, and some may reach back out to you with answers to your questions.
+
+If you’re serving a need, there will always be some who will show you what they think would make it better.
+
+Services like Aweber, MailChimp and Campaign Monitor do a great job of this.
+
+### Surveys
+Surveys may not be personal, but they’re useful for getting quick data about a particular subject. Whether you email it to your subscribers or you drop a link on your website for a while, make a survey and put it out there. At least it’ll show your visitors that what they think matters to you.
+
+Keep surveys to five questions or under. If possible, offer multiple-choice. There won’t be many people willing to sacrifice their time to complete a survey, whether they like the idea of your outreach or not. Make it easier on those who try, by making it as quick to complete as possible.
+
+I particularly like Wufoo and Google Forms for surveys. Wufoo has great integrations, and Google Forms compiles answers into spreadsheet.
+
+### Ask for feedback
+You’ve probably seen a site or two out there that have a ‘Feedback’ sticker popping out of the side. Services like UserVoice do a great job of providing quick access to things like these.
+
+These pop-out boxes can either provide a Q&A or the ability to ask site owners a question. Go with the latter, and see what questions your visitors have.
+
+### User Tests
+Testing users using the site is a great way to see how they respond to what’s there. Specialized tools like SilverbackApp or simple Hangouts/Skype video calls work great for this. This deserves a blog post of its own, email me if you’re interested in a full breakdown of conducting user testing.
+
+Once you have all this information in hand, you can create ‘personas’ to keep track of patterns. Persona development helps your copy, designers and marketers all create complimentary work. (We can talk more about persona development later if you like, email me and let me know)
+
+The brand behind the website needs to stand for something. Something your users also stand for. If you stand for the same thing together, you’re bonded in that stance.
+
+While you reach out and learn your visitors habits, you’ll spot new things you can try. As you do, iterate based on what you learn. Each time they come back, it’ll feel more like home. You’ll gain their trust because they feel like you ‘know’ them.
+
+## 2. Watch their habits
+The third point in this list can’t happen without this one. You need to watch your visitors habits.
+
+Why? Because you need to know what they like. What they want. What they’re looking for but not finding. What they find difficult. The more you know about their habits, the better you’ll be able to serve them.
+
+Understanding their habits is integral to the development of the personas.
+
+How can you watch their habits? User testing is one I’ve mentioned already, and is always a go-to for me. In addition to that:
+
+### Event tracking
+This will allow you to spot where exactly your visitors are clicking. Google Analytics has free event tracking functionality that you can embed right into your existing website. You can even assign a ‘value’ on each particular link, to get real insights into where you’re meeting your goals and where you’re not.
+
+A combination of Events and Goals in a Google Analytics property will give you tons of useful information to sift through.
+
+### A/B testing
+There's a huge amount of testing you can do to learn about your visitors. We have roughly 30 different techniques we use to learn about site visitors. Here, we’re going to cover one of them: A/B testing.
+
+Wondering if your visitors will respond better to different choice of language? Let’s say your findings lead you to believe your visitors prefer informal language. But you’re unsure about ‘breaking’ an effective page. In these cases, an A/B test will allow you to test your theory against a percentage of your traffic.
+
+Optimizely is a great tool for performing A/B testing. You can make changes quickly, and no code needs writing until you know the winning variant.
+
+### Heat mapping
+Are your visitors scrolling past the top of your page? Are they clicking on things that look like buttons but aren’t? Heat maps can show you where visitors are scrolling, where they’re clicking, and where they’re lingering.
+
+Armed with that information, you’ll be able to make changes to your content that encourage scrolling, clicking the right elements and reduce hesitation.
+
+CrazyEgg is a great tool for this, generating heat maps at a decent price.
+
+### Relationship tracking
+Your visitors will likely visit multiple times before committing to you. In these cases, it’s hard to know who and when each ‘hit’ to your site is, without specialized software. If you use such software, you’ll get those insights.
+
+You’ll be able to tell if your visitors have a habit of checking out certain content multiple times before committing. Kissmetrics and Mixpanel are both good solutions to this. These tools are pretty sophisticated, and require a lot of attention to get any bang for your buck. I’d suggest deferring this to a marketing team. Want more information this? Email us and we may cover it in a future article.
+
+## 3. Make things that are valuable to them
+Armed with all the above findings, make content that’s valuable for your visitors. Give, give, give to them.
+
+And not because you want something from them in return. I’ll be writing more about that mistake soon. But because you believe that delighting your customers is why you’re in business. Because it should be.
+
+If you’ve spent some time learning about your visitors, you should be able to think of some things you can do for them that they’ll appreciate. It could be a free product or service that would help build rapport with them. It could be help knowing how to use what you’re offering them. Whatever it is, make it specific to your visitors.
+
+The underlying message here is to think about your visitors. Share your ideas with them. Give them reasons to become a part of your community, all around your site. Let them know they’re a part of your community. Let them feel a sense of belonging. It's a tribal feeling for humans that, if utilized, will make them feel special.
+
+## 4. Watch your competition’s movements
+This is important if you’re brand new to your industry, or if you’ve been in it for twenty years. Watching your competition’s movements will help you do two things.
+
+First, you’ll be able to confirm whether to pursue some of the ideas you’re thinking of. If everyone’s offering and promoting a certain offer to their visitors, there’s a good chance it’s in demand.
+
+Second, you’ll be able to determine if you’ve spotted something they haven’t. If you understand your visitors, they'll reveal unmet needs. If your competition isn't addressing those unmet needs, great! You have a way to offer something unique to your visitors that they’ll love you for.
+
+## And so
+
+To wrap up: connect with them, understand them, make all interactions resemble what you learn, stand for what they stand for, build your site around their desires, make things for them, and make them feel a sense of belonging.
+
+Do all these things, and you’ll have an effective website that makes your users feel special.
+
+To make that easier, I’ve prepared a checklist you can print and run through. This will keep things front-of-mind, and it’ll keep you accountable to seeing the steps through. Email us if you would like us to cover any of these areas in more depth, and we might just do that.

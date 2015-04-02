@@ -1,0 +1,83 @@
+---
+layout: compress
+---
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Article">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="{% unless page.noindex == true %}index, follow{% else %}noindex, nofollow{% endunless %}" />
+  <meta name="author" content="Fairhead Creative LLC" />
+  <title>{% if page.title %}{{ page.title }} | Fairhead Creative{% endif %}</title>
+  <link rel="stylesheet" href="/css/screen.css" />
+
+  {% if page.title %}
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta itemprop="name" content="{{ page.title }}">
+  <meta property="og:site_name" content="Fairhead Creative" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://fairheadcreative.com{{ page.url }}" />
+  {% endif %}
+ 
+  {% if page.social %}
+  <meta property="og:image" content="http://fairheadcreative.com/uploads/{{ page.social }}" />
+  {% endif %}
+
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta name="twitter:description" content="{{ page.description }}">
+  {% endif %}
+</head>
+<body{% if page.class %} class="{{ page.class }}"{% endif %}>
+  {% if page.splash %}<div class="splash">{% endif %}
+  <header id="navigation" class="container">
+    <nav>
+      <ul>
+        <li class="nav-logo"><a href="/" onclick="ga('send', 'event', 'Global', 'Click', 'Nav Home');">Fairhead Creative</a></li>
+        <li class="nav-portfolio"><a href="/portfolio/" onclick="ga('send', 'event', 'Global', 'Click', 'Nav Portfolio');">Portfolio</a></li>
+        <li class="nav-clients"><a href="/clients/" onclick="ga('send', 'event', 'Global', 'Click', 'Nav Clients');">Clients</a></li>
+        <li class="nav-blog"><a href="/blog/" onclick="ga('send', 'event', 'Global', 'Click', 'Nav Blog');">Blog</a></li>
+        <li class="nav-about"><a href="/about/" onclick="ga('send', 'event', 'Global', 'Click', 'Nav About');">About</a></li>
+        <li class="nav-contact"><a href="/contact/" onclick="ga('send', 'event', 'Global', 'Click', 'Nav Contact');">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  {{ content }}
+
+  <footer id="closing">
+    <section class="container">
+      <h2>Let's talk: <a href="/contact/">email us</a>, call us at 813.644.9944 or fill out our <a href="/project-planner/">project planner</a>.</h2>
+
+      <ul>
+        <li class="closing-home"><a href="/" onclick="ga('send', 'event', 'Global', 'Click', 'Closing Home');">Fairhead Creative</a></li>
+        <li class="closing-portfolio"><a href="/portfolio/" onclick="ga('send', 'event', 'Global', 'Click', 'Closing Portfolio');">Portfolio</a></li>
+        <li class="closing-clients"><a href="/clients/" onclick="ga('send', 'event', 'Global', 'Click', 'Closing Clients');">Client Testimonials</a></li>
+        <li class="closing-blog"><a href="/blog/" onclick="ga('send', 'event', 'Global', 'Click', 'Closing Blog');">Blog</a></li>
+        <li class="closing-about"><a href="/about/" onclick="ga('send', 'event', 'Global', 'Click', 'Closing About');">About Us</a></li>
+        <li class="closing-Contact"><a href="/contact/" onclick="ga('send', 'event', 'Global', 'Click', 'Closing Contact');">Contact Us</a></li>
+      </ul>
+
+      <p>Fairhead Creative is a creative web design company based in Florida. <br />Except where otherwise noted, content on this site is &copy; Fairhead Creative. All rights reserved.</p>
+      <p>Fairhead Creative &amp; all employees are followers of Jesus Christ.</p>
+
+      <img src="/images/global/fairhead-creative-footer.svg" alt="" />
+    </section>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/production.min.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-8019780-12', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </footer>
+</body>
+</html>

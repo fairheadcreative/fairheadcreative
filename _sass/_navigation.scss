@@ -1,0 +1,92 @@
+#navigation {
+  position: relative;
+  z-index: 2;
+  padding: 1em 1em 0;
+  text-align: center;
+  font-weight: 300;
+
+
+  @include media(max-width $medium-screen) { 
+    ul {
+      line-height: 1;
+    }
+  }
+
+  a {
+    color: #76adb8;
+    font-family: $serif;
+    font-size: em(14);
+
+    &:hover {
+      color: darken(#76adb8, 20%);
+    }
+
+    .portfolio &,
+    .clients & {
+      color: #bfbfbf;
+
+      &:hover {
+        color: #f39e3a;
+      }
+    }
+
+    .about & {
+      color: #bdb0b9;
+      
+      &:hover {
+        color: #93788b;
+      }
+    }
+  }
+
+  @include media(em(720)) { 
+    padding: 1em;
+
+    nav {
+      text-align: right;
+    }
+
+    a {
+      font-size: em(23);
+      letter-spacing: -0.05em;
+      margin-left: .8em;
+    }
+
+    .nav-logo a {
+      margin-left: 0;
+    }
+  }
+}
+
+.nav-portfolio,
+.nav-clients,
+.nav-blog,
+.nav-about,
+.nav-contact {
+  display: inline-block;
+  margin: .5em .25em .25em;
+}
+
+.nav-logo a {
+  background: url('../images/global/fairhead-creative.svg') no-repeat;
+  background-size: contain;
+  @extend %hide-text;
+  width: 190px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+
+  .portfolio &,
+  .about &,
+  .clients & {
+    background: url('../images/global/fairhead-creative-light.svg') no-repeat;
+    background-size: contain;
+  }
+
+  @include media(em(720)) { 
+    width: 250px;
+    height: 45px;
+    margin: 0;
+    float: left;
+  }
+}

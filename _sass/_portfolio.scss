@@ -1,0 +1,170 @@
+.portfolio {
+  // Splash hero
+  .splash {
+    background: #02596a url("/images/portfolio/portfolio-bg.jpg") top center repeat-x;
+    color: white;
+
+    h1 {
+      color: white;
+
+      @include media($medium-screen) {
+        font-size: em(48);
+      }
+    }
+
+    .container header {
+      @include media($medium-screen) {
+        @include span-columns(4);
+      }
+    }
+
+    .container article {
+      @include media($medium-screen) {
+        @include span-columns(8);
+      }
+
+      @include media($large-screen) {
+        div {
+          @include span-columns(6);
+        }
+      }
+    }
+
+    h2 {
+      text-indent: -999em;
+      background: url("/images/portfolio/logo-fm.svg") no-repeat;
+      background-size: contain;
+      max-width: 260px;
+      margin-bottom: .5em;
+    }
+
+    article p {
+      color: #afdee5;
+
+      &.lead {
+        color: white;
+      }
+    }
+  }
+
+
+  // SMTP2GO
+  .smtp2go {
+    background: url('/images/portfolio/smtp2go-bg.png');
+    color: #aaa;
+
+    .lead {
+      color: white
+    }
+    
+    h2 {
+      text-indent: -999em;
+      background: url("/images/portfolio/logo-sg.svg") no-repeat;
+      background-size: contain;
+      height: 60px;
+      max-width: 30.5em;
+      margin: 1em auto;
+
+      @include media($large-screen) {
+        max-width: 100%;
+        margin: 1em 0;
+      }
+    }
+
+    .container div {
+      max-width: 40em;
+      margin: 0 auto;
+    }
+
+    .container img {
+      margin: 0 auto;
+      display: block;
+    }
+    
+    @include media($large-screen) {
+      .container {
+        overflow-x: hidden;
+        position: relative;
+      }
+
+      .container div {
+        @include span-columns(4);
+      }
+      
+      .container img {
+        position: absolute;
+        right: -125px;
+        width: 430px;
+        margin-top: -80px;
+      }
+    }
+    
+    @include media($x-large-screen) {
+      .container {
+        overflow-x: visible;
+      }
+
+      .container img {
+        position: absolute;
+        right: 0;
+        width: 430px;
+        margin-top: -80px;
+      }
+    }
+  }
+}
+
+.row-of-three {
+  position: relative;
+  overflow-x: hidden;
+
+  @include media($large-screen) {
+    min-height: 800px;
+  
+    img {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  @include media(em(1100)) {
+    min-height: 750px;
+  }
+}
+
+
+.lifechurch,
+.thousandeyes,
+.regadget {
+  max-width: 40em;
+  margin: 0 auto;
+
+  @include media($large-screen) {
+    @include span-columns(4);
+  }
+}
+
+.lifechurch h2 {
+  text-indent: -999em;
+  background: url("/images/portfolio/logo-lc.svg") no-repeat;
+  background-size: contain;
+  height: 45px;
+  width: 240px;
+  margin-bottom: 0;
+}
+
+.thousandeyes h2 {
+  text-indent: -999em;
+  background: url("/images/portfolio/logo-te.svg") no-repeat;
+  background-size: contain;
+  height: 45px;
+  margin-bottom: 0;
+}
+
+.regadget h2 {
+  text-indent: -999em;
+  background: url("/images/portfolio/logo-rg.svg") no-repeat;
+  background-size: contain;
+  height: 45px;
+  margin-bottom: 0;
+}

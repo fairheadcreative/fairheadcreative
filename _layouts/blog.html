@@ -1,0 +1,79 @@
+---
+layout: layout
+class: article
+---
+<div class="container group">
+  <div class="limiter">
+    <article>
+      {% if page.social %}<img class="hide" src="/uploads/{{ page.social }}" alt="" />{% endif %}
+      <header>
+        <h1>{{ page.title }}</h1>
+        <p class="meta">by <a class="author-name" href="/about/" onclick="ga('send', 'event', 'Blog', 'Click', 'Author Info');">Adam Fairhead</a> <a class="author-twitter" href="https://twitter.com/adamfairhead" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Follow Author Twitter');">@adamfairhead</a> <span class="published">on {{ page.date | date_to_string }}</span></p>
+      </header>
+
+      <hr />
+
+      <div class="main">
+
+        {% if page.featured %}<img class="featured-image {% if page.version == 4 %}ver-4{% endif %}" src="/uploads/{{ page.featured }}" alt="" />{% endif %}
+
+        {{ content }}
+
+        {% if page.freebie %}
+        <section class="inline-freebie">
+          <h3>Get a {{ page.freebie }}</h3>
+          <p class="description">This article comes with a free download. Enjoy it, and let us know what you think!</p>
+          <p><a href="javascript:void(0);" class="button get-freebie" alt="" onclick="ga('send', 'event', 'Blog', 'Click', 'Download Open Inline {{ page.title }})" />Download your freebie now</a></p>
+        </section>
+
+        <a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://fairheadcreative.com{{ page.url }}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Facebook');">Share on Facebook</a> <a class="share-twitter" href="https://twitter.com/home?status=Reading {{ page.title }}: http://fairheadcreative.com{{ page.url }}{% if page.infographic %} [INFOGRAPHIC]{% endif %}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Twitter');">Share on Twitter</a> <a class="share-google" href="https://plus.google.com/share?url=http://fairheadcreative.com{{ page.url }}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Google');">Share on Google+</a>
+        {% else %}
+        <a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://fairheadcreative.com{{ page.url }}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Facebook');">Share on Facebook</a> <a class="share-twitter" href="https://twitter.com/home?status=Reading {{ page.title }}: http://fairheadcreative.com{{ page.url }}{% if page.infographic %} [INFOGRAPHIC]{% endif %}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Twitter');">Share on Twitter</a> <a class="share-google" href="https://plus.google.com/share?url=http://fairheadcreative.com{{ page.url }}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Google');">Share on Google+</a>
+
+        <aside class="sidebar-item large-element inline-subscribe">
+          <h3>Attract more customers online with our newsletter</h3>
+          <p>Subscribe to our email newsletter for insider tips and free resources, all designed to give your business a competitive advantage online.</p>
+
+          <form action="http://mailer.fairheadcreative.com/t/r/s/jujtz/" method="post" id="subForm">
+            <input id="fieldEmail" name="cm-jujtz-jujtz" type="email" required placeholder="Email address" />
+            <button type="submit" class="button" onclick="ga('send', 'event', 'Blog', 'Click', 'Subscribe Inline');">Subscribe Now</button>
+          </form>
+
+        </aside>
+        {% endif %}
+
+        <aside class="sidebar-item large-element">
+          <h3>Recommended reading</h3>
+          {% for post in site.posts %}
+          {% if post.recommended %}
+          <article>
+            <header>
+              <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+              <p class="meta">Published {{ post.date | date_to_string }}</p>
+            </header>
+            </article>
+          {% endif %}
+          {% endfor %}
+        </aside>
+
+      </div>
+
+      {% include sidebar.html %}
+    </article>
+  </div>
+</div>
+
+{% if page.freebie %}
+<div class="modal-overlay"></div>
+<div id="freebie-modal">
+  <a href="javascript:void(0);" class="modal-close">&#10006</a>
+  <h3>We'll email you your {{ page.freebie }}</h3>
+  <p>Enter your email address below and we'll send you your freebie right away:</p>
+  
+  <form action="http://mailer.fairheadcreative.com/t/r/s/jujtz/" method="post" id="subForm">
+    <input id="fieldEmail" name="cm-jujtz-jujtz" type="email" required placeholder="Email address" />
+    {% if page.freebie-url %}<input id="fieldidxujk" class="hide" name="cm-f-idxujk" type="text" value="http://fairheadcreative.com/uploads/{{ page.freebie-url }}" />{% endif %}
+    <button type="submit" class="button" onclick="ga('send', 'event', 'Blog', 'Click', 'Download Confirm {{ page.title }});">Get your freebie</button>
+  </form>
+</div>
+{% endif %}

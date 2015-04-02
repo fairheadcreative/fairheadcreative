@@ -1,0 +1,46 @@
+<section class="sidebar">
+  <aside class="sidebar-item">
+    <h3>Attract more customers online with our newsletter</h3>
+    <p>Subscribe to our email newsletter for insider tips and free resources, all designed to give your business a competitive advantage online.</p>
+
+    <form action="http://mailer.fairheadcreative.com/t/r/s/jujtz/" method="post" id="subForm">
+      <input id="fieldEmail" name="cm-jujtz-jujtz" type="email" required placeholder="Email address" />
+      <button type="submit" class="button" onclick="ga('send', 'event', 'Blog', 'Click', 'Subscribe Side');">Subscribe Now</button>
+    </form>
+
+  </aside>
+
+  <aside class="sidebar-item">
+    <a href="/" title="Hire Fairhead Creative Web Design for your next project" onclick="ga('send', 'event', 'Blog', 'Click', 'Learn More');"><img src="/images/blog/hire-us.png" alt="" /></a>
+  </aside>
+
+  {% if page.freebie %}
+  <aside class="sidebar-item">
+    <h3>Download this article's freebie</h3>
+    <p>Download your {{ page.freebie }} right away, it's free!</p>
+    <a href="javascript:void(0);" class="button get-freebie" alt="" onclick="ga('send', 'event', 'Blog', 'Click', 'Download Open Side {{ page.title }})" />Download it now</a>
+  </aside>
+  {% endif %}
+
+  <aside class="sidebar-item">
+    <h3>Recommended reading</h3>
+    {% for post in site.posts %}
+    {% if post.recommended %}
+    <article>
+      <header>
+        <h4><a href="{{ post.url }}" onclick="ga('send', 'event', 'Blog', 'Click', 'Recommended Article');">{{ post.title }}</a></h4>
+        <p class="meta">Published {{ post.date | date_to_string }}</p>
+      </header>
+      </article>
+    {% endif %}
+    {% endfor %}
+  </aside>
+
+  <aside class="sidebar-item">
+    <h3>Follow Adam Fairhead</h3>
+    <p><a class="author-twitter" href="https://twitter.com/adamfairhead" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Follow Twitter Side');">Twitter</a></p>
+    <p><a class="author-dribbble" href="https://dribbble.com/adamfairhead" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Follow Dribbble Side');">Dribbble</a></p>
+    <p><a class="author-github" href="https://github.com/adamfairhead" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Follow GitHub Side');">GitHub</a></p>
+    <p><a class="author-website" href="http://adamfairhead.com" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Follow Personal Side');">Personal Site</a></p>
+  </aside>
+</section>

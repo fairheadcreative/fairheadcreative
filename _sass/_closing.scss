@@ -1,0 +1,58 @@
+#closing-strapline {
+  background: url("/images/home/home-bg.svg") bottom center no-repeat;
+  text-align: center;
+  @extend .group;
+  
+  h2 {
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p {
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333;
+  }
+
+  .description {
+    margin-top: -2em;
+  }
+}
+
+#closing {
+  @extend .group;
+  text-align: center;
+  border-top: #584832 5px solid;
+  background: #6c5a41;
+  color: #d3cbc0;
+
+  h2 {
+    color: #d3cbc0;
+    margin-top: 0;
+  }
+  
+  a {
+    color: white;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 .5em 0;
+    font-size: .9em;
+
+    @include media($medium-screen) {
+      margin: 0 1em 1em;
+      font-size: 1em;
+    }
+  }
+
+  p {
+    font-size: .8em;
+  }
+
+  img {
+    margin-top: 1em;
+  }
+}

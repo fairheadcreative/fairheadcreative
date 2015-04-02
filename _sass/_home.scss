@@ -1,0 +1,325 @@
+.home {
+  // Splash hero
+  .splash {
+    background: url("/images/home/home-bg.svg") bottom center no-repeat;
+    position: relative;
+
+    .container {
+      position: relative;
+    }
+  }
+
+  h1 {
+    display: none;
+  }
+
+  // Strapline header
+  #strapline {
+    float: left;
+    max-width: 1400px;
+    margin: -15px auto 0;
+    text-align: center;
+
+    h2 {
+      font-size: $base-font-size * 1.1;
+      margin-bottom: 1em;
+    }
+
+    @include media($medium-screen) {
+      margin: 0 auto;
+      text-align: left;
+      max-width: 50%;
+    }
+
+    @include media($x-large-screen) {
+      max-width: 55%;
+    }
+  }
+}
+
+#benefits {
+  @include outer-container();
+  text-align: center;
+
+  article {
+    @include media(max-width $large-screen) {
+      padding-bottom: 1em;
+    }
+
+    @include media($large-screen) {
+      @include span-columns(4);
+    }
+  }
+}
+
+
+#creative-web-design {
+  @include outer-container();
+
+  h2 {
+    text-align: center;
+  }
+
+  article {
+    img {
+      margin-top: 1em;
+    }
+
+    @include media(max-width $large-screen) {
+      text-align: center;
+      padding-bottom: 2em;
+    }
+
+    @include media(min-width $medium-screen max-width $large-screen) {
+      width: 50%;
+      padding: 0 5% 2em;
+      float: left;
+    }
+
+    @include media($large-screen) {
+      @include span-columns(3);
+    }
+  }
+}
+
+#freelance-illustrators {
+  @include media(max-width $large-screen) {
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+  }
+}
+
+#branding-design,
+#freelance-illustrators {
+  @include outer-container();
+
+  img {
+    margin-top: 1em;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  @include media($large-screen) {
+    @include span-columns(6);
+  }
+
+  article {
+    @include media(max-width $large-screen) {
+      text-align: center;
+      padding-bottom: 2em;
+    }
+
+    @include media(min-width $medium-screen max-width $large-screen) {
+      width: 50%;
+      padding: 0 5% 2em;
+      float: left;
+    }
+
+    @include media($medium-screen) {
+      @include span-columns(6);
+    }
+  }
+}
+
+@include media($medium-screen) {
+  .viner {
+    height: 410px;
+    width: 300px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 1em;
+  }
+    
+  .vine-1,
+  .vine-2,
+  .vine-3,
+  .vine-4 {
+    position: absolute;
+    top: 629px;
+    width: 300px;
+    height: 412px;
+    background-size: 300px 412px;
+  }
+    
+  .vine-1-1,
+  .vine-2-1,
+  .vine-3-1,
+  .vine-4-1 {
+    top: 560px;
+    margin-top: -140px;
+    position: absolute;  
+    width: 153px;
+    height: 230px;
+    background-size: 153px 230px;
+  }
+    
+  .vine-1 { background: url("/images/home/home-featurevine-1.svg") bottom no-repeat; }
+    
+  .vine-1 .screen {
+    background: url("/images/home/home-featurevine-1-site.png") no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 109px;
+    left: 37px;
+    background-size: 100%;
+  }
+    
+  .vine-2 { background: url("/images/home/home-featurevine-2.svg") bottom no-repeat; }
+    
+  .vine-2 .screen {
+    background: url("/images/home/home-featurevine-2-site.png") no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 109px;
+    left: 64px;
+    background-size: 100%;
+  }
+    
+  .vine-3 {
+    background: url("/images/home/home-featurevine-1.svg") bottom no-repeat;
+  }
+    
+  .vine-3 .screen {
+    background: url("/images/home/home-featurevine-3-site.png") no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 109px;
+    left: 37px;
+    background-size: 100%;
+  }
+        
+  .vine-4 {
+    background: url("/images/home/home-featurevine-2.svg") bottom no-repeat;
+  }
+    
+  .vine-4 .screen {
+    background: url("/images/home/home-featurevine-4-site.png") no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 109px;
+    left: 64px;
+    background-size: 100%;
+  }
+    
+  .vine-1-1 {
+    background: url("/images/home/home-featurevine-1.1.svg") top no-repeat; right: 5px;
+  }
+      
+  .vine-1-1 .screen {
+    background: url("/images/home/home-featurevine-1.1-site.png") top no-repeat; 
+    background-size: 100%;
+    height: 84px;
+    width: 84px;
+    margin-left: 57px;
+    margin-top: 19px;
+  }
+  
+  .vine-2-1 {
+    background: url("/images/home/home-featurevine-2.1.svg") top no-repeat;
+    left: 5px;
+   }
+    
+  .vine-2-1 .screen {
+    background: url("/images/home/home-featurevine-2.1-site.png") top no-repeat; 
+    background-size: 100%;
+    height: 84px;
+    width: 84px;
+    margin-left: 11px;
+    margin-top: 19px;
+  }
+    
+  .vine-3-1 {
+    background: url("/images/home/home-featurevine-1.1.svg") top no-repeat;
+    right: 5px;
+  }
+    
+  .vine-3-1 .screen {
+    background: url("/images/home/home-featurevine-3.1-site.png") top no-repeat; 
+    background-size: 100%;
+    height: 84px;
+    width: 84px;
+    margin-left: 57px;
+    margin-top: 19px;
+  }
+    
+  .vine-4-1 {
+    background: url("/images/home/home-featurevine-2.1.svg") top no-repeat;
+    left: 5px;
+  }
+    
+  .vine-4-1 .screen {
+    background: url("/images/home/home-featurevine-4.1-site.png") top no-repeat; 
+    background-size: 100%;
+    height: 84px;
+    width: 84px;
+    margin-left: 11px;
+    margin-top: 19px;
+  }
+}
+
+@include media($large-screen) {
+  #strapline .h1-rendered {
+    margin-top: 70px;
+  }
+
+  .viner { width: 458px; height: 492px; }
+  
+  .vine-1, .vine-2, .vine-3, .vine-4 { 
+    width: 460px;
+    height: 630px;
+    -webkit-background-size: 460px 630px;
+    -o-background-size: 460px 630px;
+    -moz-background-size: 460px 630px;
+    background-size: 460px 630px;
+  }
+  
+  .vine-1-1, .vine-2-1, .vine-3-1, .vine-4-1 {
+    position: absolute;
+    top: 600px;
+    margin: 0; 
+    width: 153px;
+    height: 232px;
+    -webkit-background-size: 153px 230px;
+    -o-background-size: 153px 230px;
+    -moz-background-size: 153px 230px;
+    background-size: 153px 230px;
+  }
+  
+  .vine-1 .screen { width: 310px; height: 350px; top: 163px; left: 55px; }
+  .vine-2 .screen { width: 310px; height: 350px; top: 163px; left: 96px; }
+  .vine-3 .screen { width: 310px; height: 350px; top: 163px; left: 55px; }
+  .vine-4 .screen { width: 310px; height: 350px; top: 163px; left: 96px; }
+}
+
+@media only screen and (max-height: 710px) and (min-width: 1200px) {
+  .vine-1-1, .vine-2-1, .vine-3-1, .vine-4-1 { margin-top: -100px !important; }
+}
+
+@media only screen and (max-width: 1200px) {
+  .vine-1-1, .vine-2-1, .vine-3-1, .vine-4-1 { margin-top: -100px; }
+}
+
+@media only screen and (min-height: 710px) and (min-width: 1200px) {
+  #strapline .h1-rendered {
+    margin-top: 200px;
+  }
+
+  .viner { height: 622px; width: 458px; }
+  .vine-1, .vine-2, .vine-3, .vine-4 { height: 629px; width: 458px; top: 629px; }
+  .svg .vine-1 .screen { top: 161px; left: 53px; }
+  .svg .vine-2 .screen { top: 162px; left: 95px; }
+  .svg .vine-3 .screen { top: 161px; left: 53px; }
+  .svg .vine-4 .screen { top: 162px; left: 95px; }
+  .vine-1-1, .vine-2-1, .vine-3-1, .vine-4-1 { height: 232px; width: 153px; }
+  .vine-1-1 { top: 700px; }
+  .vine-2-1 { top: 700px; }
+  .vine-3-1 { top: 700px; }
+  .vine-4-1 { top: 700px; }
+}

@@ -1,0 +1,125 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: $base-background-color;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  letter-spacing: -0.010em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font-family;
+  color: $dark-gray; 
+  line-height: $header-line-height;
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
+}
+
+h1,
+h2 {
+  font-family: $serif;
+  font-weight: 400;
+  letter-spacing: -0.050em;
+}
+
+h1 {
+  font-size: $h1-font-size;
+  letter-spacing: -0.035em;
+}
+
+h2 {
+  font-size: $h2-font-size;
+  line-height: 1.5;
+  margin-bottom: 2em;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+h5 {
+  font-size: $h5-font-size;
+}
+
+h6 {
+  font-size: $h6-font-size;
+}
+
+p {
+  margin: 0 0 ($base-spacing / 2);
+}
+
+.lead {
+  font-size: 1.2em;
+}
+
+a {
+  @include transition(color 0.1s linear);
+  color: $base-link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $hover-link-color;
+  }
+
+  &:active, &:focus {
+    color: $hover-link-color;
+    outline: none;
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-spacing 0;
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+blockquote p {
+  line-height: 1.4em;
+  font-style: italic;
+
+  &:first-child:before,
+  &:last-child:after {
+    color: lighten($base-font-color, 25);
+    font-size: 1.5em;
+  }
+
+  &:first-child:before {
+    content: "“";
+    margin-left: -9px;
+  }
+
+  &:last-child:after {
+    content: "”";
+  }
+}
+
+cite {
+  color: lighten($base-font-color, 25);
+  font-style: italic;
+  font-size: .875em;
+  display: block;
+
+  &:before {
+    content: "\2014 \00A0";
+  }
+}

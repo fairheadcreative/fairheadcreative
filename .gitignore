@@ -1,0 +1,20 @@
+# Numerous always-ignore extensions
+*.ai
+*.zip
+*.psd
+*.diff
+*.vi
+*~
+*.sass-cache
+.sass-cache
+.sass-cache/*
+
+# Files to ignore
+Gemfile.lock
+
+# OS or Editor folders
+.DS_Store
+Thumbs.db
+
+# Hide output site for GitHub Pages
+_site

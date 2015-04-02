@@ -1,0 +1,48 @@
+.about {
+  .splash {
+    background: #fec6ec url("/images/about/about-bg.svg") top center no-repeat;
+    background-size: 1200px auto;
+
+    @include media($medium-screen) {
+      background-color: white;
+      padding-bottom: 100px;
+    }
+
+    @include media($large-screen) {
+      padding-bottom: 190px;
+    }
+  }
+
+  article {
+    @include media(max-width $large-screen) {
+      max-width: 40em;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #222;
+      text-align: center;
+      margin-top: 0;
+
+      @include media($large-screen) {
+        text-align: left;
+        font-size: 6em;
+        line-height: 0;
+        margin-top: .5em;
+        @include span-columns(4);
+      }
+
+      @include media($x-large-screen) {
+        font-size: 7em;
+      }
+    }
+
+    div {
+      @include media($large-screen) {
+        @include span-columns(4);
+        color: #222;
+      }
+    }
+  }
+}
