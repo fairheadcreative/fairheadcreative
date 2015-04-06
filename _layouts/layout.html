@@ -33,6 +33,8 @@ layout: compress
   <meta property="og:description" content="{{ page.content | strip_html | truncatewords: 20 }}" />
   <meta name="twitter:description" content="{{ page.content | strip_html | truncatewords: 20 }}">
   {% endif %}
+  
+  <script src="//cdn.optimizely.com/js/2751050879.js"></script>
 </head>
 <body{% if page.class %} class="{{ page.class }}"{% endif %}>
   {% if page.splash %}<div class="splash">{% endif %}
