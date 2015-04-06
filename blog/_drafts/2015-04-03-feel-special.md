@@ -1,12 +1,12 @@
 ---
 layout: blog
-title: 4 Steps to Cause Your Website Users to Feel Special
-permalink: blog/cause-your-website-users-to-feel-special/
+title: 4 Ways to Cause Your Website Users to Feel Special
+permalink: blog/special/
 recommended: true
 freebie: Checklist for how to make your website’s users feel special
-freebie-url: 2015-04-20-feel-special/freebie-checklist-making-your-users-feel-special.pdf
-social: 2015-04-20-feel-special/share-4-steps-to-cause-your-website-users-to-feel-special.jpg
-infographic: 2015-04-20-feel-special/4-steps-to-cause-your-website-users-to-feel-special.png
+freebie-url: https://s3-us-west-2.amazonaws.com/fairheadcreative/blog/freebie-checklist-making-your-users-feel-special.pdf?X-Amz-Date=20150406T181229Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=1862b82345b9a93a78501c93fe92aaac28c8690f4d3eb0f18a89eb0d91e63ec2&X-Amz-Credential=ASIAJWU4C24EHS5CQYJQ/20150406/us-west-2/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=AQoDYXdzEPP//////////wEakAIFevk7kbNUAt3XxATPbQ0ru2sxQT/kKcIuUmZ1qsTiwyuNfJF5qpArheFeoBqYWfpef6P2IgNJ8zUCspdWcZ4wEHvUlr8lzDm4GiBNaZyZ3wQrIhYNoWziGWLiJ7VegbtXDWmazxDNcCFvkCL0/KXYzb5vkKQfcWJWvSQedwV4rfCqWNC516YsRuf0X3bSpXJ9HX/SNiDF8AFjyDLwK%2BQXo0dsaBbC7wNkDYU97fZNpy0XQ6YJbBsDUnRQst9wW3yjSSSdkSscpFMsFgj28pEyKZayEgBUb22nIxYex4kH%2BGEVNn9Ks%2Bbp0gJlJcj90bUDuESzUksxAzgDFGt/0Zor83UMstIXnKtxwdih2hHVdSCTkYupBQ%3D%3D
+social: 2015-04-20-special/share-4-ways-to-cause-your-website-users-to-feel-special.jpg
+infographic: 2015-04-20-special/4-ways-to-cause-your-website-users-to-feel-special.png
 ---
 
 Have you ever walked into a store and felt immediately awkward?
