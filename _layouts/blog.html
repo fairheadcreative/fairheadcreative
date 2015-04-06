@@ -72,7 +72,7 @@ class: article
   
   <form action="//adamfairhead.us8.list-manage.com/subscribe/post?u=078c568914b24026a4a24cbc8&amp;id=56a7df1be0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address" />
-    {% if page.freebie-url %}<input type="text" value="http://fairheadcreative.com/uploads/{{ page.freebie-url }}" name="MMERGE1" class="hide" id="mce-MMERGE1" placeholder="Download link" />{% endif %}
+    {% if page.freebie-url %}<input type="text" value="{{ page.freebie-url }}" name="MMERGE1" class="hide" id="mce-MMERGE1" placeholder="Download link" />{% endif %}
     <div style="position: absolute; left: -5000px;"><input type="text" name="b_078c568914b24026a4a24cbc8_56a7df1be0" tabindex="-1" value=""></div>
     <input type="submit" value="Subscribe Now" name="subscribe" id="mc-embedded-subscribe" class="button" onclick="ga('send', 'event', 'Blog', 'Click', 'Download Confirm {{ page.title }}');" />
   </form>
