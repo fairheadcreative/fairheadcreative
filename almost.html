@@ -1,0 +1,29 @@
+---
+layout: layout
+title: Almost there
+permalink: almost/
+class: contact
+noindex: true
+---
+<div class="form">
+  <h1>Almost finished...</h1>
+  <p>We need to confirm your email address.</p>
+  
+  <p>To complete the subscription process, please click the link in the email we just sent you.</p>
+
+  <article class="article">
+  <aside class="sidebar-item">
+    <h3>Recommended reading</h3>
+    {% for post in site.posts %}
+    {% if post.recommended %}
+    <article>
+      <header>
+        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+        <p class="meta">Published {{ post.date | date_to_string }}</p>
+      </header>
+      </article>
+    {% endif %}
+    {% endfor %}
+    </aside>
+  </article>
+</div>
