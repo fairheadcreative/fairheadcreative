@@ -93,6 +93,29 @@ input[type="submit"] {
 
 // -------------------------------------
 
+.inline-freebie {
+  background: #fffee8;
+  padding: .3em 1em .6em;
+  margin: 1em 0;
+  border: $base-border;
+
+  .form & {
+    margin-top: 0;
+  }
+
+  input[type="email"] {
+    display: inline-block;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(237, 240, 225);
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.04);
+
+    @include media($medium-screen) {
+      max-width: 200px;
+      margin-right: 10px;
+    }
+  }
+}
 
 .article,
 .blog {
@@ -182,13 +205,6 @@ input[type="submit"] {
 
   .author-name {
     margin-right: 1em;
-  }
-
-  .inline-freebie {
-    background: #fffee8;
-    padding: .3em 1em .6em;
-    margin: 1em 0;
-    border: $base-border;
   }
 
   @include media($medium-screen) {
