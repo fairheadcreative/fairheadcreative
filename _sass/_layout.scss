@@ -1,0 +1,70 @@
+// Limiter around the sides of content.
+.container {
+  @include outer-container();
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+// Vertical padding for groups of content.
+.group {
+  padding-top: 2em;
+  padding-bottom: 1.5em;
+
+  @include media($medium-screen) { 
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+
+.button,
+input[type="submit"] {
+  @extend %button;
+  margin: 0 0 .5em 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 5px 0 rgba(0,0,0,0.09);
+
+  @include linear-gradient(#f29f46, #eb7e2e);
+
+  &:hover {
+    @include linear-gradient(#e98932, #e0671e);
+  }
+
+  @include media($medium-screen) {
+     width: auto;   
+  }
+
+  @include media($large-screen) {
+    margin: 0 .5em 0 0;
+  }
+}
+
+.button.secondary {
+  @extend %button-secondary;
+
+  @include linear-gradient(#77d8f6, #52c6f0);
+
+  &:hover {
+    @include linear-gradient(#55bbdb, #32a9d4);
+  }
+}
+
+.button.large {
+  font-size: 1.4em;
+}
+
+.small-element {
+  @include media($medium-screen) {
+    display: none;
+  }
+}
+
+.large-element {
+  @include media(max-width $medium-screen) {
+    display: none;
+  }
+}
+
+.hide {
+  display: none;
+}

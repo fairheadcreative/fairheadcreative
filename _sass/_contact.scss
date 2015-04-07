@@ -1,0 +1,12 @@
+.contact,
+.project {
+  background: #fafafa;
+
+  .form {
+    background: white;
+    padding: 1em 1em 0;
+    max-width: 40em;
+    margin: 0 auto 1em;
+    border: $base-border;
+  }
+}

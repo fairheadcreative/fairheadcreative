@@ -15,7 +15,7 @@ class: article
 
       <div class="main">
 
-        {% if page.featured %}<img class="featured-image {% if page.version == 4 %}ver-4{% endif %}" src="/uploads/{{ page.featured }}" alt="Blog post featured image" />{% endif %}
+        {% if page.featured %}<img class="featured-image{% if page.version == 4 %} ver-4{% endif %}" src="/uploads/{{ page.featured }}" alt="Blog post featured image" />{% endif %}
 
         {{ content }}
 
