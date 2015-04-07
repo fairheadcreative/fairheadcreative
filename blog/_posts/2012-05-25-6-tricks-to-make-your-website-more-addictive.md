@@ -5,7 +5,6 @@ featured: 2012-05-25-website-more-addictive/6-tricks-to-make-your-website-more-a
 version: 4
 stylesheet: blog/2012-05-6-tricks-to-make-your-website-more-addictive/styles.css
 permalink: blog/2012-05-25-6-tricks-to-make-your-website-more-addictive/
-recommended: true
 ---
 
 There's nothing more depressing than spending countless hours and dollars on a brand new web venture, only to watch it fall flat on its face because nobody cares. This is the unfortunate destiny of many new ventures that don’t carefully consider how to keep their customer base coming back.
