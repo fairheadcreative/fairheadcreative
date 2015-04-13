@@ -4,8 +4,9 @@ title: How You Can Use User Testing to Quickly Find Weaknesses In Your Website
 permalink: blog/user-testing/
 recommended: true
 freebie: How To Lead A User Testing Session guide
-freebie-url: 
-social: 
+freebie-url: https://s3-us-west-2.amazonaws.com/fairheadcreative/blog/freebie-how-to-lead-a-user-testing-session.pdf
+featured: 2015-04-13-user-testing/featured-user-testing.jpg
+social: 2015-04-13-user-testing/share-user-testing.jpg
 ---
 Over the coming months, we'll be going over some various new techniques. They're designed to help your business grow by making engaging, memorable experiences for your website visitors. User Testing is one of those techniques, and it's one that can have fast results. It's something you'll be able to take advantage of shortly after reading this article.
 
@@ -21,7 +22,7 @@ I've also created another free gift for you with this article. This one unpacks 
 
 ## What is User Testing?
 
-Do you have your [UX Cheat Sheet from the previous article](LINK) handy? You'll see that User Testing is an "Evaluation Method". That means it's often a method used with released products. You can also use it with Prototypes for early feedback. We'll cover how that's possible in a future article.
+Do you have your [UX Cheat Sheet from the previous article](/blog/reasons-your-business-needs-user-experience/) handy? You'll see that User Testing is an "Evaluation Method". That means it's often a method used with released products. You can also use it with Prototypes for early feedback. We'll cover how that's possible in a future article.
 
 User Testing is the process of:
 
@@ -56,7 +57,7 @@ Think of a product that you use and love. How would you feel if the owner of tha
 
 Make that offer to your fans.
 
-These fans will be able to screen share with you as they use your product. For desktop or web products, you could use Skype or Google+ Hangouts. Both are free. Both allow you to record your screen and theirs at the same time. This way, you can capture the participant's actions and their reactions to those actions. For iPhone apps, UX Recorder (http://www.uxrecorder.com/) is a great app that achieves similar functionality for mobile, for $1.99 per recording.
+These fans will be able to screen share with you as they use your product. For desktop or web products, you could use Skype or Google+ Hangouts. Both are free. Both allow you to record your screen and theirs at the same time. This way, you can capture the participant's actions and their reactions to those actions. For iPhone apps, <a href="http://www.uxrecorder.com" rel="nofollow">UX Recorder</a> is a great app that achieves similar functionality for mobile, for $1.99 per recording.
 
 It's nice to offer a small gift card to your fans as a surprise "thank you" at the end of a test. Just to let them know you appreciate them. It's also worth asking them if they'd be willing to take a test again, at this point.
 
@@ -67,7 +68,7 @@ This option isn't free, but it's cheap, and it doesn't ask for much of your time
 
 There's two tools I'll cover in this option. Both of them ask the your test questions for you, and do all the video/audio recording. They also don't need you to pay participants. You don't even need to be around to watch the tests.
 
-The first of the two is UserTesting.com. These guys charge $49 per 15-minute video of a single participant using your product. You'll get to choose participant age, income, gender, country, etc. Even web expertise and operating system. Once you've outlined what tasks you want to ask your participants, their tool will take over. It'll ask them to complete your tasks. It'll then send you the video/audio files of how the test went. You won't be able to pick who takes the test with this tool though, unfortunately. So you'll need to factor in that they might not be from your target industry. That’s the biggest downside of this option, in my opinion.
+The first of the two is <a href="http://usertesting.com" rel="nofollow">UserTesting.com</a>. These guys charge $49 per 15-minute video of a single participant using your product. You'll get to choose participant age, income, gender, country, etc. Even web expertise and operating system. Once you've outlined what tasks you want to ask your participants, their tool will take over. It'll ask them to complete your tasks. It'll then send you the video/audio files of how the test went. You won't be able to pick who takes the test with this tool though, unfortunately. So you'll need to factor in that they might not be from your target industry. That’s the biggest downside of this option, in my opinion.
 
 As an aside, UserTesting.com also offers a service called "Peek", which lets you try out their service for free. Just encase you're on the fence about using them. I'm not affiliated in any way with these guys, encase you’re wondering.
 
