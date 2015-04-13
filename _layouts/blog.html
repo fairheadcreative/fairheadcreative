@@ -23,7 +23,7 @@ class: article
         <section class="inline-freebie">
           <h3>Get a {{ page.freebie }}</h3>
           <p class="description">This article comes with a free download. Enjoy it, and let us know what you think!</p>
-          <p><a href="javascript:void(0);" class="button get-freebie" alt="" onclick="ga('send', 'event', 'Blog', 'Click', 'Download Open Inline {{ page.title }})" />Download your freebie now</a></p>
+          <p><a href="javascript:void(0);" class="button get-freebie" alt="" onclick="ga('send', 'event', 'Blog', 'Click', 'Download Open Inline {{ page.title }}')" />Download your freebie now</a></p>
         </section>
 
         <a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://fairheadcreative.com{{ page.url }}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Facebook');">Share on Facebook</a> <a class="share-twitter" href="https://twitter.com/home?status=Reading {{ page.title }}: http://fairheadcreative.com{{ page.url }}{% if page.infographic %} [INFOGRAPHIC]{% endif %}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Twitter');">Share on Twitter</a> <a class="share-google" href="https://plus.google.com/share?url=http://fairheadcreative.com{{ page.url }}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Google');">Share on Google+</a>
