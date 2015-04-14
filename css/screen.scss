@@ -17,3 +17,9 @@
 @import 'about';
 @import 'blog';
 @import 'contact';
+
+a[title="SumoMe"] {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
