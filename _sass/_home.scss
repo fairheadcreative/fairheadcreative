@@ -38,27 +38,53 @@
   }
 }
 
+%home-lead {
+  margin: -2.2em auto 2.5em;
+  text-align: center;
+  font-size: 1.1em;
+
+  strong {
+    color: #60bb44;
+    font-weight: 900;
+  }
+}
+
 #benefits {
   @include outer-container();
   text-align: center;
 
+  .lead {
+    @extend %home-lead;
+  }
+
   article {
+    text-align: left;
+
     @include media(max-width $large-screen) {
       padding-bottom: 1em;
     }
 
     @include media($large-screen) {
-      @include span-columns(4);
+      @include span-columns(3);
+    }
+
+    @include media(min-width $medium-screen max-width $large-screen) {
+      width: 50%;
+      padding: 0 5% 2em;
+      float: left;
     }
   }
 }
-
 
 #creative-web-design {
   @include outer-container();
 
   h2 {
     text-align: center;
+  }
+
+  .lead {
+    @extend %home-lead;
   }
 
   article {
@@ -83,6 +109,53 @@
   }
 }
 
+#site-optimization {
+  @include outer-container();
+  padding-bottom: 0;
+
+  h2 {
+    text-align: center;
+  }
+
+  .lead {
+    @extend %home-lead;
+  }
+
+  .intro {
+    max-width: 40em;
+    margin: 0 auto 3em;
+    text-align: center;
+  }
+
+  .panel {
+    background: lighten($base-border-color, 5);
+    @include row();
+    padding: 1em 2em 1.5em;
+    margin: 1em 0 0;
+
+    h4 {
+      margin-bottom: .25em;
+    }
+  }
+
+  article {
+    @include media(max-width $large-screen) {
+      text-align: center;
+      padding-bottom: 2em;
+    }
+
+    @include media(min-width $medium-screen max-width $large-screen) {
+      width: 50%;
+      padding: 0 5% 2em;
+      float: left;
+    }
+
+    @include media($large-screen) {
+      @include span-columns(4);
+    }
+  }
+}
+
 #freelance-illustrators {
   @include media(max-width $large-screen) {
     padding-top: 2em;
@@ -100,6 +173,10 @@
 
   h2 {
     text-align: center;
+  }
+
+  .lead {
+    @extend %home-lead;
   }
 
   @include media($large-screen) {
