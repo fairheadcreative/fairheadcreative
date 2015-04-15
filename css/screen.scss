@@ -23,3 +23,46 @@ a[title="SumoMe"] {
   visibility: hidden;
   opacity: 0;
 }
+
+.var2 {
+  @include media($medium-screen) {
+    width: 55%;
+  }
+
+  @include media($large-screen) {
+    padding-bottom: 50px;
+  }
+  @media only screen and (min-height: 710px) and (min-width: 1200px) {
+    padding-bottom: 80px;
+  }
+
+  .h1-rendered {
+    display: none;
+  }
+
+  h1 {
+    display: block;
+    font-family: Lato;
+    font-size: 2.5em;
+    line-height: 1;
+    font-weight: 700;
+
+    @include media($large-screen) {
+      margin-top: 90px;
+    }
+
+    @media only screen and (min-height: 710px) and (min-width: 1200px) {
+      margin-top: 220px;
+    }
+
+    span {
+      font-size: .6em;
+      letter-spacing: -0.02em;
+      font-weight: 400;
+    }
+  }
+
+  h2 {
+    display: none;
+  }
+}
