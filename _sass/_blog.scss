@@ -54,6 +54,13 @@
   .share-facebook,
   .share-twitter,
   .share-google {
+    @include media(max-width $medium-screen) {
+      width: 32.5%;
+      padding-left: .5%;
+      padding-right: .5%;
+      font-size: .7em;
+    }
+
     @include media($medium-screen) {
       margin-top: 1em;
     }
@@ -306,5 +313,38 @@
     background: rgba(0,0,0,.4);
     display: block;
     z-index: 2;
+  }
+}
+
+.share {
+  height: 40px;
+
+  @include media($medium-screen) {
+    height: 70px;
+  }
+}
+
+.share,
+.share-inner {
+  width: 100%;
+}
+
+.share-inner.fixed {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  bottom: 0;
+  background: white;
+  width: 100%;
+  max-width: 60em;
+  border-top: 1px solid #eee;
+
+  @include media(max-width $medium-screen) {
+    left: 0;
+    padding: 5px 1em 0;
+  }
+
+  @include media($medium-screen) {
+    height: 70px;
   }
 }
