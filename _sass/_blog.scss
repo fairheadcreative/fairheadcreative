@@ -356,3 +356,18 @@
     height: 70px;
   }
 }
+
+.take-survey {
+  display: none;
+
+  @include media($medium-screen) {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 1em;
+    background: #33aad8;
+    color: white;
+    padding: .2em .5em;
+    border-radius: 4px 4px 0 0
+  }
+}
