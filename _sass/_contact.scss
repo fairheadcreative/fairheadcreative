@@ -10,3 +10,65 @@
     border: $base-border;
   }
 }
+
+.options {
+  margin-bottom: 1em;
+
+  li {
+    margin-bottom: .25em;
+
+    .button.secondary {
+      background: #eee;
+
+      &:hover {
+        background: #ddd;
+      }
+    }
+
+    .button.selected {
+      &:after {
+        content: "";
+        display: block;
+        background: #aaa;
+        width: 9px;
+        height: 9px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        border-radius: 50%;
+      }
+    }
+
+    .button {
+      background: #ddd;
+      color: $base-font-color;
+      box-shadow: none;
+      position: relative;
+
+      &:before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        background: white;
+        display: block;
+        float: left;
+        margin: 0 .55em 0 -.25em;
+        border-radius: 2px; 
+      }
+    }
+  }
+}
+
+.result {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+
+  &.is-visible {
+    position: relative;
+    opacity: 1;
+    height: auto;
+    overflow: visible;
+  }
+}

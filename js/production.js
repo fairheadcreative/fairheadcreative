@@ -20,6 +20,32 @@ $(window).scroll(function() {
 });
 
 $(function() {
+  $('.contact #option-1').on('click', function(e) {
+    $('.option').removeClass('secondary').removeClass('selected').addClass('secondary');
+    $(this).removeClass('secondary').addClass('selected');
+    $('.result').removeClass('is-visible');
+    $('#project-planner').addClass('is-visible');
+    return false;
+  });
+
+  $('.contact #option-2').on('click', function(e) {
+    $('.option').removeClass('secondary').removeClass('selected').addClass('secondary');
+    $(this).removeClass('secondary').addClass('selected');
+    $('.result').removeClass('is-visible');
+    $('#prices').addClass('is-visible');
+    return false;
+  });
+
+  $('.contact #option-3').on('click', function(e) {
+    $('.option').removeClass('secondary').removeClass('selected').addClass('secondary');
+    $(this).removeClass('secondary').addClass('selected');
+    $('.result').removeClass('is-visible');
+    $('#something-else').addClass('is-visible');
+    return false;
+  });
+});
+
+$(function() {
 
   $(".viner").append("<div class='vine-1'><div class='screen'></div></div><div class='vine-1-1'><div class='screen'></div></div><div class='vine-2'><div class='screen'></div></div><div class='vine-2-1'><div class='screen'></div></div><div class='vine-3'><div class='screen'></div></div><div class='vine-3-1'><div class='screen'></div></div><div class='vine-4'><div class='screen'></div></div><div class='vine-4-1'><div class='screen'></div></div>");
   

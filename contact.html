@@ -6,8 +6,17 @@ permalink: contact/
 class: contact
 ---
 <div class="form">
-  <div class="inline-freebie">
-    <h3>Looking for general information first?</h3>
+
+  <h1>Contact Us</h1>
+  <h3>Select which of these best describes you:</h3>
+  <ul class="options">
+    <li><a id="option-1" href="#" class="option button secondary" onclick="ga('send', 'event', 'Contact', 'Click', 'Option Planner');">I know what we want, let me describe it to you</a></li>
+    <li><a id="option-2" href="#" class="option button secondary" onclick="ga('send', 'event', 'Contact', 'Click', 'Option Prices');">I’m not sure what we want, show me prices & talk with us</a></li>
+    <li><a id="option-3" href="#" class="option button secondary" onclick="ga('send', 'event', 'Contact', 'Click', 'Option Contact');">I just want to get in touch with you</a></li>
+  </ul>
+
+  <div id="prices" class="result inline-freebie">
+    <h3>We will send you our latest pricing details, and follow up with you if you’d like us to walk you through it them:</h3>
     <p><form action="//adamfairhead.us8.list-manage.com/subscribe/post?u=078c568914b24026a4a24cbc8&amp;id=6b9a8f5568" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="" placeholder="Your email address">
       <div style="position: absolute; left: -5000px;"><input type="text" name="b_078c568914b24026a4a24cbc8_6b9a8f5568" tabindex="-1" value=""></div>
       <input placeholder="Your email address" type="email" name="EMAIL" class="required email" id="mce-EMAIL">
@@ -15,21 +24,44 @@ class: contact
   </div>
   <br />
 
-  <div id="wufoo-z7x3p3">
-    Fill out my <a href="http://fairheadcreative.wufoo.com/forms/z7x3p3">online form</a>.
+  <div id="project-planner" class="result">
+    <div id="wufoo-q7x2w5">
+      Fill out my <a href="http://fairheadcreative.wufoo.com/forms/q7x2w5">online form</a>.
+    </div>
+    <script type="text/javascript">var q7x2w5;(function(d, t) {
+    var s = d.createElement(t), options = {
+    'userName':'fairheadcreative', 
+    'formHash':'q7x2w5', 
+    'autoResize':true,
+    'height':'951',
+    'async':true,
+    'header':'show'};
+    s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+    s.onload = s.onreadystatechange = function() {
+    var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+    try { q7x2w5 = new WufooForm();q7x2w5.initialize(options);q7x2w5.display(); } catch (e) {}};
+    var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+    })(document, 'script');</script>
   </div>
-  <script type="text/javascript">var z7x3p3;(function(d, t) {
-  var s = d.createElement(t), options = {
-  'userName':'fairheadcreative', 
-  'formHash':'z7x3p3', 
-  'autoResize':true,
-  'height':'517',
-  'async':true,
-  'header':'show'};
-  s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-  s.onload = s.onreadystatechange = function() {
-  var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-  try { z7x3p3 = new WufooForm();z7x3p3.initialize(options);z7x3p3.display(); } catch (e) {}};
-  var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-  })(document, 'script');</script>
+
+  <div id="something-else" class="result">
+    <div id="wufoo-z7x3p3">
+      Fill out my <a href="http://fairheadcreative.wufoo.com/forms/z7x3p3">online form</a>.
+    </div>
+    <script type="text/javascript">var z7x3p3;(function(d, t) {
+    var s = d.createElement(t), options = {
+    'userName':'fairheadcreative', 
+    'formHash':'z7x3p3', 
+    'autoResize':true,
+    'height':'517',
+    'async':true,
+    'header':'show'};
+    s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+    s.onload = s.onreadystatechange = function() {
+    var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+    try { z7x3p3 = new WufooForm();z7x3p3.initialize(options);z7x3p3.display(); } catch (e) {}};
+    var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+    })(document, 'script');</script>
+  </div>
+
 </div>
