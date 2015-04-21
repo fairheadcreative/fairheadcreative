@@ -66,3 +66,60 @@ a[title="SumoMe"] {
     display: none;
   }
 }
+
+
+
+/* Awwwards */
+
+/* Base */
+
+#awwwards{
+  position: absolute;
+  width: 126px;
+  height: 126px;
+  text-indent: -666em;
+  overflow: hidden;
+  z-index: 999;
+
+  -webkit-transition: all 1s ease;
+    transition: all 1s ease; 
+}
+
+#awwwards.top{
+  top: 0;
+}
+#awwwards.bottom{
+  bottom: 0;
+}
+#awwwards.left{
+  left: 0;
+}
+#awwwards.right{
+  right: 0;
+}
+#awwwards a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 126px;
+  height: 126px;
+  background-repeat: no-repeat;
+  background-position: 4px -23px;
+  background-size: 145px 145px;
+}
+#awwwards.top.left a{
+  -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg); 
+}
+#awwwards.bottom.left a{
+  background-position: -23px 4px;
+}
+#awwwards.bottom.right a{
+  background-position: -23px 4px;
+  -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg); 
+}
+#awwwards.nominee.black a{
+  @include retina-image('../images/home/awwwards_nominee_black', 145px 145px, png, '../images/home/awwwards_nominee_black@2x');
+}
