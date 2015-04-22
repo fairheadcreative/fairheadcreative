@@ -5,6 +5,8 @@ permalink: blog/reasons-your-business-needs-user-experience/
 recommended: true
 freebie: User Experience Terminology Cheat Sheet
 freebie-url: https://s3-us-west-2.amazonaws.com/fairheadcreative/blog/freebie-user-experience-terminology.pdf
+freebie-image: 2015-04-06-business-ux/product-5-reasons-business-user-experience.png
+freebie-description: There’s a lot of conflicting advice online about how to better reach your audience. This cheat sheet will show you factual, tried and tested tricks that experience UX practitioners use.
 featured: 2015-04-06-business-ux/featured-5-reasons-business-user-experience.jpg
 social: 2015-04-06-business-ux/share-5-reasons-business-user-experience.jpg
 ---
