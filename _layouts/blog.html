@@ -21,8 +21,9 @@ class: article
 
         {% if page.freebie %}
         <section class="inline-freebie">
-          <h3>Get a {{ page.freebie }}</h3>
-          <p class="description">This article comes with a free download. Enjoy it, and let us know what you think!</p>
+        {% if page.freebie-image %}<img class="freebie-image" src="/uploads/{{ page.freebie-image }}" alt="{{ page.freebie }}" width="200" />{% endif %}
+          <h3>Get your {{ page.freebie }}</h3>
+          <p class="description">{% if page.freebie-description %}{{ page.freebie-description }}{% else %}This article comes with a free download. Enjoy it, and let us know what you think!{% endif %}</p>
           <p><a href="javascript:void(0);" class="button get-freebie" alt="" onclick="ga('send', 'event', 'Blog', 'Click', 'Download Open Inline {{ page.title }}')" />Download your freebie now</a></p>
         </section>
 

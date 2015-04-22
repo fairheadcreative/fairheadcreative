@@ -5,6 +5,8 @@ permalink: blog/user-testing/
 recommended: true
 freebie: How To Lead A User Testing Session guide
 freebie-url: https://s3-us-west-2.amazonaws.com/fairheadcreative/blog/freebie-how-to-lead-a-user-testing-session.pdf
+freebie-description: Effective user testing will give you invaluable insights into how your users interact with your website or product. Download this guide to avoid common pitfalls and get on the road to effectiveness from your very first test.
+freebie-image: 2015-04-13-user-testing/product-user-testing.png
 featured: 2015-04-13-user-testing/featured-user-testing.jpg
 social: 2015-04-13-user-testing/share-user-testing.jpg
 ---
