@@ -3,7 +3,7 @@
 
 // Freebie modal
 $(function() {
-  $('.get-freebie, .modal-close').on('click', function(e) {
+  $('.get-freebie, #freebie-modal .modal-close').on('click', function(e) {
     $('#freebie-modal, .modal-overlay').toggleClass('open');
     return false;
   });

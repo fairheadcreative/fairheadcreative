@@ -3,7 +3,7 @@
 
 // Freebie modal
 $(function() {
-  $('.get-freebie, .modal-close').on('click', function(e) {
+  $('.get-freebie, #freebie-modal .modal-close').on('click', function(e) {
     $('#freebie-modal, .modal-overlay').toggleClass('open');
     return false;
   });
@@ -47,8 +47,8 @@ $(function() {
 
 $(function() {
 
+  // Viner
   if ($('body').hasClass('home')) {
-
     $(".viner").append("<div class='vine-1'><div class='screen'></div></div><div class='vine-1-1'><div class='screen'></div></div><div class='vine-2'><div class='screen'></div></div><div class='vine-2-1'><div class='screen'></div></div><div class='vine-3'><div class='screen'></div></div><div class='vine-3-1'><div class='screen'></div></div><div class='vine-4'><div class='screen'></div></div><div class='vine-4-1'><div class='screen'></div></div>");
     
     $(function viner() {
@@ -105,4 +105,15 @@ $(function() {
       
     });
   };
+
+  // Home Strap Form
+  $('.strap-submit').on('click', function(e) {
+    $('#free-report input[type="url"]').remove();
+    $('.strap-form input[type="url"]').clone().insertAfter('#free-report input[type="email"]');
+  });
+
+  $('.strap-submit, #free-report .modal-close').on('click', function(e) {
+    $('#free-report, .modal-overlay').toggleClass('open');
+    return false;
+  });
 });
