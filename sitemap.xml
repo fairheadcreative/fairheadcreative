@@ -10,14 +10,20 @@
     <priority>1.0</priority>
   </url>
   {% endif %}{% endfor %}
-  {% for page in site.pages %}{% if page.layout != nil %}{% if page.class != 'home' %}
+  <url>
+    <loc>http://fairheadcreative.com/blog/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% for page in site.pages %}{% if page.layout != nil %}{% if page.class != 'home' %}{% unless page.noindex == true %}{% unless page.class == 'blog' %} 
   <url>
     <loc>http://fairheadcreative.com{{ page.url | remove: 'index.html' }}</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
-  {% endif %}{% endif %}{% endfor %}
+  {% endunless %}{% endunless %}{% endif %}{% endif %}{% endfor %}
   {% for post in site.posts %}
   <url>
     <loc>http://fairheadcreative.com{{ post.url | remove: 'index.html' }}</loc>
