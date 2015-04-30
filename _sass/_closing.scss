@@ -19,6 +19,23 @@
   .description {
     margin-top: -2em;
   }
+
+  .strap-form {
+    max-width: em(500);
+    margin: 0 auto;
+
+    @include media($large-screen) {
+      input[type="url"] {
+        width: 58%;
+        margin: 0 2% 0 0;
+      }
+
+      .strap-submit {
+        width: 35%;
+        min-width: 200px;
+      }
+    }
+  }
 }
 
 #closing {

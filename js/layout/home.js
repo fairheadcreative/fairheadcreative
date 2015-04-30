@@ -62,7 +62,7 @@ $(function() {
   // Home Strap Form
   $('.strap-submit').on('click', function(e) {
     $('#free-report input[type="url"]').remove();
-    $('.strap-form input[type="url"]').clone().insertAfter('#free-report input[type="email"]');
+    $(this).parent().find('input[type="url"]').clone().insertAfter('#free-report input[type="email"]');
   });
 
   $('.strap-submit, #free-report .modal-close').on('click', function(e) {
