@@ -61,55 +61,55 @@
       padding-bottom: 50px;
     }
   }
+}
 
-  .strapline-form,
-  .strap-form,
-  #free-report {
-    display: block;
-  }
+.strapline-form,
+.strap-form,
+#free-report {
+  display: block;
+}
 
-  .strap-form {
-    input[type="email"],
-    input[type="url"] {
-      background: white;
-      box-shadow: 0 5px 0 rgba(0,0,0,0.09);
-    }
-
-    @include media($large-screen) {
-      input[type="url"] {
-        width: 40%;
-        float: left;
-        margin: 0 2% 0 0;
-      }
-
-      .strap-submit {
-        width: 35%;
-        min-width: 200px;
-        float: left;
-        margin: 0;
-      }
-    }
-  }
-
-  #free-report {
-    position: fixed;
-    top: 10px;
-    left: 0;
-    right: 0;
-    max-width: 400px;
-    margin: 0 auto;
+.strap-form {
+  input[type="email"],
+  input[type="url"] {
     background: white;
-    padding: 0 1.5em 1.5em;
-    border-radius: 4px;
     box-shadow: 0 5px 0 rgba(0,0,0,0.09);
-    z-index: 4;
-    opacity: 0;
-    display: none;
+  }
 
-    &.open {
-      opacity: 1;
-      display: block;
+  @include media($large-screen) {
+    input[type="url"] {
+      width: 40%;
+      float: left;
+      margin: 0 2% 0 0;
     }
+
+    .strap-submit {
+      width: 35%;
+      min-width: 200px;
+      float: left;
+      margin: 0;
+    }
+  }
+}
+
+#free-report {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  padding: 0 1.5em 1.5em;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 rgba(0,0,0,0.09);
+  z-index: 4;
+  opacity: 0;
+  display: none;
+
+  &.open {
+    opacity: 1;
+    display: block;
   }
 }
 

@@ -1,0 +1,71 @@
+.study {
+  h1 {
+    text-align: center;
+    padding: .5em 0 1em;
+    color: white;
+    font-family: Lato;
+    font-size: 2.5em;
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  .splash {
+    background-size: cover;
+    background-position: right center;
+  }
+
+  .details {
+    background: $base-border-color;
+
+    .container {
+      max-width: $large-screen;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+  }
+
+  #goals,
+  #roi {
+    padding-bottom: 2em;
+
+    @include media($medium-screen) {
+      @include span-columns(6);
+    }
+    
+    ul {
+      list-style: disc outside;
+      padding-left: 1.2em;
+    }
+  }
+
+  #roi {
+    padding-bottom: 0;
+  }
+
+  .single {
+    h2, p {
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    figure {
+      background-color: #1b1b1b;
+      width: 100%;
+      margin: 1.5em 0;
+      border: 1em solid #1b1b1b;
+    }
+  }
+}
+
+.lifechurchtv.study .splash {
+  background-image: url('/images/studies/lifechurchtv/lifechurch-intro_2x.jpg');
+}
