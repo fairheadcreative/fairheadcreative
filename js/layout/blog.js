@@ -3,8 +3,8 @@
 
 // Freebie modal
 $(function() {
-  $('.get-freebie, #freebie-modal .modal-close').on('click', function(e) {
-    $('#freebie-modal, .modal-overlay').toggleClass('open');
+  $('.strap-submit, .get-freebie, #key-modal .modal-close').on('click', function(e) {
+    $('#key-modal').toggle();
     return false;
   });
 });
@@ -17,4 +17,23 @@ $(window).scroll(function() {
   } else {
     $('.share-inner').addClass('fixed');
   }
+});
+
+// If user is about to leave
+function addEvent(obj, evt, fn) {
+    if (obj.addEventListener) {
+        obj.addEventListener(evt, fn, false);
+    }
+    else if (obj.attachEvent) {
+        obj.attachEvent("on" + evt, fn);
+    }
+}
+
+addEvent(document, "mouseout", function(e) {
+    e = e ? e : window.event;
+    var from = e.relatedTarget || e.toElement;
+    if (!from || from.nodeName == "HTML") {
+        // the cursor has left the building
+        console.log('leaving');
+    }
 });

@@ -61,12 +61,7 @@ $(function() {
 
   // Home Strap Form
   $('.strap-submit').on('click', function(e) {
-    $('#free-report input[type="url"]').remove();
-    $(this).parent().find('input[type="url"]').clone().insertAfter('#free-report input[type="email"]');
-  });
-
-  $('.strap-submit, #free-report .modal-close').on('click', function(e) {
-    $('#free-report, .modal-overlay').toggleClass('open');
-    return false;
+    $('#key-modal input[type="url"]').remove();
+    $(this).parent().find('input[type="url"]').clone().insertAfter('#key-modal input[type="email"]');
   });
 });

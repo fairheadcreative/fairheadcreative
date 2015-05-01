@@ -19,6 +19,9 @@ class: article
 
         {{ content }}
 
+        <section class="share"><div class="share-inner">
+        <a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://fairheadcreative.com{{ page.url }}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Facebook');">Share on Facebook</a> <a class="share-twitter" href="https://twitter.com/home?status=Reading {{ page.title }}: http://fairheadcreative.com{{ page.url }}{% if page.infographic %} [INFOGRAPHIC]{% endif %}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Twitter');">Share on Twitter</a> <a class="share-google" href="https://plus.google.com/share?url=http://fairheadcreative.com{{ page.url }}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Google');">Share on Google+</a></div></section>
+
         {% if page.freebie %}
         <section class="inline-freebie">
         {% if page.freebie-image %}<img class="freebie-image" src="/uploads/{{ page.freebie-image }}" alt="{{ page.freebie }}" width="200" />{% endif %}
@@ -27,12 +30,7 @@ class: article
           <p><a href="javascript:void(0);" class="button get-freebie" alt="" onclick="ga('send', 'event', 'Blog', 'Click', 'Download Open Inline {{ page.title }}')" />Download your freebie now</a></p>
         </section>
 
-        <section class="share"><div class="share-inner">
-        <a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://fairheadcreative.com{{ page.url }}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Facebook');">Share on Facebook</a> <a class="share-twitter" href="https://twitter.com/home?status=Reading {{ page.title }}: http://fairheadcreative.com{{ page.url }}{% if page.infographic %} [INFOGRAPHIC]{% endif %}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Twitter');">Share on Twitter</a> <a class="share-google" href="https://plus.google.com/share?url=http://fairheadcreative.com{{ page.url }}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Google');">Share on Google+</a></div></section>
         {% else %}
-        <section class="share"><div class="share-inner">
-        <a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://fairheadcreative.com{{ page.url }}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Facebook');">Share on Facebook</a> <a class="share-twitter" href="https://twitter.com/home?status=Reading {{ page.title }}: http://fairheadcreative.com{{ page.url }}{% if page.infographic %} [INFOGRAPHIC]{% endif %}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Twitter');">Share on Twitter</a> <a class="share-google" href="https://plus.google.com/share?url=http://fairheadcreative.com{{ page.url }}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Google');">Share on Google+</a>
-        </div></section>
 
         <aside class="sidebar-item large-element inline-subscribe">
           <h3>Attract more customers online with our newsletter</h3>
@@ -68,18 +66,20 @@ class: article
 </div>
 
 {% if page.freebie %}
-<div class="modal-overlay"></div>
-<div id="freebie-modal">
-  <a href="javascript:void(0);" class="modal-close">&#10006</a>
-  <h3>We'll email you your {{ page.freebie }}</h3>
-  <p>Enter your email address below and we'll send you your freebie right away:</p>
-  
-  <form action="//adamfairhead.us8.list-manage.com/subscribe/post?u=078c568914b24026a4a24cbc8&amp;id=56a7df1be0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address" />
-    {% if page.freebie-url %}<input type="text" value="{{ page.freebie-url }}" name="MMERGE1" class="hide" id="mce-MMERGE1" placeholder="Download link" />{% endif %}
-    <div style="position: absolute; left: -5000px;"><input type="text" name="b_078c568914b24026a4a24cbc8_56a7df1be0" tabindex="-1" value=""></div>
-    <input type="submit" value="Subscribe Now" name="subscribe" id="mc-embedded-subscribe" class="button" onclick="ga('send', 'event', 'Blog', 'Click', 'Download Confirm {{ page.title }}');" />
-  </form>
+<div class="modal-wrapper" id="key-modal">
+  <div class="modal-overlay"></div>
+  <div class="modal">
+    <a href="javascript:void(0);" class="modal-close">&#10006</a>
+    <h3>Where shall we send your your {{ page.freebie }}?</h3>
+    <p>Enter your email address below and we'll send you your freebie right away:</p>
+    
+    <form action="//adamfairhead.us8.list-manage.com/subscribe/post?u=078c568914b24026a4a24cbc8&amp;id=56a7df1be0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address" />
+      {% if page.freebie-url %}<input type="text" value="{{ page.freebie-url }}" name="MMERGE1" class="hide" id="mce-MMERGE1" placeholder="Download link" />{% endif %}
+      <div style="position: absolute; left: -5000px;"><input type="text" name="b_078c568914b24026a4a24cbc8_56a7df1be0" tabindex="-1" value=""></div>
+      <input type="submit" value="Subscribe Now" name="subscribe" id="mc-embedded-subscribe" class="button" onclick="ga('send', 'event', 'Blog', 'Click', 'Download Confirm {{ page.title }}');" />
+    </form>
+  </div>
 </div>
 {% endif %}
 
