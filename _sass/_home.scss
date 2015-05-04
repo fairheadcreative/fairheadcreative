@@ -26,6 +26,7 @@
 
       @include media($large-screen) {
         margin-top: 90px;
+        max-width: 15em;
       }
 
       @media only screen and (min-height: 710px) and (min-width: 1200px) {
