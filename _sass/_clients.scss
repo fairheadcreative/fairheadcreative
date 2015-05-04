@@ -1,38 +1,37 @@
-.clients {
-  #quotes {
-    blockquote {
-      @include outer-container();
-      max-width: 40em;
-      padding-bottom: 1em;
+#quotes {
+  blockquote {
+    @include outer-container();
+    max-width: 40em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+
+    @include media($medium-screen) {
+      padding-bottom: 3em;
+      margin-bottom: 3em;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
       margin-bottom: 1em;
+    }
 
-      @include media($medium-screen) {
-        padding-bottom: 3em;
-        margin-bottom: 3em;
-      }
+    img {
+      @include span-columns(2); 
+      border-radius: 100%;
+    }
 
-      &:last-child {
-        padding-bottom: 0;
-        margin-bottom: 1em;
-      }
+    &:nth-child(even) img {
+      float: right;
+      margin-right: 0;
+    }
 
-      img {
-        @include span-columns(2); 
-        border-radius: 100%;
-      }
-
-      &:nth-child(even) img {
-        float: right;
-        margin-right: 0;
-      }
-
-      div {
-        @include span-columns(10);
-      }
+    div {
+      @include span-columns(10);
     }
   }
+}
 
-
+.clients {
   #intro {
     z-index: 2;
     position: relative;
