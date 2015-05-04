@@ -8,6 +8,33 @@
   margin-top: 1em;
 }
 
+.blog .blog-title-wrapper {
+  .blog-title {
+    max-width: 25em;
+    margin: 0 auto 1.5em;
+  }
+
+  .blog-title-form {
+    @include outer-container();
+    max-width: 35em;
+    margin: 0 auto;
+    font-size: 1.2em;
+
+    @include media($medium-screen) {
+      input[type="email"] {
+        width: 50%;
+        float: left;
+      }
+
+      input[type="submit"] {
+        width: 45%;
+        float: right;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
 .article,
 .blog {
   h1 {

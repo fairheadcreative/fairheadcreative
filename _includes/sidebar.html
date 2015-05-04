@@ -1,4 +1,5 @@
 <section class="sidebar">
+  {% if page.class != 'blog' %}
   <aside class="sidebar-item">
     <h3>Attract more customers online with our newsletter</h3>
     <p>Subscribe to our email newsletter for insider tips and free resources, all designed to give your business a competitive advantage online.</p>
@@ -9,6 +10,7 @@
       <input type="submit" value="Subscribe Now" name="subscribe" id="mc-embedded-subscribe" class="button" onclick="ga('send', 'event', 'Blog', 'Click', 'Subscribe Side');" />
     </form>
   </aside>
+  {% endif %}
 
   <aside class="sidebar-item">
     <a href="/" title="Hire Fairhead Creative Web Design for your next project" onclick="ga('send', 'event', 'Blog', 'Click', 'Learn More');"><img src="/images/blog/hire-us.png" alt="Hire Fairhead Creative Web Design for your next project" /></a>
@@ -37,8 +39,8 @@
   </aside>
 
   <aside class="sidebar-item">
-    <h3>Follow Adam Fairhead</h3>
-    <p><a class="author-twitter" href="https://twitter.com/adamfairhead" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Follow Twitter Side');">Twitter</a></p>
-    <p><a class="author-website" href="http://adamfairhead.com" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Follow Personal Side');">Personal Site</a></p>
+    <h3>Follow the Author</h3>
+    <p><a class="author-twitter" href="https://twitter.com/adamfairhead" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Follow Twitter Side');">@adamfairhead</a></p>
+    <!--<p><a class="author-website" href="http://adamfairhead.com" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Follow Personal Side');">Personal Site</a></p>-->
   </aside>
 </section>
