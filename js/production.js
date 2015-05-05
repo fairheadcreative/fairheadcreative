@@ -72,7 +72,6 @@ function addEvent(obj, evt, fn) {
         obj.attachEvent("on" + evt, fn);
     }
 }
-
 addEvent(document, "mouseout", function(e) {
     e = e ? e : window.event;
     var from = e.relatedTarget || e.toElement;
@@ -80,6 +79,154 @@ addEvent(document, "mouseout", function(e) {
         // the cursor has left the building
         console.log('leaving');
     }
+});
+
+
+$(document).ready(function(){
+
+  // MailChimp Article Freebie Download / Subscribe
+  
+  ajaxMailChimpForm($(".article .modal form, .article .sidebar-item .subscribe-form, .blog-title-form"), $(".subscribe-result"));
+  
+  function ajaxMailChimpForm($form, $resultElement){
+    // Hijack the submission. We'll submit the form manually.
+    $form.submit(function(e) {
+      e.preventDefault();
+      if (!isValidEmail($form)) {
+        var error =  "A valid email address must be provided.";
+        $resultElement.html(error);
+        $resultElement.css("color", "red");
+      } else {
+        $resultElement.css("color", "black");
+        $resultElement.html("Subscribing...");
+        submitSubscribeForm($form, $resultElement);
+      }
+    });
+  }
+
+  // Validate the email address in the form
+  function isValidEmail($form) {
+    // If email is empty, show error message.
+    // contains just one @
+    var email = $form.find("input[type='email']").val();
+    if (!email || !email.length) {
+      return false;
+    } else if (email.indexOf("@") == -1) {
+      return false;
+    }
+    return true;
+  }
+
+  // Submit the form with an ajax/jsonp request.
+  // Based on http://stackoverflow.com/a/15120409/215821
+  function submitSubscribeForm($form, $resultElement) {
+    $.ajax({
+      type: "GET",
+      url: $form.attr("action"),
+      data: $form.serialize(),
+      cache: false,
+      dataType: "jsonp",
+      jsonp: "c", // trigger MailChimp to return a JSONP response
+      contentType: "application/json; charset=utf-8",
+      error: function(error){
+        // According to jquery docs, this is never called for cross-domain JSONP requests
+      },
+      success: function(data){
+        if (data.result != "success") {
+
+          if ($("body").hasClass("article")) {
+            var message = data.msg || "Sorry. Unable to subscribe (MailChimp problems?) Here's your freebie anyway:";
+            $('.subscribe-freebie').show();
+          } else {
+            var message = data.msg || "Sorry. Unable to subscribe (MailChimp problems?) Please try again in a few minutes.";
+          };
+
+          $resultElement.css("color", "red");
+          $('.modal form input, .modal p').hide();
+
+          if (data.msg && data.msg.indexOf("already subscribed") >= 0) {
+            message = "Thanks, you're subscribed!";
+            $('.subscribe-freebie').show();
+            $('.modal form input, .modal p').hide();
+            $resultElement.css("color", "black");
+            $('.subscribe-result .freebie').show();
+          }
+          $resultElement.html(message);
+        } else {
+          $resultElement.css("color", "black");
+          $('.modal form input, .modal p').hide();
+
+          if ($("body").hasClass("article")) {
+            $resultElement.html("Thanks!<br>Look for the confirmation link in your inbox, your freebie awaits!");
+          } else {
+            $resultElement.html("Great!<br>Look for the confirmation link in your inbox.");
+          };
+        }
+      }
+    });
+  }
+
+  // MailChimp Report
+  
+  ajaxMailChimpFormHome($(".strapline-form"), $(".subscribe-result"));
+  
+  function ajaxMailChimpFormHome($form, $resultElement){
+    // Hijack the submission. We'll submit the form manually.
+    $form.submit(function(e) {
+      e.preventDefault();
+      if (!isValidEmailHome($form)) {
+        var error =  "We need a valid email address to send your report to.";
+        $resultElement.html(error);
+      } else {
+        $resultElement.html("Submitting...");
+        submitSubscribeFormHome($form, $resultElement);
+      }
+    });
+  }
+
+  // Validate the email address in the form
+  function isValidEmailHome($form) {
+    // If email is empty, show error message.
+    // contains just one @
+    var email = $form.find("input[type='email']").val();
+    if (!email || !email.length) {
+      return false;
+    } else if (email.indexOf("@") == -1) {
+      return false;
+    }
+    return true;
+  }
+
+  // Submit the form with an ajax/jsonp request.
+  // Based on http://stackoverflow.com/a/15120409/215821
+  function submitSubscribeFormHome($form, $resultElement) {
+    $.ajax({
+      type: "GET",
+      url: $form.attr("action"),
+      data: $form.serialize(),
+      cache: false,
+      dataType: "jsonp",
+      jsonp: "c", // trigger MailChimp to return a JSONP response
+      contentType: "application/json; charset=utf-8",
+      error: function(error){
+        // According to jquery docs, this is never called for cross-domain JSONP requests
+      },
+      success: function(data){
+        if (data.result != "success") {
+          var message = data.msg || "Sorry. Unable to capture your address (MailChimp problems?) Please try again in a few minutes? ";
+
+          if (data.msg && data.msg.indexOf("already subscribed") >= 0) {
+            message = "Thanks, you've already requested a report!";
+          }
+          $resultElement.html(message);
+        } else {
+          $('.modal form input, .modal p').hide();
+          $resultElement.html("Sent!<br>Look for the confirmation link in your inbox, we only send to confirmed addresses for privacy reasons.");
+        }
+      }
+    });
+  }
+
 });
 
 $(function() {
