@@ -34,9 +34,25 @@
     {% endfor %}
   </aside>
 
-  <aside class="sidebar-item">
+  <aside class="sidebar-item follow-author">
     <h3>Follow the Author</h3>
     <p><a class="author-twitter" href="https://twitter.com/adamfairhead" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Follow Twitter Side');">@adamfairhead</a></p>
     <!--<p><a class="author-website" href="http://adamfairhead.com" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Follow Personal Side');">Personal Site</a></p>-->
   </aside>
+
+  {% if page.freebie %}
+  <section class="inline-freebie in-sidebar" style="display: none;">
+  {% if page.freebie-image %}<img class="freebie-image" src="/uploads/{{ page.freebie-image }}" alt="{{ page.freebie }}" width="200" />{% endif %}
+    <h3>Get your {{ page.freebie }}</h3>
+    <p><a href="javascript:void(0);" class="button get-freebie" alt="" onclick="ga('send', 'event', 'Blog', 'Click', 'Download Open Float {{ page.title }}')" />Download your freebie now</a></p>
+  </section>
+
+  {% else %}
+
+  <section class="inline-subscribe in-sidebar" style="display: none;">
+    <h3>Attract more customers online with our newsletter</h3>
+    <p>Subscribe to our email newsletter for insider tips and free resources, all designed to give your business a competitive advantage online.</p>
+    <p><a href="javascript:void(0);" class="button get-freebie" alt="" onclick="ga('send', 'event', 'Blog', 'Click', 'Subscribe Inline')" />Subscribe Now</a></p>
+  </section>
+  {% endif %}
 </section>

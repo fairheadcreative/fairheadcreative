@@ -49,6 +49,7 @@
 $(function() {
   $('.strap-submit, .get-freebie, #key-modal .modal-close').on('click', function(e) {
     $('#key-modal').toggle();
+    $('#key-modal .email').focus();
     return false;
   });
 });
@@ -60,6 +61,13 @@ $(window).scroll(function() {
     $('.share-inner').removeClass('fixed');
   } else {
     $('.share-inner').addClass('fixed');
+  }
+
+  // Add floating element to sidebar on articles
+  if ($('.sidebar').visible(true) || $('.main .inline-freebie').visible(true) || $('#closing').visible(true)) {
+    $('.sidebar .in-sidebar').fadeOut();
+  } else {
+    $('.sidebar .in-sidebar').fadeIn();
   }
 });
 
@@ -76,8 +84,9 @@ addEvent(document, "mouseout", function(e) {
     e = e ? e : window.event;
     var from = e.relatedTarget || e.toElement;
     if (!from || from.nodeName == "HTML") {
-        // the cursor has left the building
-        console.log('leaving');
+      // the cursor has left the building
+      console.log('leaving');
+      $('#key-modal .email').focus();
     }
 });
 

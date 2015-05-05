@@ -210,6 +210,8 @@
     }
 
     .sidebar {
+      position: relative;
+
       @include media($medium-screen) {
         margin-top: 3em;
         @include span-columns(4);
@@ -335,6 +337,18 @@
   border-radius: 4px;
   box-shadow: 0 5px 0 rgba(0,0,0,0.09);
   z-index: 4;
+
+  @include media($medium-screen) {
+    top: 70px;
+  }
+
+  @include media($large-screen) {
+    top: 120px;
+  }
+
+  .button {
+    width: 100%;
+  }
 }
 
 .modal-overlay {
@@ -346,7 +360,7 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,.4);
+  background: rgba(0,0,0,.6);
   display: block;
   z-index: 2;
 }
@@ -401,10 +415,36 @@
   }
 }
 
-.article .freebie-image {
+.article .main .freebie-image {
   float: right;
   margin: .75em 0 0;
   border: none;
+}
+
+// Floating elements
+.sidebar .in-sidebar {
+  display: none;
+
+  @include media($medium-screen) {
+    position: fixed;
+    top: 2em;
+    max-width: 293px;
+    padding: 0 1em .5em;
+    background: lighten($base-border-color, 5);
+    border-radius: 2px;
+
+    .freebie-image {
+      margin: 0 auto;
+      display: block;
+      border: none;
+    }
+
+    &.inline-freebie {
+      text-align: center;
+      border: none;
+      margin: 0;
+    }
+  }
 }
 
 .article .small-right {
