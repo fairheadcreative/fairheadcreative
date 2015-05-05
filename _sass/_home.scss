@@ -24,6 +24,11 @@
       line-height: 1;
       font-weight: 700;
 
+      @include media(max-width $medium-screen) {
+        font-size: 2em;
+        margin-top: 0;
+      }
+
       @include media($large-screen) {
         margin-top: 90px;
         max-width: 15em;
