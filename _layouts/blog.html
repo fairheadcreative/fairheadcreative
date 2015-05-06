@@ -79,7 +79,7 @@ class: article
     </form>
 
     <div class="subscribe-result"></div>
-    <span class="subscribe-freebie" style="display: none;">{% if page.freebie-url %}<br />Here's your download link: <br /><a href="{{ page.freebie-url }}" target="_blank" class="button">Download now</a>{% endif %}</span>
+    <span class="subscribe-freebie" style="display: none;">{% if page.freebie-url %}<br />Here's your download link: <br /><a href="{{ page.freebie-url }}" target="_blank" class="button" onclick="ga('send', 'event', 'Blog', 'Click', 'Download AlreadySubscribed Confirm');">Download now</a>{% endif %}</span>
   </div>
 </div>
 
