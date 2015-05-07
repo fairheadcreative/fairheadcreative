@@ -59,7 +59,7 @@ Think of a product that you use and love. How would you feel if the owner of tha
 
 Make that offer to your fans.
 
-These fans will be able to screen share with you as they use your product. For desktop or web products, you could use Skype or Google+ Hangouts. Both are free. Both allow you to record your screen and theirs at the same time. This way, you can capture the participant's actions and their reactions to those actions. For iPhone apps, <a href="http://www.uxrecorder.com" rel="nofollow">UX Recorder</a> is a great app that achieves similar functionality for mobile, for $1.99 per recording.
+These fans will be able to screen share with you as they use your product. For desktop or web products, you could use Skype or Google+ Hangouts. Both are free. Both allow you to record your screen and theirs at the same time. This way, you can capture the participant's actions and their reactions to those actions. For iPhone apps, <a href="http://www.uxrecorder.com" rel="nofollow" target="_blank">UX Recorder</a> is a great app that achieves similar functionality for mobile, for $1.99 per recording.
 
 It's nice to offer a small gift card to your fans as a surprise "thank you" at the end of a test. Just to let them know you appreciate them. It's also worth asking them if they'd be willing to take a test again, at this point.
 
@@ -70,13 +70,13 @@ This option isn't free, but it's cheap, and it doesn't ask for much of your time
 
 There's two tools I'll cover in this option. Both of them ask the your test questions for you, and do all the video/audio recording. They also don't need you to pay participants. You don't even need to be around to watch the tests.
 
-The first of the two is <a href="http://usertesting.com" rel="nofollow">UserTesting.com</a>. These guys charge $49 per 15-minute video of a single participant using your product. You'll get to choose participant age, income, gender, country, etc. Even web expertise and operating system. Once you've outlined what tasks you want to ask your participants, their tool will take over. It'll ask them to complete your tasks. It'll then send you the video/audio files of how the test went. You won't be able to pick who takes the test with this tool though, unfortunately. So you'll need to factor in that they might not be from your target industry. That’s the biggest downside of this option, in my opinion.
+The first of the two is <a href="http://usertesting.com" rel="nofollow" target="_blank">UserTesting.com</a>. These guys charge $49 per 15-minute video of a single participant using your product. You'll get to choose participant age, income, gender, country, etc. Even web expertise and operating system. Once you've outlined what tasks you want to ask your participants, their tool will take over. It'll ask them to complete your tasks. It'll then send you the video/audio files of how the test went. You won't be able to pick who takes the test with this tool though, unfortunately. So you'll need to factor in that they might not be from your target industry. That’s the biggest downside of this option, in my opinion.
 
 As an aside, UserTesting.com also offers a service called "Peek", which lets you try out their service for free. Just encase you're on the fence about using them. I'm not affiliated in any way with these guys, encase you’re wondering.
 
-The second of the two is Inspectlet. These guys do have a free plan, but prices start at $39 for useful data. The benefit of these guys is that you don't have to arrange a test. Instead, they take recordings of actual site users. Sites like Salesforce and eBay are among Inspectlet's customer base. The downside to this tool is that you don't get to hear the user, or ask them questions. You just get to watch them use the tool.
+The second of the two is <a href="http://inspectlet.com" rel="nofollow" target="_blank">Inspectlet</a>. These guys do have a free plan, but prices start at $39 for really useful data. The benefit of these guys is that you don't actually have to arrange a test. Instead, they simply take recordings of actual site users as they come. Sites like Salesforce and eBay are among Inspectlet's customer base. The downside to this tool (when used alone) is that you don't get to "hear" the user, or ask them questions, like you would through a recording. You just get to watch them use the tool.
 
-If you're interested in going with Option 2, I'd suggest using both tools together. Neither captures data that is both demographic-specific with audio/video at the same time.
+If you're interested in going with Option 2, I'd suggest using both of these tools together. Neither captures the full spectrum of data that is both demographic-specific with audio/video at the same time.
 
 ### Option 3: The Specialist method
 This option involves working with a UX specialist. That specialist will lead your users through the User Testing. While you'll have to pay both the specialist and the participants to do it, you can give them this article's free gift. That'll make sure they really know how to run a successful User Test. This will make sure they're not missing any important business goals.
