@@ -455,3 +455,8 @@
   float: right;
   margin: 0 0 1em 1.5em;
 }
+
+.form-comment.validation input[name="name"],
+.form-comment.validation input[name="email"] {
+  border: 1px solid $blue;
+}

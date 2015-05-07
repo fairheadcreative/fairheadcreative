@@ -38,6 +38,20 @@ class: article
         </aside>
         {% endif %}
 
+        <section class="private-comment sidebar-item">
+          <h3>Leave a private comment (only we will see it)</h3>
+          <p>We love discussing these articles with our readers! Your private comments come straight to us, so we can have personal conversations, and learn from you. Let us know what you thoughts, good or bad!</p>
+
+          <form class="form-comment" action="http://fairheadcreative-mailer.herokuapp.com/comment" method="post">
+            <input type="hidden" class="title" name="subject" value="“{{ page.title }}”" />
+            <input type="text" class="details" name="name" placeholder="Name" />
+            <input type="text" class="details" name="email" placeholder="Email" />
+            <textarea name="comment" placeholder="Comment"></textarea>
+
+            <input type="submit" class="button submit-form" value="Send to Adam's inbox" onclick="ga('send', 'event', 'Blog', 'Click', 'New Private Comment');" />
+          </form>
+        </section>
+
         <aside class="sidebar-item large-element">
           <h3>Recommended reading</h3>
           {% for post in site.posts %}

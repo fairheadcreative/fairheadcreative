@@ -57,14 +57,14 @@ $(function() {
 // If scroll…
 $(window).scroll(function() {
   // Fix Share section to the bottom when scrolling down
-  if ($('#closing').visible(true) || $('.share').visible(true) || $('.sidebar-item img').visible(true) || $('.recommended').visible(true)) {
+  if ($('#closing').visible(true) || $('.share').visible(true) || $('.sidebar-item img').visible(true) || $('.recommended').visible(true) || $('.private-comment').visible(true)) {
     $('.share-inner').removeClass('fixed');
   } else {
     $('.share-inner').addClass('fixed');
   }
 
   // Add floating element to sidebar on articles
-  if ($('.sidebar').visible(true) || $('.main .inline-freebie').visible(true) || $('#closing').visible(true)) {
+  if ($('.sidebar').visible(true) || $('.main .inline-freebie').visible(true) || $('#closing').visible(true) || $('.private-comment').visible(true)) {
     $('.sidebar .in-sidebar').fadeOut();
   } else {
     $('.sidebar .in-sidebar').fadeIn();
@@ -235,6 +235,37 @@ $(document).ready(function(){
       }
     });
   }
+  
+  // Private Comment Form
+  $('.form-comment').submit(function(event) {
+    event.preventDefault();
+
+    var form = $(this);
+
+    var subject = form.find('input[name="subject"]').val();
+    var name = form.find('input[name="name"]').val();
+    var email = form.find('input[name="email"]').val();
+    var comment = form.find('textarea').val();
+
+    if (name.replace(/ /g,'').length == 0 || email.replace(/ /g,'').length == 0)
+    {
+      form.addClass('validation');
+      return false;
+    }
+    else {
+      $.post(form.attr('action'), {
+        subject: subject,
+        name: name,
+        email: email,
+        comment: comment,
+        key: '345e8e6fb8'
+      });
+
+      form.fadeOut();
+      form.parent().append("<div class='cta-thanks' style='display:none'><em>Thanks! We love reading your comments, and we love getting to know you.</em></div>");
+      $('.cta-thanks').fadeIn();
+    } 
+  });
 
 });
 
