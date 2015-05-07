@@ -89,7 +89,7 @@
   .share-facebook,
   .share-twitter,
   .share-google {
-    @include media(max-width $medium-screen) {
+    @include media(max-width $large-screen) {
       width: 32.5%;
       padding-left: .5%;
       padding-right: .5%;

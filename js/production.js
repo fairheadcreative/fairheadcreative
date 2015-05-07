@@ -57,7 +57,7 @@ $(function() {
 // If scroll…
 $(window).scroll(function() {
   // Fix Share section to the bottom when scrolling down
-  if ($('#closing').visible(true) || $('.share').visible(true)) {
+  if ($('#closing').visible(true) || $('.share').visible(true) || $('.sidebar-item img').visible(true) || $('.recommended').visible(true)) {
     $('.share-inner').removeClass('fixed');
   } else {
     $('.share-inner').addClass('fixed');
