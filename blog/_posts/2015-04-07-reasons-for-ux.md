@@ -29,7 +29,7 @@ These two devices, the iPod and the Zen, had the exact same storage capacity. Bu
 
 What Apple did was actually pretty clever. At this point in the article they didn't even do anything different with their product. **They simply spoke my language.**
 
-It's important that your business understands its audience, and speaks on that audience's terms. From User Testing to Persona Development, this is a key part of creating engaging, memorable user experiences for your audience. I'll be diving into these concepts in upcoming articles, and relating them back to your online business in language that you understand. Stay tuned for those.
+It's important that your business understands its audience, and speaks on that audience's terms. From <a href="/blog/user-testing/" title="How You Can Use User Testing to Quickly Find Weaknesses In Your Website">User Testing</a> to <a href="/blog/persona-development/" title="Your Profitable Path to Powerful Personas">Persona Development</a>, this is a key part of creating engaging, memorable user experiences for your audience. Be sure to check out those articles, too.
 
 Would it have mattered if that Creative Zen had 30GB? 40GB? Would we have been any more confident in our purchases? If we can learn from our audience, and speak their language, we can offer them a sense of ease and comfort in the sales pipeline that others can't match.
 
