@@ -130,6 +130,39 @@
   }
 }
 
+#formula {
+  @include outer-container();
+  text-align: center;
+
+  .lead {
+    @extend %home-lead;
+  }
+
+  .number {
+    background: $green;
+    width: 40px;
+    height: 40px;
+    margin: 0px auto -0.6em;
+    padding: 0.5em 0px 0px;
+    color: white;
+    font-family: Lato;
+    font-weight: bold;
+    border-radius: 50%;
+  }
+
+  article {
+    @include media(max-width $medium-screen) {
+      padding-bottom: 1em;
+      max-width: 25em;
+      margin: 0 auto;
+    }
+
+    @include media($medium-screen) {
+      @include span-columns(4);
+    }
+  }
+}
+
 #benefits {
   @include outer-container();
   text-align: center;
