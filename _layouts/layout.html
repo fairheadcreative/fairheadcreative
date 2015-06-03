@@ -9,7 +9,7 @@ layout: compress
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="{% unless page.noindex == true %}index, follow{% else %}noindex, nofollow{% endunless %}" />
   <meta name="author" content="Fairhead Creative LLC" />
-  <title>{% if page.class == 'home'%}Fairhead Creative | Creative Website & SaaS Designers{% else %}{% if page.title %}{{ page.title }}{% if page.title == 'Blog' %} (Page {{ paginator.page }}){% endif %} | Fairhead Creative{% endif %}{% endif %}</title>
+  <title>{% if page.class == 'home'%}{{ page.title }}{% elsif page.title == 'Blog' %}{{ page.title}} (Page {{ paginator.page }}){% else %}{{ page.title }} | Fairhead Creative{% endif %}</title>
   <link rel="stylesheet" href="/css/screen.css" />
 
   {% if page.title %}
