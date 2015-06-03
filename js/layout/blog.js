@@ -5,6 +5,7 @@
 $(function() {
   $('.strap-submit, .get-freebie, #key-modal .modal-close').on('click', function(e) {
     $('#key-modal').toggle();
+    $('#key-modal .modal').toggleClass('animated bounceIn');
     return false;
   });
 });
@@ -42,6 +43,7 @@ addEvent(document, "mouseout", function(e) {
       // the cursor has left the building
       console.log('leaving');
       $('#key-modal .email').focus();
+      $('#key-modal .modal').toggleClass('animated bounceIn');
     }
 });
 
