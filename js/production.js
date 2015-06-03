@@ -49,7 +49,6 @@
 $(function() {
   $('.strap-submit, .get-freebie, #key-modal .modal-close').on('click', function(e) {
     $('#key-modal').toggle();
-    $('#key-modal .email').focus();
     return false;
   });
 });
