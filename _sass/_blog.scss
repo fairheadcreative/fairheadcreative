@@ -342,6 +342,14 @@
   box-shadow: 0 5px 0 rgba(0,0,0,0.09);
   z-index: 4;
 
+  text-align: center;
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.1;
+    margin: 1em 0px 0.75em;
+  }
+
   @include media($medium-screen) {
     top: 70px;
     width: 400px;
