@@ -112,6 +112,7 @@ $(document).ready(function(){
 
           if (data.msg && data.msg.indexOf("already subscribed") >= 0) {
             message = "Thanks, you're subscribed!";
+            window.location = "/excited/";
             $('.subscribe-freebie').show();
             $('.modal form input, .modal p').hide();
             $resultElement.css("color", "black");
@@ -182,12 +183,13 @@ $(document).ready(function(){
           var message = data.msg || "Sorry. Unable to capture your address (MailChimp problems?) Please try again in a few minutes? ";
 
           if (data.msg && data.msg.indexOf("already subscribed") >= 0) {
-            message = "Thanks, you've already requested a report!";
+            message = "Thanks, you've already requested a report!"; 
           }
           $resultElement.html(message);
         } else {
           $('.modal form input, .modal p').hide();
           $resultElement.html("Sent!<br>Look for the confirmation link in your inbox, we only send to confirmed addresses for privacy reasons.");
+          window.location = "/excited/";
         }
       }
     });

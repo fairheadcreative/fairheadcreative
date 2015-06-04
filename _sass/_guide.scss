@@ -1,0 +1,88 @@
+.guide {
+  .nav-portfolio,
+  .nav-clients,
+  .nav-blog,
+  .nav-about {
+    display: none;
+  }
+
+  @include media(max-width $large-screen) {
+    .nav-contact {
+      display: none;
+    }
+  }
+
+  #next-steps {
+    @extend #formula;
+    background: lighten($base-border-color, 5);
+  }
+
+  .blog-title-wrapper {
+    text-align: center;
+  }
+
+  .blog-title {
+    max-width: 25em;
+    margin: 1em auto 1.5em;
+  }
+
+  .blog-title-form {
+    @include outer-container();
+    max-width: 35em;
+    margin: 0 auto;
+
+    @include media($medium-screen) {
+      input[type="email"] {
+        width: 50%;
+        float: left;
+      }
+
+      input[type="submit"] {
+        width: 45%;
+        float: right;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .main {
+    max-width: 35em;
+    margin: 0 auto;
+
+    .post-title {
+      padding-top: 0;
+      margin-top: 2.5em;
+      margin-bottom: .1em;
+      border: none;
+      font-size: em(20);
+
+      @include media($medium-screen) {
+        font-size: em(26);
+      }
+    }
+  }
+
+  .read-more {
+    margin: 2em auto 0 auto;
+    display: block;
+    max-width: 16em;
+  }
+
+  .video {
+    margin: .5em auto 0;
+    display: block;
+    overflow: hidden;
+
+    @include media(em(750)) {
+      .wistia_embed {
+        position: relative;
+        top: -20px;
+      }
+
+      margin: 0 auto -70px;
+      position: relative;
+      top: -50px;
+      max-width: 620px
+    }
+  }
+}
