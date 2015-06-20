@@ -114,7 +114,7 @@ $(document).ready(function(){
     });
   }
 
-  // Validate the email address in the form
+  // Validate the email address in the form (also used by the home report)
   function isValidEmail($form) {
     // If email is empty, show error message.
     // contains just one @
@@ -145,10 +145,10 @@ $(document).ready(function(){
         if (data.result != "success") {
 
           if ($("body").hasClass("article")) {
-            var message = data.msg || "Sorry. Unable to subscribe (MailChimp problems?) Here's your freebie anyway:";
+            var message = data.msg || "Sorry. Unable to subscribe (mail service provider issues) Here's your freebie anyway:";
             $('.subscribe-freebie').show();
           } else {
-            var message = data.msg || "Sorry. Unable to subscribe (MailChimp problems?) Please try again in a few minutes.";
+            var message = data.msg || "Sorry. Unable to subscribe (mail service provider issues). Contact our Executive Assistant at kris.parris@fairheadcreative.com for help.";
           };
 
           $resultElement.css("color", "red");
@@ -185,7 +185,7 @@ $(document).ready(function(){
     // Hijack the submission. We'll submit the form manually.
     $form.submit(function(e) {
       e.preventDefault();
-      if (!isValidEmailHome($form)) {
+      if (!isValidEmail($form)) {
         var error =  "We need a valid email address to send your report to.";
         $resultElement.html(error);
       } else {
@@ -193,19 +193,6 @@ $(document).ready(function(){
         submitSubscribeFormHome($form, $resultElement);
       }
     });
-  }
-
-  // Validate the email address in the form
-  function isValidEmailHome($form) {
-    // If email is empty, show error message.
-    // contains just one @
-    var email = $form.find("input[type='email']").val();
-    if (!email || !email.length) {
-      return false;
-    } else if (email.indexOf("@") == -1) {
-      return false;
-    }
-    return true;
   }
 
   // Submit the form with an ajax/jsonp request.
@@ -224,16 +211,23 @@ $(document).ready(function(){
       },
       success: function(data){
         if (data.result != "success") {
-          var message = data.msg || "Sorry. Unable to capture your address (MailChimp problems?) Please try again in a few minutes? ";
+          var message = data.msg || "Our mail service provider must be having problems. Email our Executive Assistant at kris.parris@fairheadcreative.com and we'll do it manually for you. ";
 
           if (data.msg && data.msg.indexOf("already subscribed") >= 0) {
-            message = "Thanks, you've already requested a report!";
-            window.location = "/excited/";
+            message = "Thanks, you've already requested a report! Email our Executive Assistant at kris.parris@fairheadcreative.com for help if you lost it!"; 
           }
           $resultElement.html(message);
         } else {
+          $.post('http://fairheadcreative-mailer.herokuapp.com/welcome', {
+            name: $('.strapline-form input[name="MMERGE1"]').val(),
+            email: $('.strapline-form input[name="EMAIL"]').val(),
+            website: $('.strapline-form input[name="MMERGE3"]').val(),
+            key: '345e8e6fb8'
+          });
+
           $('.modal form input, .modal p').hide();
           $resultElement.html("Sent!<br>Look for the confirmation link in your inbox, we only send to confirmed addresses for privacy reasons.");
+          window.location = "/excited/";
         }
       }
     });
@@ -270,6 +264,18 @@ $(document).ready(function(){
     } 
   });
 
+});
+
+$(function() {
+  $(".test-send").on("click", function() {
+    $.post('http://fairheadcreative-mailer.herokuapp.com/welcome', {
+      name: $('.strapline-form input[name="MMERGE1"]').val(),
+      email: $('.strapline-form input[name="EMAIL"]').val(),
+      website: $('.strapline-form input[name="MMERGE3"]').val(),
+      key: '345e8e6fb8'
+    });
+    console.log('test clicked');
+  });
 });
 
 $(function() {
