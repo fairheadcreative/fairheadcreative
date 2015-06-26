@@ -1,0 +1,78 @@
+.careers {
+  .hero,
+  h2 {
+    text-align: center;
+  }
+
+  h1 {
+    font-family: Lato;
+    font-size: 2.5em;
+    line-height: 1;
+    font-weight: 700;
+
+    @include media(max-width $medium-screen) {
+      font-size: 2em;
+      margin-top: 0;
+    }
+  }
+
+  .single {
+    max-width: $medium-screen;
+
+    ul {
+      list-style: disc outside;
+      padding-left: 2em;
+    }
+  }
+
+  .other {
+    margin: 2.5em auto 0;
+    text-align: center;
+  }
+
+  .job {
+    @include row;
+    background: white;
+    display: block;
+    padding: .5em 1em 1em;
+    border-radius: $base-border-radius;
+
+    &:hover {
+      background: $base-border-color;
+    }
+
+    header {
+      @include span-columns(5);
+    }
+
+    .job-title {
+      margin-bottom: .25em;
+    }
+    
+    .job-summary {
+      @include span-columns(7);
+      padding-top: 1em;
+    }
+
+    p {
+      color: $base-font-color;
+    }
+  }
+
+  .group.alt {
+    background: lighten($base-border-color, 5);
+  }
+
+  .meta {
+    margin-bottom: 1.5em;
+    color: #bbb;
+    @extend h3;
+    font-size: 1em;
+  }
+
+  .button.large {
+    margin: 0 auto;
+    display: block;
+    max-width: 10em;
+  }
+}
