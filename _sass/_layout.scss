@@ -5,6 +5,11 @@
   padding-right: 1em;
 }
 
+.single {
+  @extend .container;
+  max-width: $large-screen;
+}
+
 // Vertical padding for groups of content.
 .group {
   padding-top: 2em;

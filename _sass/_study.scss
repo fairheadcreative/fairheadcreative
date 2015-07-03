@@ -25,11 +25,6 @@
     }
   }
 
-  .single {
-    @extend .container;
-    max-width: $large-screen;
-  }
-
   .study-2 {
     @include media($medium-screen) {
       @include span-columns(8);
