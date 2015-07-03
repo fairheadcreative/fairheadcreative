@@ -110,6 +110,8 @@ blockquote p {
 
   &:after {
     content: "”";
+    margin-top: -10px;
+    position: absolute;
   }
 }
 

@@ -30,8 +30,7 @@
     }
 
     .portfolio &,
-    .clients &,
-    .study & {
+    .clients & {
       color: #bfbfbf;
 
       &:hover {
@@ -106,8 +105,7 @@
 
   .portfolio &,
   .about &,
-  .clients &,
-  .study & {
+  .clients {
     background: url('../images/global/fairhead-creative-light.svg') no-repeat;
     background-size: contain;
   }
