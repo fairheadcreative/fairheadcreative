@@ -168,3 +168,67 @@
   height: 45px;
   margin-bottom: 0;
 }
+
+%portfolio-study {
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  @extend .group;
+  @extend .container;
+  padding: 2em 2em 3em;
+  border: 1em solid white;
+  min-height: 410px;
+
+  @include media($medium-screen + 10em) {
+    width: 50%;
+    float: left;
+    border-right: none;
+
+    &:last-child {
+      border-right: 1em solid white;
+    }
+  }
+}
+
+.case-studies {
+  @include row;
+
+  p {
+    @extend h2;
+    color: $medium-gray;
+    margin: 0 auto 1.5em;
+    font-size: 1.2em;
+    color: $light-gray;
+  }
+
+  .meta {
+    font-size: .75em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 0;
+    font-family: Lato;
+    opacity: .8;
+    margin-bottom: 2.5em;
+  }
+
+  h3 {
+    @extend h1;
+    font-family: Lato;
+    font-size: 2em;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: .5em;
+    color: white;
+  }
+
+}
+
+.study-lifechurch {
+  @extend %portfolio-study;
+  background-image: url("/images/studies/lifechurchtv/lifechurch-preview_2x.jpg");
+}
+
+.study-zurb {
+  @extend %portfolio-study;
+  background-image: url("/images/studies/zurb/zurb-preview_2x.jpg");
+}
