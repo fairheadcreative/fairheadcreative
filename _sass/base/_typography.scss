@@ -97,18 +97,18 @@ blockquote p {
   line-height: 1.4em;
   font-style: italic;
 
-  &:first-child:before,
-  &:last-child:after {
+  &:before,
+  &:after {
     color: lighten($base-font-color, 25);
     font-size: 1.5em;
   }
 
-  &:first-child:before {
+  &:before {
     content: "“";
     margin-left: -9px;
   }
 
-  &:last-child:after {
+  &:after {
     content: "”";
   }
 }
