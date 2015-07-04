@@ -76,7 +76,7 @@ class: article
 <div class="modal-wrapper" id="key-modal">
   <div class="modal-overlay"></div>
   <div class="modal">
-    <a href="javascript:void(0);" class="modal-close">&#10006</a>
+    <a href="javascript:void(0);" class="modal-close" onclick="ga('send', 'event', 'Blog', 'Click', 'Home Report Close');">&#10006</a> 
     {% if page.freebie %}
     <h3>Where shall we send your {{ page.freebie }}?</h3>
     <p>Enter your email address below and we'll send you your freebie right away:</p>
