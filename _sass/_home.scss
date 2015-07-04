@@ -80,6 +80,7 @@
   input[type="url"] {
     background: white;
     box-shadow: 0 5px 0 rgba(0,0,0,0.09);
+    color: $base-font-color;
   }
 
   @include media($large-screen) {
@@ -96,6 +97,20 @@
       margin: 0;
     }
   }
+}
+
+.alternative {
+  clear: both;
+  padding-top: .5em;
+}
+
+.alternative a {
+  text-decoration: underline;
+  color: $dark-gray;
+}
+
+#closing-strapline .alternative {
+  padding-top: 1em;
 }
 
 #free-report {
