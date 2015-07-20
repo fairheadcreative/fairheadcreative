@@ -112,7 +112,6 @@ $(document).ready(function(){
 
           if (data.msg && data.msg.indexOf("already subscribed") >= 0) {
             message = "Thanks, you're subscribed!";
-            window.location = "/excited/";
             $('.subscribe-freebie').show();
             $('.modal form input, .modal p').hide();
             $resultElement.css("color", "black");
