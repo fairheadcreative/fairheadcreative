@@ -64,4 +64,39 @@ $(function() {
     $('#key-modal input[type="url"]').remove();
     $(this).parent().find('input[type="url"]').clone().insertAfter('#key-modal input[type="email"]');
   });
+
+  // Florida page
+
+  setTimeout(h1Span1, 2000);
+
+  function h1Span1() {
+    $('.h1-span-1').removeClass('is-visible');
+    $('.h1-span-2').addClass('is-visible');
+    setTimeout(h1Span2, 2000);
+  }
+
+  function h1Span2() {
+    $('.h1-span-2').removeClass('is-visible');
+    $('.h1-span-3').addClass('is-visible');
+    setTimeout(h1Span3, 2000);
+  }
+
+  function h1Span3() {
+    $('.h1-span-3').removeClass('is-visible');
+    $('.h1-span-4').addClass('is-visible');
+    setTimeout(h1Span4, 2000);
+  }
+
+  function h1Span4() {
+    $('.h1-span-4').removeClass('is-visible');
+    $('.h1-span-5').addClass('is-visible');
+    setTimeout(h1Span5, 2000);
+  }
+
+  function h1Span5() {
+    $('.h1-span-5').removeClass('is-visible');
+    $('.h1-span-1').addClass('is-visible');
+    setTimeout(h1Span1, 2000);
+  }
+
 });

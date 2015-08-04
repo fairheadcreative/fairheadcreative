@@ -156,7 +156,6 @@ $(document).ready(function(){
 
           if (data.msg && data.msg.indexOf("already subscribed") >= 0) {
             message = "Thanks, you're subscribed!";
-            window.location = "/excited/";
             $('.subscribe-freebie').show();
             $('.modal form input, .modal p').hide();
             $resultElement.css("color", "black");
@@ -263,19 +262,6 @@ $(document).ready(function(){
       $('.cta-thanks').fadeIn();
     } 
   });
-
-});
-
-$(function() {
-  $(".test-send").on("click", function() {
-    $.post('http://fairheadcreative-mailer.herokuapp.com/welcome', {
-      name: $('.strapline-form input[name="MMERGE1"]').val(),
-      email: $('.strapline-form input[name="EMAIL"]').val(),
-      website: $('.strapline-form input[name="MMERGE3"]').val(),
-      key: '345e8e6fb8'
-    });
-    console.log('test clicked');
-  });
 });
 
 $(function() {
@@ -370,6 +356,44 @@ $(function() {
     $('#key-modal input[type="url"]').remove();
     $(this).parent().find('input[type="url"]').clone().insertAfter('#key-modal input[type="email"]');
   });
+
+  // Florida page
+
+
+  setTimeout(h1Span1, 2000);
+
+  function h1Span1() {
+    $('.h1-span-1').removeClass('is-visible');
+    $('.h1-span-2').addClass('is-visible');
+    setTimeout(h1Span2, 2000);
+  }
+
+  function h1Span2() {
+    $('.h1-span-2').removeClass('is-visible');
+    $('.h1-span-3').addClass('is-visible');
+    setTimeout(h1Span3, 2000);
+  }
+
+  function h1Span3() {
+    $('.h1-span-3').removeClass('is-visible');
+    $('.h1-span-4').addClass('is-visible');
+    setTimeout(h1Span4, 2000);
+  }
+
+  function h1Span4() {
+    $('.h1-span-4').removeClass('is-visible');
+    $('.h1-span-5').addClass('is-visible');
+    setTimeout(h1Span5, 2000);
+  }
+
+  function h1Span5() {
+    $('.h1-span-5').removeClass('is-visible');
+    $('.h1-span-1').addClass('is-visible');
+    setTimeout(h1Span1, 2000);
+  }
+
+
+
 });
 
 // Make sure placeholders are available for the popups
