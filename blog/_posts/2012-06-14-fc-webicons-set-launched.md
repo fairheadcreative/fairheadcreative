@@ -3,7 +3,7 @@ layout: blog
 title: FC Webicons Set Launched
 featured: 2012-06-14-webicons/2012-webicons.jpg
 discussion: https://github.com/dashboard/issues
-permalink: blog/2012-06-14-fc-webicons-set-launched/
+permalink: /blog/fc-webicons-set-launched/
 version: 4
 ---
 
