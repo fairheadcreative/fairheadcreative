@@ -19,9 +19,6 @@ class: article
 
         {{ content }}
 
-        <section class="share"><div class="share-inner">
-        <a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://fairheadcreative.com{{ page.url }}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Facebook');">Share on Facebook</a> <a class="share-twitter" href="https://twitter.com/home?status=Reading {{ page.title }}: http://fairheadcreative.com{{ page.url }}{% if page.infographic %} [INFOGRAPHIC]{% endif %}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Twitter');">Share on Twitter</a> <a class="share-google" href="https://plus.google.com/share?url=http://fairheadcreative.com{{ page.url }}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Google');">Share on Google+</a></div></section>
-
         {% if page.freebie %}
         <section class="inline-freebie">
         {% if page.freebie-image %}<img class="freebie-image" src="/uploads/{{ page.freebie-image }}" alt="{{ page.freebie }}" width="200" />{% endif %}
@@ -37,6 +34,9 @@ class: article
           <p><a href="javascript:void(0);" class="button get-freebie" alt="" onclick="ga('send', 'event', 'Blog', 'Click', 'Subscribe Inline')" />Subscribe Now</a></p>
         </aside>
         {% endif %}
+
+        <section class="share"><div class="share-inner">
+        <a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://fairheadcreative.com{{ page.url }}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Facebook');">Share on Facebook</a> <a class="share-twitter" href="https://twitter.com/home?status=Reading {{ page.title }}: http://fairheadcreative.com{{ page.url }}{% if page.infographic %} [INFOGRAPHIC]{% endif %}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Twitter');">Share on Twitter</a> <a class="share-google" href="https://plus.google.com/share?url=http://fairheadcreative.com{{ page.url }}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Google');">Share on Google+</a></div></section>
 
         <section class="private-comment sidebar-item">
           <h3>Leave a private comment (only we will see it)</h3>
