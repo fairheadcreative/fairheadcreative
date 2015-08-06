@@ -1,5 +1,16 @@
 // Article General
 
+.blog-title {
+  background: url('/images/blog/blog-subscribe.png') center top no-repeat;
+  background-size: 300px auto;
+  padding-top: 120px;
+
+  @include media($medium-screen) {
+    background-size: 476px 160px;
+    padding-top: 200px;
+  }
+}
+
 .blog article .blog-title {
   font-family: Lato;
   font-weight: 700;
@@ -291,11 +302,35 @@
 
 // Freebies
 
-.inline-freebie {
+.main .inline-freebie {
   background: #fffee8;
   padding: .3em 1em .6em;
-  margin: 1em 0;
+  margin: 140px 0 1em;
   border: $base-border;
+  position: relative;
+
+  @include media($medium-screen) {
+    margin: 180px 0 1em;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -103px;
+    left: 0;
+    display: block;
+    background: url('/images/blog/blog-subscribe.png') center top no-repeat;
+    background-size: 300px auto;
+    height: 120px;
+    width: 100%;
+
+    @include media($large-screen) {
+      background-size: 476px 160px;
+      padding-top: 200px;
+      height: 200px;
+      top: -162px;
+    }
+  }
 
   .form & {
     margin-top: 0;
