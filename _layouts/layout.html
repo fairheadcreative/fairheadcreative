@@ -9,7 +9,7 @@ layout: compress
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="{% unless page.noindex == true %}index, follow{% else %}noindex, nofollow{% endunless %}" />
   <meta name="author" content="Fairhead Creative LLC" />
-  <title>{% if page.class == 'home'%}{{ page.title }}{% elsif page.title == 'Blog' %}{{ page.title}} (Page {{ paginator.page }}){% else %}{{ page.title }} | Fairhead Creative{% endif %}</title>
+  <title>{% if page.class == 'home'%}{{ page.title }}{% elsif page.class == 'blog' %}{{ page.title }} (Page {{ paginator.page }}){% else %}{{ page.title }} | Fairhead Creative{% endif %}</title>
   <link rel="stylesheet" href="/css/screen.css" />
   {% if page.style %}<link rel="stylesheet" href="/uploads/{{ page.style }}" />{% endif %}
 
@@ -27,9 +27,13 @@ layout: compress
   {% endif %}
 
   {% if page.description %}
-  <meta name="description" content="{{ page.description }}" />
-  <meta property="og:description" content="{{ page.description }}" />
-  <meta name="twitter:description" content="{{ page.description }}">
+    {% if page.class == 'blog' %}
+    <meta name="description" content="{{ page.description }} (Page {{ paginator.page }})" />
+    {% else %}
+    <meta name="description" content="{{ page.description }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta name="twitter:description" content="{{ page.description }}">
+    {% endif %}
   {% elsif page.content %}
   <meta name="description" content="{{ page.content | strip_html | truncatewords: 20 }}" />
   <meta property="og:description" content="{{ page.content | strip_html | truncatewords: 20 }}" />
