@@ -359,7 +359,6 @@ $(function() {
 
   // Florida page
 
-
   setTimeout(h1Span1, 2000);
 
   function h1Span1() {
@@ -391,8 +390,6 @@ $(function() {
     $('.h1-span-1').addClass('is-visible');
     setTimeout(h1Span1, 2000);
   }
-
-
 
 });
 
