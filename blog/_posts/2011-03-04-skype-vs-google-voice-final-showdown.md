@@ -3,7 +3,7 @@ layout: blog
 title: Skype vs Google Voice - Final Showdown
 featured: 2011-03-04-skype-vs-google-voice/2011-skype-gt1.jpeg
 version: 4
-permalink: blog/2011-03-04-skype-vs-google-voice-final-showdown/
+permalink: blog/skype-vs-google-voice-final-showdown/
 ---
 
 Every business owner is conscious of the ways he or she allows clients to get in touch with them. They should assess what tools they have available to them and make a call (so to speak) about which tools to use. They should be interested to find the best way to handle their business communications.

@@ -3,7 +3,7 @@ layout: blog
 title: The 2 Types of Social Networking
 featured: 2011-06-30-social-networking/2011-social-networking.jpeg
 version: 4
-permalink: blog/2011-06-30-the-2-types-of-social-networking/
+permalink: blog/the-2-types-of-social-networking/
 ---
 
 As social networking online becomes more and more lucrative, more and more services are appearing hoping to capture your social life. As time passed, two trends have appeared.
