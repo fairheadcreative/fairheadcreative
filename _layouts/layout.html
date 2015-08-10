@@ -9,7 +9,7 @@ layout: compress
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="{% unless page.noindex == true %}index, follow{% else %}noindex, nofollow{% endunless %}" />
   <meta name="author" content="Fairhead Creative LLC" />
-  <title>{% if page.class == 'home'%}{{ page.title }}{% elsif page.class == 'blog' %}{{ page.title }} (Page {{ paginator.page }}){% else %}{{ page.title }} | Fairhead Creative{% endif %}</title>
+  <title>{% if page.class == 'home'%}{{ page.title }}{% elsif page.class == 'blog' %}{{ page.title }} (Page {{ paginator.page }}){% elsif page.layout == 'index' %}{{ page.title }}{% else %}{{ page.title }} | Fairhead Creative{% endif %}</title>
   <link rel="stylesheet" href="/css/screen.css" />
   {% if page.style %}<link rel="stylesheet" href="/uploads/{{ page.style }}" />{% endif %}
 
@@ -54,7 +54,6 @@ layout: compress
       <ul>
         <li class="nav-logo"><a href="/" onclick="ga('send', 'event', 'Global', 'Click', 'Nav Home');">Fairhead Creative Web Design</a></li>
         <li class="nav-portfolio"><a href="/portfolio/" onclick="ga('send', 'event', 'Global', 'Click', 'Nav Portfolio');">Portfolio</a></li>
-        <!--<li class="nav-clients"><a href="/clients/" onclick="ga('send', 'event', 'Global', 'Click', 'Nav Clients');">Clients</a></li>-->
         <li class="nav-blog"><a href="/blog/" onclick="ga('send', 'event', 'Global', 'Click', 'Nav Blog');">Blog</a></li>
         <li class="nav-about"><a href="/about/" onclick="ga('send', 'event', 'Global', 'Click', 'Nav About');">About</a></li>
         <li class="nav-contact"><a href="/contact/" onclick="ga('send', 'event', 'Global', 'Click', 'Nav Contact');">Contact</a></li>
@@ -66,12 +65,11 @@ layout: compress
 
   <footer id="closing">
     <section class="container">
-      <h2>Let's talk: <a href="/contact/">email us</a>, call us at 813.644.9944 or fill out our <a href="/project-planner/">project planner</a>.</h2>
+      <p class="lets-talk">Let's talk: <a href="/contact/">email us</a>, call us at 813.644.9944 or fill out our <a href="/project-planner/">project planner</a>.</p>
 
       <ul>
         <li class="closing-home"><a href="/" onclick="ga('send', 'event', 'Global', 'Click', 'Closing Home');">Fairhead Creative</a></li>
         <li class="closing-portfolio"><a href="/portfolio/" onclick="ga('send', 'event', 'Global', 'Click', 'Closing Portfolio');">Portfolio</a></li>
-        <!--<li class="closing-clients"><a href="/clients/" onclick="ga('send', 'event', 'Global', 'Click', 'Closing Clients');">Client Testimonials</a></li>-->
         <li class="closing-blog"><a href="/blog/" onclick="ga('send', 'event', 'Global', 'Click', 'Closing Blog');">Blog</a></li>
         <li class="closing-about"><a href="/about/" onclick="ga('send', 'event', 'Global', 'Click', 'Closing About');">About Us</a></li>
         <li class="closing-about"><a href="/refer/" onclick="ga('send', 'event', 'Global', 'Click', 'Closing Refer');">Referrals</a></li>
@@ -80,9 +78,8 @@ layout: compress
       </ul>
 
       <p>Fairhead Creative is a creative web design company based in Florida. <br />Except where otherwise noted, content on this site is &copy; Fairhead Creative. All rights reserved.</p>
-      <p>Fairhead Creative &amp; all employees are followers of Jesus Christ.</p>
 
-      <img src="/images/global/fairhead-creative-footer.svg" alt="" />
+      <img src="/images/global/fairhead-creative-footer.svg" alt="Fairhead Creative Web Design" />
     </section>
 
     <script src="/js/jquery.min.js"></script>
@@ -108,17 +105,6 @@ layout: compress
     </script>
   </footer>
   {% unless page.class == 'article' %}{% unless page.class == 'blog' %}
-  <!--
-  <script type="text/javascript">
-    var __lc = {};
-    __lc.license = 6300391;
-    (function() {
-      var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-      lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-    })();
-  </script>
-  -->
   {% endunless %}{% endunless %}
 </body>
 </html>

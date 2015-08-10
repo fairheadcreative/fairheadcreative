@@ -71,6 +71,12 @@
       }
     }
 
+    .lead {
+      float: none;
+      @extend h3;
+      margin: 2em 0 1em;
+    }
+
     form {
       @include media($medium-screen) {
         input[type="url"] {
