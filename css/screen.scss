@@ -25,3 +25,355 @@
 .subscribe-result {
   margin-top: 1em;
 }
+
+$process-relate-bg: #80c838;
+$process-relate-header: #fff;
+$process-relate-text: #fff;
+$process-relate-accent: #ace96f;
+$process-strategy-bg: #e8faff;
+$process-strategy-header: #3d5054;
+$process-strategy-text: #638389;
+$process-strategy-accent: #bbe5f1;
+$process-strategy-text: #638389;
+$process-strategy-accent: #bbe5f1;
+$process-create-bg: #c4eef6;
+$process-create-header: #3d5054;
+$process-create-text: #638389;
+$process-create-accent: #94c3d0;
+$process-measure-bg: #f29b43;
+$process-measure-header: #fff;
+$process-measure-text: #fff;
+$process-measure-accent: #ffc285;
+$process-iterate-bg: #5c962f;
+$process-iterate-header: #fff;
+$process-iterate-text: #fff;
+$process-iterate-accent: #8fd459;
+
+.process {
+
+  .single {
+    text-align: center;
+    margin-bottom: 3em;
+
+    figure {
+      max-width: 13em;
+      margin: 0 auto -1.5em;
+
+      svg text {
+        font-family: $sans-serif;
+        font-weight: 700;
+      }
+
+      @include media($medium-screen) {
+        max-width: 30em;
+        margin: 0 auto -2.5em;
+      }
+    }
+
+    p {
+      @extend h2;
+      color: $medium-gray;
+      margin: 0 auto 1.5em;
+
+      @include media(max-width $medium-screen) {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  h1 {
+    font-family: Lato;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: .4em;
+    font-size: 2.5em;
+
+    @include media($medium-screen) {
+      font-size: 3.5em;
+    }
+  }
+
+  .process-piece {
+    .container {
+      max-width: 54em;
+    }
+
+    figure {
+      margin: 0;
+      padding: 0;
+
+      @include media($medium-screen) {
+        @include span-columns(5);
+      }
+    }
+
+    article {
+      @include media($medium-screen) {
+        @include span-columns(6);
+        @include shift(1);
+        @include omega;
+      }
+    }
+
+    h2 {
+      @extend h2;
+      font-family: Lato;
+      font-size: 2.5em;
+      line-height: 1;
+      font-weight: 700;
+      margin-bottom: .5em;
+
+      &:before {
+        margin-right: 5px;
+
+        @include media($medium-screen) {
+          margin-left: -1em;
+        }
+      }
+    }
+
+    p, li {
+      font-size: 1.2em;
+    }
+
+    strong {
+      font-weight: normal;
+      border-radius: $base-border-radius;
+      padding: .1em .2em;
+    }
+
+    li {
+      margin-left: 1.25em;
+      margin-bottom: .5em;
+
+      &:before {
+        content: "• ";
+        margin-left: -1em;
+        margin-right: 4px;
+      }
+    }
+
+    ul {
+      margin: 1em 0;
+    }
+  }
+
+  #relate {
+    background: $process-relate-bg;
+    color: $process-relate-text;
+
+    figure {
+      margin-top: 80px;
+
+      @include media(max-width $medium-screen) {
+        width: 60%;
+        margin: -90px auto -20px;
+      }
+    }
+  
+    li:before {
+      color: $process-relate-accent; 
+    }
+
+    strong {
+      background: shade($process-relate-bg, 10);
+    }
+
+    h2 {
+      color: $process-relate-header;
+
+      &:before {
+        content: "1. ";
+        color: $process-relate-accent;
+      }
+    }
+  }
+
+  #strategy {
+    background: $process-strategy-bg;
+    color: $process-strategy-text;
+    overflow: hidden;
+
+    @include media(max-width $medium-screen) {
+      figure {
+        width: 60%;
+        margin: -190px auto -20px;
+      }
+    }
+
+    li:before {
+      color: $process-strategy-accent;
+    }
+
+    strong {
+      background: shade($process-strategy-bg, 10);
+    }
+
+    h2 {
+      color: $process-strategy-header;
+
+      &:before {
+        content: "2. ";
+        color: $process-strategy-accent;
+      }
+    }
+  }
+  
+  #create {
+    background: #acdde2 url('/images/process/create.svg') no-repeat left -40px;
+    background-size: 120% auto;
+    color: $process-create-text;
+
+    @include media(max-width $medium-screen) {
+      padding-top: 150px;
+    }
+
+    @include media($medium-screen) {
+      background-size: auto 100%;
+      background-color: $process-create-bg;
+      background-position: center bottom;
+    }
+
+    li:before {
+      color: $process-create-accent;
+    }
+
+    strong {
+      background: shade($process-create-bg, 10);
+    }
+
+    h2 {
+      color: $process-create-header;
+
+      &:before {
+        content: "3. ";
+        color: $process-create-accent;
+      }
+    }
+  }
+
+  #measure {
+    position: relative;
+    background: $process-measure-bg;
+    color: $process-measure-text;
+    overflow: hidden;
+
+    @include media(max-width $medium-screen) {
+      figure {
+        width: 310px;
+        margin: -230px auto -20px;
+      }
+    }
+
+    li:before {
+      color: $process-measure-accent;
+    }
+
+    figure {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    svg {
+      @include media($medium-screen) {
+        height: 500px;
+      }
+    }
+
+    article {
+      @include media(max-width $medium-screen) {
+        padding-top: 160px;
+      }
+
+      @include media($medium-screen) {
+        @include shift(6);
+      }
+    }
+
+    strong {
+      background: shade($process-measure-bg, 10);
+    }
+
+    h2 {
+      color: $process-measure-header;
+
+      &:before {
+        content: "4. ";
+        color: $process-measure-accent;
+      }
+    }
+  }
+
+  #iterate {
+    background: #5a7743 url('/images/process/iterate.svg') no-repeat center -20px;
+    background-size: 100% auto;
+    color: $process-iterate-text;
+
+    @include media($medium-screen) {
+      background-position: center top;
+      background-size: auto 100%;
+      padding-bottom: 12em;
+    }
+
+    @include media(max-width $medium-screen) {
+      article {
+        padding-top: 90px;
+      }
+    }
+
+    @include media($medium-screen) {
+      background-color: $process-iterate-bg;
+    }
+
+    li:before {
+      color: $process-iterate-accent;
+    }
+
+    strong {
+      background: darken($process-iterate-bg, 12);
+
+      @include media($medium-screen) {
+        background: shade($process-iterate-bg, 10);
+      }
+    }
+
+    h2 {
+      color: $process-iterate-header;
+
+      &:before {
+        content: "4. ";
+        color: $process-iterate-accent;
+      }
+    }
+  }
+
+  #motivate {
+    article {
+      @include media($medium-screen) {
+        @include shift(3);
+      }
+    }
+
+    h2 {
+      @include media($medium-screen) {
+        text-align: center;
+      }
+
+      &:before {
+        content: "5. ";
+        color: #aaa;
+      }
+    }
+
+    strong {
+      background: #eee;
+    }
+  }
+
+  #closing-strapline {
+    h2 {
+      font-size: 2.2em;
+    }
+  }
+}
