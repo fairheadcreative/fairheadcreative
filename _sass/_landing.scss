@@ -79,12 +79,14 @@
 
     form {
       @include media($medium-screen) {
-        input[type="url"] {
+        input[type="url"],
+        input[type="email"] {
           @include span-columns(7);
         }
 
         .button { 
           @include span-columns(5);
+          @include omega;
           box-shadow: none;
         }
       }

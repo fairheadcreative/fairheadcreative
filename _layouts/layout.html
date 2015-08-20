@@ -66,6 +66,7 @@ layout: compress
 
   <footer id="closing">
     <section class="container">
+      {% unless page.class contains 'resource' %}
       <p class="lets-talk">Let's talk: <a href="/contact/">email us</a>, call us at 813.644.9944 or fill out our <a href="/project-planner/">project planner</a>.</p>
 
       <ul>
@@ -79,6 +80,7 @@ layout: compress
       </ul>
 
       <p>Fairhead Creative is a creative web design company based in Florida. <br />Except where otherwise noted, content on this site is &copy; Fairhead Creative. All rights reserved.</p>
+      {% endunless %}
 
       <img src="/images/global/fairhead-creative-footer.svg" alt="Fairhead Creative Web Design" />
     </section>
