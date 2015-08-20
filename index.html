@@ -20,29 +20,47 @@ class: home
 </header>
 </div>
 
-<section id="formula" class="container group">
-  <header>
-    <h2>Why choose Fairhead Creative for your website?</h2>
-    <p class="lead">Here's our <strong>formula for your success</strong>:</p>
-  </header>
+<section id="options" class="container group">
+  <ul id="choices">
+    <li class="formula">
+      <a href="/process/" onclick="ga('send', 'event', 'Home', 'Click', 'Home Process');">
+        <h3>See our process</h3>
+        <p>See how we motivate visitors to take action.</p>
+      </a>
+    </li>
+    <li class="resources">
+      <a href="/resources/" onclick="ga('send', 'event', 'Home', 'Click', 'Home Resources');">
+        <h3>Free resources for online business owners</h3>
+        <p>Actionable content to help grow your online business.</p>
+      </a>
+    </li>
+    <li class="report">
+      <a href="javascript:void(0);" class="strap-submit" onclick="ga('send', 'event', 'Home', 'Click', 'Home Report');">
+        <h3>Try a custom report of your website, risk-free</h3>
+        <p>We’ll show you how to motivate your visitors to buy.</p>
+      </a>
+    </li>
+    <li class="retainer">
+      <a href="/project-planner/" onclick="ga('send', 'event', 'Home', 'Click', 'Home Project');">
+        <h3>Transform your visitors into motivated buyers</h3>
+        <p>Sign up with the leading motivational creative company.</p>
+        <small>Includes money-back guarantees & an all-access pass to future premium resources.</small>
+      </a>
+    </li>
+  </ul>
 
-  <article>
-    <div class="number">1</div>
-    <h3>Relate</h3>
-    <p>People buy their problems. By relating to your community, we can understand their problems and sell in a way they'll understand.</p>
-  </article>
+  <div id="access">
+    <img src="/images/blog/blog-subscribe.png" alt="Fairhead Creative Web Design" width="400">
+    <h3>Get instant access to tons of our exclusive</h3>
+    <p>advice, tips, best practices and case studies to apply to your website, every week, absolutely free.</p>
+    <form action="//adamfairhead.us8.list-manage.com/subscribe/post-json?u=078c568914b24026a4a24cbc8&amp;id=56a7df1be0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="blog-title-form" target="_blank" novalidate>
+      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address" />
+      <div style="position: absolute; left: -5000px;"><input type="text" name="b_078c568914b24026a4a24cbc8_56a7df1be0" tabindex="-1" value=""></div>
+      <input type="submit" value="Get access" name="subscribe" id="mc-embedded-subscribe" class="button secondary" onclick="ga('send', 'event', 'Home', 'Click', 'Home Subscribe Digest');" />
+    </form>
 
-  <article>
-    <div class="number">2</div>
-    <h3>Create</h3>
-    <p>Together we'll design and develop the exact website your community is looking for. Because nobody else matters.</p>
-  </article>
-
-  <article>
-    <div class="number">3</div>
-    <h3>Motivate</h3>
-    <p>Everything we create together will be designed to motivate your community to overcome the fear of buying and take action.</p>
-  </article>
+    <div class="subscribe-result"></div>
+  </div>
 </section>
 
 <section id="quotes" class="group">
@@ -79,7 +97,8 @@ class: home
     </blockquote>
   </div>
 </section>
-
+<div class="finish">
+<!--
 <section id="creative-web-design" class="container group">
   <header>
     <h2>Choose us for Creative Web Design &amp; Development</h2>
@@ -201,7 +220,7 @@ class: home
     </article>
   </section>
 </div>
-
+-->
 <section id="closing-strapline">
   <div class="container">
     <h2>The creative web design team that’ll motivate your visitors to buy.</h2>
@@ -213,6 +232,7 @@ class: home
     <p class="alternative">…or check out our <a href="/portfolio/" onclick="ga('send', 'event', 'Home', 'Click', 'Home Portfolio');">portfolio</a>.</p>
   </div>
 </section>
+</div>
 
 <div class="modal-wrapper" id="key-modal">
   <div class="modal-overlay"></div>
