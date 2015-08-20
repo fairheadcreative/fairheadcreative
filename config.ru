@@ -30,5 +30,6 @@ use Rack::Rewrite do
   r301 %r{^/blog/flickr-picasa-facebook-dropbox?$}, '/blog/flickr-vs-picasa-vs-facebook-vs-dropbox/'
   r301 %r{^/blog/fc-webicons-set-launched?$}, '/blog/fc-webicons-set-launched/'
   r301 %r{^/blog/2012/06/14/fc-webicons-set-launched.html?$}, '/blog/fc-webicons-set-launched/'
+  r301 %r{^/blog/2012-06-14-fc-webicons-set-launched/?$}, '/blog/fc-webicons-set-launched/'
   r301 %r{^/blog/more-isnt-always-better?$}, '/blog/right-budget-for-your-business/'
 end
