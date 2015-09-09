@@ -417,3 +417,35 @@ $process-iterate-accent: #8fd459;
     display: none;
   }
 }
+
+// Phone
+
+.phone {
+  background: #C5C2BC;
+  color: white;
+  padding: .3em;
+  text-align: center;
+  font-size: .9em;
+
+  .home & {
+    background: #93C4CC;
+  }
+
+  .portfolio & {
+    background: #19303E;
+  }
+
+  .about & {
+    background: #C3BCC3;
+  }
+
+  @include media(max-width $medium-screen) {
+    span {
+      display: none;
+    }
+  }
+
+  a {
+    color: white;
+  }
+}
