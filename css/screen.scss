@@ -426,6 +426,8 @@ $process-iterate-accent: #8fd459;
   padding: .3em;
   text-align: center;
   font-size: .9em;
+  position: relative;
+  z-index: 2;
 
   .home & {
     background: #93C4CC;
