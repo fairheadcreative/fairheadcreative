@@ -55,7 +55,7 @@ $new-yellow-dark: #6c5224;
 }
 
 .home2 {
-  color: $dark-gray;
+  color: $dark-gray !important;
 
   .phone {
     background: #2b6e99;
@@ -133,7 +133,7 @@ $new-yellow-dark: #6c5224;
   }
 
   .splash {
-    background: $new-blue-medium;
+    background: $new-blue-medium !important;
     color: white; 
   }
 
