@@ -1,27 +1,161 @@
 .careers {
-  .hero,
-  h2 {
+  #hero {
+    @extend %group;
+    @extend %container;
+    max-width: 41em;
     text-align: center;
+    padding-top: 0; 
+    z-index: 1;
+    position: relative;
+
+    img {
+      max-width: 300px;
+      margin: 0 auto 1em;
+      display: block;
+    }
+
+    h1 {
+      @extend %header2;
+    }
+
+    p,
+    li {
+      font-size: 1.2em;
+      display: block;
+    }
+
+    li {
+      margin-top: 2em;
+      padding-left: 50px;
+    }
+
+    strong {
+      font-weight: 900;
+    }
   }
 
-  h1 {
-    font-family: Lato;
-    font-size: 2.5em;
-    line-height: 1;
-    font-weight: 700;
+  #look {
+    background: $new-yellow-medium;
+    @extend %group;
 
-    @include media(max-width $medium-screen) {
-      font-size: 2em;
-      margin-top: 0;
+    .inner {
+      @extend %container;
+    }
+
+    h2 {
+      @extend %header2;
+      color: $new-yellow-dark;
+
+      strong { color: white; }
+    }
+
+    ol { @include row; }
+
+    li {
+      color: $new-yellow-dark;
+      margin-top: 2em;
+      padding-left: 50px;
+
+      @include media($medium-screen) {
+        @include span-columns(6);
+      }
+    }
+
+    li strong {
+      display: block;
+      color: $dark-gray;
+      font-weight: 900;
+      font-size: 1.2em;
+    }
+
+    li:before {
+      @extend %bullet;
+      font-size: 1.2em;
+      background: $dark-gray;
+      color: $new-yellow-medium;
+    }
+
+    li:nth-child(1):before { content: '1'; }
+    li:nth-child(2):before { content: '2'; }
+    li:nth-child(3):before { content: '3'; }
+    li:nth-child(4):before { content: '4'; }
+
+    li:nth-child(2n) {
+      @include omega;
+      clear: right;
+    }
+  }
+
+  #provide {
+    background: $new-blue-medium;
+    @extend %group;
+
+    .inner {
+      @extend %container;
+    }
+
+    h2 {
+      @extend %header2;
+      color: $new-blue-light;
+
+      strong { color: white; }
+    }
+
+    ol { @include row; }
+
+    li {
+      color: lighten($new-blue-light, 10);
+      margin-top: 2em;
+      padding-left: 50px;
+
+      @include media($medium-screen) {
+        @include span-columns(6);
+      }
+    }
+
+    li strong {
+      display: block;
+      color: white;
+      font-weight: 900;
+      font-size: 1.2em;
+    }
+
+    li:before {
+      @extend %bullet;
+      font-size: 1.2em;
+      background: white;
+      color: $new-blue-medium;
+    }
+
+    li:nth-child(1):before { content: '1'; }
+    li:nth-child(2):before { content: '2'; }
+    li:nth-child(3):before { content: '3'; }
+    li:nth-child(4):before { content: '4'; }
+
+    li:nth-child(2n) {
+      @include omega;
+      clear: right;
     }
   }
 
   .single {
+    h1, h2 {
+      @extend %header2;
+    }
+
     max-width: $medium-screen;
 
     ul {
       list-style: disc outside;
       padding-left: 2em;
+    }
+  }
+
+  .single.hero {
+    text-align: center;
+
+    h1 {
+      margin-bottom: .5em;
     }
   }
 
