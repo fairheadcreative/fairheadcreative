@@ -1,13 +1,21 @@
+.contact .form > h3 {
+  text-align: center;
+}
+
 .contact,
 .project {
-  background: #fafafa;
+  h1 {
+    font-family: Lato;
+    font-size: 2.5em;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+  }
 
   .form {
-    background: white;
-    padding: 1em 1em 0;
     max-width: 40em;
+    padding: 0 1em;
     margin: 0 auto 1em;
-    border: $base-border;
   }
 
   .half {
@@ -20,10 +28,15 @@
 }
 
 .options {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
+  text-align: center;
 
   li {
     margin-bottom: .25em;
+
+    @include media($medium-screen) {
+      display: inline-block;
+    }
 
     .button.secondary {
       background: #eee;
