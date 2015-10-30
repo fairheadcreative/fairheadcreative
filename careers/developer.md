@@ -3,6 +3,7 @@ layout: career
 title: Web Developer (Front-end)
 permalink: careers/developer/
 time: Part or Full-time Position
+version: v4
 ---
 We’re really excited you’re here to apply to become our future Front-end Web Developer. We’ll take good care of you, and you'll be able to work from anywhere in the world.
 

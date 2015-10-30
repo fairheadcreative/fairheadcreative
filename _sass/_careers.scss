@@ -15,7 +15,7 @@
     }
 
     h1 {
-      @extend %header2;
+      @extend h2;
     }
 
     p,
@@ -43,7 +43,6 @@
     }
 
     h2 {
-      @extend %header2;
       color: $new-yellow-dark;
 
       strong { color: white; }
@@ -95,7 +94,6 @@
     }
 
     h2 {
-      @extend %header2;
       color: $new-blue-light;
 
       strong { color: white; }
@@ -140,7 +138,7 @@
 
   .single {
     h1, h2 {
-      @extend %header2;
+      @extend h2;
     }
 
     max-width: $medium-screen;

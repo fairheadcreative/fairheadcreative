@@ -95,18 +95,17 @@
 }
 
 .nav-logo a {
-  background: url('../images/global/fairhead-creative.svg') no-repeat;
+  background: url('../images/global/fairhead-creative-black.svg') no-repeat;
   background-size: contain;
   @extend %hide-text;
-  width: 190px;
+  width: 160px;
   height: 33px;
   display: block;
   margin: 0 auto;
 
   .portfolio &,
-  .about &,
   .clients {
-    background: url('../images/global/fairhead-creative-light.svg') no-repeat;
+    background: url('../images/global/fairhead-creative-white.svg') no-repeat;
     background-size: contain;
   }
 

@@ -1,0 +1,24 @@
+---
+layout: layout
+splash: true
+---
+{% if page.twitter-image %}<img class="hide" src="{{ page.twitter-image }}" alt="" />{% endif %}
+
+{{ content }}
+
+{% unless page.class contains 'system' %}
+<section id="continue">
+  <div class="inner">
+    <h2>Continue the series by downloading your free PDF called <strong>Conversion Rates Applied</strong></h2>
+
+    <script type="text/javascript" src="https://app.simplycast.com/?q=forms/getForm&i=115025&type=portable"></script>
+
+<!--    <form class="continue-form">
+    <input type="email" value="" name="MMERGE3" class="required url" id="mce-MMERGE3" placeholder="Your email address" />
+    <input type="submit" value="Yes! Give me my PDF">
+    </form>
+-->
+    <img src="/images/home2/closing.svg" alt="" />
+  </div>
+</section>
+{% endunless %}

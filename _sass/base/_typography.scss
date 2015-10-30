@@ -20,22 +20,38 @@ h6 {
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
 }
 
-h1,
-h2 {
-  font-family: $serif;
-  font-weight: 400;
-  letter-spacing: -0.050em;
-}
-
 h1 {
-  font-size: $h1-font-size;
+  display: block;
+  font-size: 2em;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-top: 0;
   letter-spacing: -0.035em;
+
+  @include media($medium-screen) {
+    font-size: 2.5em;
+  }
+
+  @include media($large-screen) { 
+    padding-top: .5em;
+  }
 }
 
 h2 {
-  font-size: $h2-font-size;
-  line-height: 1.5;
-  margin-bottom: 2em;
+  letter-spacing: -0.050em;
+  display: block;
+  font-family: Lato;
+  font-size: 2.5em;
+  margin-top: 0;
+  line-height: 1.1;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1em;
+
+  @include media(max-width $medium-screen) {
+    font-size: 2em;
+  }
+
 }
 
 h3 {

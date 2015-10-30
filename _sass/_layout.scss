@@ -1,23 +1,27 @@
-// Limiter around the sides of content.
-.container {
-  @include outer-container();
+%container {
   padding-left: 1em;
   padding-right: 1em;
+  max-width: $large-screen + 10em;
+  margin: 0 auto;
+
+  @include media($medium-screen) { 
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
 
-.single {
-  @extend .container;
-  max-width: $large-screen;
+%container-thin {
+  @extend %container;
+  max-width: 40em;
 }
 
-// Vertical padding for groups of content.
-.group {
+%group {
   padding-top: 2em;
   padding-bottom: 1.5em;
 
   @include media($medium-screen) { 
-    padding-top: 4em;
-    padding-bottom: 4em;
+    padding-top: 5em;
+    padding-bottom: 5em;
   }
 }
 
@@ -27,7 +31,6 @@ input[type="submit"] {
   margin: 0 0 .5em 0;
   width: 100%;
   text-align: center;
-  box-shadow: 0 5px 0 rgba(0,0,0,0.09);
 
   @include linear-gradient(#f29f46, #eb7e2e);
 

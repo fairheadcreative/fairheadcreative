@@ -7,6 +7,8 @@ module.exports = function(grunt) {
       dist: {
         src: [
           'js/components/ouibounce.js',
+          'js/components/slick.js',
+          'js/components/smoothscroll.js',
           'js/layout/*.js'
         ],
         dest: 'js/production.js',

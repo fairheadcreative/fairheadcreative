@@ -3,6 +3,7 @@ layout: layout
 title: Actionable advice for owners of caring, creative & fun online businesses
 description: Actionable advice for owners of caring, creative & fun online businesses
 class: blog
+version: v4
 ---
 <div class="container group">
   <div class="limiter">
@@ -22,7 +23,7 @@ class: blog
       <hr class="large-element" />
 
       <div class="main">
-        {% for post in paginator.posts %}
+        {% for post in site.posts limit:12 %}{% unless post.layout == 'master' %}
         <div class="article">
           <h2 class="post-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}{% if post.infographic %} <span>(Infographic)</span>{% endif %}</a></h2>
           <p class="meta">Published {{ post.date | date_to_string }}</p>
@@ -30,16 +31,28 @@ class: blog
           {{ post.excerpt }}
           <a href="{{ post.url }}"><strong>Read this post &rarr;</strong></a>
         </div>
-        {% endfor %}
+        {% endunless %}{% endfor %}
 
-        <div class="pagination">
+        <!--<div class="pagination">
           {% if paginator.previous_page %}
             <a href="{{ paginator.previous_page_path }}" class="previous">&larr; Newer Articles</a> &nbsp; &nbsp;
           {% endif %}
           {% if paginator.next_page %}
             <a href="{{ paginator.next_page_path }}" class="next">Older Articles &rarr;</a>
           {% endif %}
-        </div>
+        </div>-->
+
+        <header class="blog-title-wrapper">
+          <h2 style="font-family: 'Lato', sans-serif; font-size: 2em; margin-bottom: 1em; line-height: 1.2;"><strong>Want more great quality content?<br />Subscribe below and we’ll send it to you:</strong></h2>
+
+          <form action="//adamfairhead.us8.list-manage.com/subscribe/post-json?u=078c568914b24026a4a24cbc8&amp;id=56a7df1be0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="blog-title-form" target="_blank" novalidate>
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address" />
+            <div style="position: absolute; left: -5000px;"><input type="text" name="b_078c568914b24026a4a24cbc8_56a7df1be0" tabindex="-1" value=""></div>
+            <input type="submit" value="Send me actionable advice" name="subscribe" id="mc-embedded-subscribe" class="button" onclick="ga('send', 'event', 'Blog', 'Click', 'Subscribe Side');" />
+          </form>
+
+          <div class="subscribe-result"></div>
+        </header>
       </div>
 
       {% include sidebar.html %}

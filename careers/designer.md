@@ -3,6 +3,7 @@ layout: career
 title: Visual Web Designer
 permalink: careers/designer/
 time: Part or Full-time Position
+version: v4
 ---
 We’re really excited you’re here to apply to become our future Visual Web Designer. We’ll take good care of you, and you'll be able to work from anywhere in the world.
 

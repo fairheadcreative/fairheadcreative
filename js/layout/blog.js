@@ -10,21 +10,45 @@ $(function() {
   });
 });
 
-// If scroll…
-$(window).scroll(function() {
-  // Fix Share section to the bottom when scrolling down
-  if ($('#closing').visible(true) || $('.share').visible(true) || $('.sidebar-item img').visible(true) || $('.recommended').visible(true) || $('.private-comment').visible(true)) {
-    $('.share-inner').removeClass('fixed');
-  } else {
-    $('.share-inner').addClass('fixed');
-  }
+jQuery(document).ready(function($) {
+  // If scroll…
+  $(window).scroll(function() {
+    // Fix Share section to the bottom when scrolling down
+    if ($('.share').length > 0) {
+      if ($('#closing').visible(true) || $('.share').visible(true) || $('.sidebar-item img').visible(true) || $('.recommended').visible(true) || $('.private-comment').visible(true)) {
+        $('.share-inner').removeClass('fixed');
+      } else {
+        $('.share-inner').addClass('fixed');
+      }
+    }
 
-  // Add floating element to sidebar on articles
-  if ($('.sidebar').visible(true) || $('.main .inline-freebie').visible(true) || $('#closing').visible(true) || $('.private-comment').visible(true)) {
-    $('.sidebar .in-sidebar').fadeOut();
-  } else {
-    $('.sidebar .in-sidebar').fadeIn();
-  }
+    // Add floating element to sidebar on articles
+    if ($('.sidebar').length > 0) {
+      if ($('.sidebar').visible(true) || $('.main .inline-freebie').visible(true) || $('#closing').visible(true) || $('.private-comment').visible(true)) {
+        $('.sidebar .in-sidebar').fadeOut();
+      } else {
+        $('.sidebar .in-sidebar').fadeIn();
+      }
+    }
+
+    if ($('.master').length > 0) {
+      if ($('#hero').visible(true)) {
+        $('#start').fadeOut();
+      } else {
+        $('#start').fadeIn();
+      }
+    }
+
+    if ($('.home').length > 0) {
+      if ($('#are-you-ready').visible(true)) {
+        $('#start').fadeIn();
+        $('._hj-f5b2a1eb-9b07_widget').fadeOut();
+      } else {
+        $('#start').fadeOut();
+        $('._hj-f5b2a1eb-9b07_widget').fadeIn();
+      }
+    }
+  });
 });
 
 // If user is about to leave
