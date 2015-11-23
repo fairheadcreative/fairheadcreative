@@ -68,7 +68,7 @@ $new-gray-light: #c1c0c0;
 
   // Hero sections
 
-  #hero p:last-child:after {
+  &.conversion-rates #hero p:last-child:after {
     content: '';
     display: block;
     width: 40px;
