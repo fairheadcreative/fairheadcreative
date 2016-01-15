@@ -19,7 +19,9 @@
 
   #navigation a { color: #2b6e99; }
 
-  h1 { padding-top: 4em; }
+  @include media($large-screen) {
+    h1 { padding-top: 4em; }
+  }
 
 
   // Custom forms
@@ -163,6 +165,11 @@
     color: white;
     max-width: 15em;
     strong { color: $new-blue-light; }
+
+    @include media(max-width $large-screen) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   .meet-charlie-break {
@@ -746,10 +753,6 @@
 
 .home #quotes {
   background: white !important;
-
-  h2 {
-    font-size: 1.3em !important;
-  }
 }
 
 .home #quotes {
@@ -760,45 +763,25 @@
     margin-bottom: 0;
     padding-top: 2em;
 
+    ul {
+      margin-bottom: 3em;
+      background: url('../images/home2/brands-small.png') center no-repeat;
+      background-size: contain;
+      height: 70px;
 
-    @include media(min-width $medium-screen max-width $large-screen) {
-      article {
-        @include span-columns(3);
-        height: 130px;
+      @include media($medium-screen) {
+        height: 90px;
+      }
+
+      @include media($large-screen) {
+        background: url('../images/home2/brands-large.png') center no-repeat;
+        background-size: contain;
+        height: 50px;
       }
     }
 
-    @include media(max-width $medium-screen) {
-      article {
-        @include span-columns(6);
-        height: 130px;
-      }
-
-      article:nth-child(2n) {
-        @include omega;
-      }
-    }
-
-    @include media($large-screen) {
-
-      article,
-      header {
-        @include span-columns(2.4);
-      }
-    }
-
-    p {
-      font-size: .875em;
-      max-width: 10em;
-      margin: 0 auto;
-    }
-
-    .lifechurch p {
-      max-width: 12em;
-    }
-
-    .zurb p {
-      max-width: 15em;
+    header p {
+      color: $medium-gray;
     }
   }
 
