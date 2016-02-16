@@ -19,7 +19,7 @@ version: v4
 
 <section id="next-steps" class="container group">
   <header>
-    <h2>We’re excited to get started on your free report!</h2>
+    <h2>Thanks, we’re looking forward to reading what you’ve written!</h2>
     <p class="lead">Here’s the <strong>next 3 steps</strong>:</p>
   </header>
 
@@ -32,15 +32,15 @@ version: v4
 
   <article>
     <div class="number">2</div>
-    <h3>Get an email when it’s ready</h3>
-    <p>Don’t forget to accept our email in your inbox, it should be with you any minute. We’ll email you there when your report is ready.</p>
-    <p><em>Keep an eye out for your report!</em></p>
+    <h3>Get an email within the hour</h3>
+    <p>We’ll email you from hello@fairheadcreative.com. Be sure to add that address to your contacts, so your spam folder won't eat our email.</p>
+    <p><em>We’ll email you shortly!</em></p>
   </article>
 
   <article>
     <div class="number">3</div>
-    <h3>Talk about it with us</h3>
-    <p>We’ll schedule a call together, to see how we can motivate your visitors to buy more of what your business is selling.</p>
+    <h3>Download your custom report</h3>
+    <p>We’ll schedule a call together, at no cost to you, to make sure your custom report will be as beneficial to your business as possible.</p>
     <p><em>Let’s do this.</em></p>
   </article>
 </section>
@@ -63,7 +63,7 @@ version: v4
       {% for post in site.posts limit:4 %}{% if post.layout == 'blog' %}
       <div class="article">
         <h2 class="post-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}{% if post.infographic %} <span>(Infographic)</span>{% endif %}</a></h2>
-        <p class="meta">Published {{ post.date | date_to_string }}</p>
+        <br />
         {% if post.featured %}<img class="featured-image{% if post.version == 4 %} ver-4{% endif %}" src="/uploads/{{ post.featured }}" alt="Blog post featured image" />{% endif %}
         {{ post.excerpt }}
         <a href="{{ post.url }}"><strong>Read this post &rarr;</strong></a>

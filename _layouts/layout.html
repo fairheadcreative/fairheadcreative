@@ -13,6 +13,7 @@ layout: compress
   <title>{% if page.class == 'home' or page.class contains 'master' %}{{ page.title }}{% elsif page.class == 'blog' %}{{ page.title }} (Page {{ paginator.page }}){% elsif page.layout == 'index' %}{{ page.title }}{% else %}{{ page.title }} | Fairhead Creative{% endif %}</title>
   <link href="https://plus.google.com/+fairheadcreative/" rel="publisher" />
   <link rel="stylesheet" href="{% if page.version == 'v4' %}/css/v4.css{% else %}/css/screen.css{% endif %}" />
+  {% if page.class == 'portfolio' %}<link rel="stylesheet" href="/css/screen.css" />{% endif %}
   {% if page.style %}<link rel="stylesheet" href="/uploads/{{ page.style }}" />{% endif %}
 
   {% if page.title %}
@@ -83,7 +84,7 @@ layout: compress
     <nav>
       <ul>
         <li class="nav-logo"><a href="/" onclick="ga('send', 'event', 'Global', 'Click', 'Nav Home');">Fairhead Creative Web Design</a></li>
-        <li class="nav-portfolio"><a href="{% if page.class contains 'home' or page.class contains 'master' %}/#examples{% else %}/portfolio/{% endif %}" onclick="ga('send', 'event', 'Global', 'Click', 'Nav Portfolio');">Portfolio</a></li>
+        <li class="nav-portfolio"><a href="/#examples" onclick="ga('send', 'event', 'Global', 'Click', 'Nav Portfolio');">Portfolio</a></li>
         <li class="nav-blog"><a href="/blog/" onclick="ga('send', 'event', 'Global', 'Click', 'Nav Blog');">Blog</a></li>
         <li class="nav-about"><a href="/about/" onclick="ga('send', 'event', 'Global', 'Click', 'Nav About');">About</a></li>
         <li class="nav-contact"><a href="/contact/" onclick="ga('send', 'event', 'Global', 'Click', 'Nav Contact');">Contact</a></li>

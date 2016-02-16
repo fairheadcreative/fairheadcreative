@@ -30,56 +30,17 @@
   .strap-form input[type="url"] {
     font-size: 19px;
     display: inline-block;
-    float: none;
-    width: 47.5%;
     box-shadow: none;
-
-    @include media(max-width $medium-screen) {
-      width: 100% !important;
-      margin: 0 0 .5em !important;
-    }
-  }
-
-  .strap-form { text-align: center; }
-
-  .strap-form small {
-    display: block;
-    width: 47.5%;
-    clear: both;
-    float: right;
-    text-align: left;
-    padding-right: 3px;
-    color: $new-blue-light;
-
-    @include media(max-width $medium-screen) {
-      width: 100% !important;
-    }
-
-    em {
-      float: right;
-      text-decoration: line-through;
-      font-style: normal;
-    }
-  }
-
-  .strap-form input[type="url"] {
-    border-top: 3px solid #eee;
-    cursor: text;
-    margin: 0 2% 0 0;
-
-    &:hover,
-    &:focus {
-      box-shadow: 0 0 10px rgba(255,255,255,.5);
-    }
   }
 
   .strap-form .button {
-    padding-left: .5em;
-    padding-right: .5em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
     margin: 0 0 0 2%;
     background: $new-green-medium;
     background: linear-gradient($new-green-medium 0, darken($new-green-medium, 10) 100%);
     border-top: 3px solid $new-green-light;
+    margin-left: 0;
 
     &:hover {
       box-shadow: 0 0 10px rgba($new-green-light, .5);
@@ -133,11 +94,11 @@
     }
   }
 
-  #hero p,
-  #hero form {
+  #hero p {
     @include media($large-screen) {
-      max-width: 45%;
+      max-width: 48%;
       font-size: 1.1em;
+      margin-bottom: 1.75em;
     }
   }
 
@@ -165,6 +126,13 @@
     color: white;
     max-width: 15em;
     strong { color: $new-blue-light; }
+    font-weight: normal;
+    font-size: 2.1em;
+
+    strong {
+      position: fixed;
+      top: -3em;
+    }
 
     @include media(max-width $large-screen) {
       margin-left: auto;
@@ -467,46 +435,60 @@
     }
   }
 
-  #are-you-ready {
-    @extend %group;
-    background: $new-blue-medium;
-    color: white;
-    padding-bottom: 0;
-    text-align: center;
-
-    .inner {
-      @extend %container;
-    }
-
-    h2 {
-      width: 80%;
-      margin: 0 auto 1em;
-      color: white;
-
-      @include media($medium-screen) {
-        width: 70%;
-      }
-    }
-
-    img {
-      width: 300px;
-      margin: 3em auto 0;
-      display: block;
-      clear: both;
-    }
-
-    .strap-form {
-      width: 100%;
-      max-width: 35em;
-      margin: 0 auto;
-    }
-  }
-
   #closing {
     display: none;
   }
 }
 
+#are-you-ready {
+  @extend %group;
+  background: $new-blue-medium;
+  color: white;
+  padding-bottom: 0;
+  text-align: center;
+
+  .inner {
+    @extend %container;
+  }
+
+  h2 {
+    width: 80%;
+    margin: 0 auto 1em;
+    color: white;
+
+    @include media($medium-screen) {
+      width: 70%;
+    }
+  }
+
+  img {
+    width: 300px;
+    margin: 3em auto 0;
+    display: block;
+    clear: both;
+  }
+
+  form .body-div {
+    margin: 0 auto !important;
+    max-width: 25em !important;
+    width: 100% !important;
+    text-align: left !important;
+    padding: 20px 0 10px 10px !important;
+
+    br {
+      display: none !important;
+    }
+
+    input, textarea{
+      margin-bottom: 0 !important;
+      padding: .5em !important;
+    }
+
+    input[type="submit"] {
+      width: 93% !important;
+    }
+  }
+}
 
 .strapline-form,
 .strap-form,

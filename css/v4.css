@@ -6,3 +6,44 @@
     margin: 0 1%;
   }
 }
+
+.questions #next-steps { padding-top: 2em; }
+.questions #next-steps .lead { margin-bottom: 1em; }
+.questions div.body-div {
+  background: transparent !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+  text-align: left !important;
+}
+.questions input[type="text"],
+.questions textarea {
+  padding: .5em !important;
+}
+.questions .options.input {
+  width: 100% !important;
+  text-align: left !important;
+  margin-left: 6px;
+}
+.questions .options.input input[type="checkbox"],
+.questions .options.input label {
+  display: inline-block;
+  margin-top: .5em;
+}
+.questions #SubmitElement_0_input {
+  width: 90% !important;
+}
+.questions .small-description {
+  margin-top: -10px;
+  opacity: .4;
+}
+
+.contact table span span {
+  margin-top: -25px !important;
+  display: block;
+}
+
+.contact table input[type="submit"] {
+  box-sizing: border-box;
+  width: 97% !important;
+  padding-bottom: 1.8em !important;
+}
