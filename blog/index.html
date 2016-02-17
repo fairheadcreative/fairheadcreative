@@ -23,10 +23,21 @@ version: v4
       <hr class="large-element" />
 
       <div class="main">
+
+        <div class="article" style="background: #92d061; border-radius: 3px; padding: 1em; margin-bottom: 2.5em;">
+          <span style="margin-bottom: .5em; background: white; color: #92d061; border-radius: 2px; font-size: .8em; text-transform: uppercase; display: inline-block; padding: .15em .4em .1em; font-weight: bold;">Featured Post</span>
+          <h2 class="post-title"><a href="/conversion-rate-optimization/" title="How to Turn Leads Into Buyers" style="color: white; font-family: Lato, sans-serif; font-weight: bold; font-size: 1.2em;">How to Turn Leads Into Buyers</a></h2>
+          <img src="/images/masters/conversions-hero.svg" alt="Website Conversion Rate Optimization Chart" style="border: none; max-width: 35%; float: right; margin-left: 10px;">
+          <p style="color: #355021;">Even if your business has hardly any online leads. See how we do it for our clients.</p>
+          <p style="color: #355021;">If you're ready to turn your online leads into buyers, then read on.</p>
+          <a href="/conversion-rate-optimization/" style="color: #355021;"><strong>Read this post &rarr;</strong></a>
+        </div>
+
+
         {% for post in site.posts limit:12 %}{% unless post.layout == 'master' %}
         <div class="article">
           <h2 class="post-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}{% if post.infographic %} <span>(Infographic)</span>{% endif %}</a></h2>
-          <p class="meta">Published {{ post.date | date_to_string }}</p>
+          <br />
           {% if post.featured %}<img class="featured-image{% if post.version == 4 %} ver-4{% endif %}" src="/uploads/{{ post.featured }}" alt="Blog post featured image" />{% endif %}
           {{ post.excerpt }}
           <a href="{{ post.url }}"><strong>Read this post &rarr;</strong></a>
