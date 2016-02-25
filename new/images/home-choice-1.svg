@@ -66,8 +66,8 @@
 		c0.624,1.251,2.57,2.918,3.967,2.796"/>
 	<path fill="none" stroke="#818081" stroke-width="2" stroke-miterlimit="10" d="M384.477,179.505c0.018,1,0,3.34,0,4.168
 		c0,0.886-0.254,1.678-0.644,2.493c-0.635,1.329-2.315,1.952-3.833,1.834"/>
-	<text transform="matrix(1 0 0 1 103.3994 65.9473)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Lato'" font-size="12">The Expert’s</tspan><tspan x="0" y="14.4" fill="#FFFFFF" font-family="'Lato'" font-size="12">Guide to</tspan><tspan x="0" y="28.8" fill="#FFFFFF" font-family="'Lato'" font-size="12">Working While</tspan><tspan x="0" y="43.2" fill="#FFFFFF" font-family="'Lato'" font-size="12">Traveling</tspan></text>
-	<text transform="matrix(1 0 0 1 204.7324 51.2808)"><tspan x="0" y="0" fill="#58595B" font-family="'Lato'" font-size="12">Keep the desk job,</tspan><tspan x="0" y="14.4" fill="#58595B" font-family="'Lato'" font-size="12">ditch the desk.</tspan></text>
+	<text transform="matrix(1 0 0 1 103.3994 65.9473)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Arial'" font-size="12">The Expert’s</tspan><tspan x="0" y="14.4" fill="#FFFFFF" font-family="'Arial'" font-size="12">Guide to</tspan><tspan x="0" y="28.8" fill="#FFFFFF" font-family="'Arial'" font-size="12">Working While</tspan><tspan x="0" y="43.2" fill="#FFFFFF" font-family="'Arial'" font-size="12">Traveling</tspan></text>
+	<text transform="matrix(1 0 0 1 204.7324 51.2808)"><tspan x="0" y="0" fill="#58595B" font-family="'Arial'" font-size="12">Keep the desk job,</tspan><tspan x="0" y="14.4" fill="#58595B" font-family="'Arial'" font-size="12">ditch the desk.</tspan></text>
 	<path fill="none" stroke="#493419" stroke-width="2" stroke-miterlimit="10" d="M95.899,25.354c0.01,3.436,0.193,103.253,0,106.594
 		h97V25.354H95.899z"/>
 	<circle fill="#493419" cx="175.399" cy="41.447" r="8.5"/>
