@@ -26,7 +26,7 @@
 		S69.25,43.393,68.898,45.471z"/>
 </g>
 <g id="Layer_2">
-	<text transform="matrix(0.9973 -0.074 0.074 0.9973 77.1177 45.9775)"><tspan x="0" y="0" fill="#58595B" font-family="'MyriadPro-Bold'" font-size="9">Places to work</tspan><tspan x="0" y="10" fill="#58595B" font-family="'MyriadPro-Bold'" font-size="9">remotely in your</tspan><tspan x="0" y="20" fill="#58595B" font-family="'MyriadPro-Bold'" font-size="9">neighbourhood</tspan></text>
+	<text transform="matrix(0.9973 -0.074 0.074 0.9973 77.1177 45.9775)"><tspan x="0" y="0" fill="#58595B" font-family="'Arial'" font-size="9">Places to work</tspan><tspan x="0" y="10" fill="#58595B" font-family="'Arial'" font-size="9">remotely in your</tspan><tspan x="0" y="20" fill="#58595B" font-family="'Arial'" font-size="9">neighbourhood</tspan></text>
 	<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M174.178,139.071l62.334-11.964
 		c0,0,3.833-1.131,8.833,0s106.834,23.631,106.834,23.631s7,0.999,0,2.833s-77.167,19-77.167,19s-3.167,1.166-6.5,0
 		s-95.681-29.5-95.681-29.5S165.096,140.814,174.178,139.071z"/>
@@ -119,7 +119,7 @@
 		c1.198,2.055,8.106-0.017,11.334,0.05c3.223,0.064,3.913,0.724,6.989,0.232c1.567-0.251,2.097-0.979,3.83-1.151
 		c1.603-0.159,3.686,0.345,5.375,0.326c5.78-0.064,12.032-0.624,17.387-1.351c2.426-0.329,5.185-0.59,7.99-0.981
 		c1.256-0.174,3.485-0.246,4.935-0.406c2.445-0.27,4.199-1.274,5.611,0.478"/>
-	<text transform="matrix(0.9973 -0.074 0.074 0.9973 83.312 120.9824)"><tspan x="0" y="0" fill="#58595B" font-family="'MyriadPro-Bold'" font-size="9">Travel bundle:</tspan><tspan x="0" y="10" fill="#58595B" font-family="'MyriadPro-Bold'" font-size="9">Top 10 remote</tspan><tspan x="0" y="20" fill="#58595B" font-family="'MyriadPro-Bold'" font-size="9">work gadgets</tspan></text>
+	<text transform="matrix(0.9973 -0.074 0.074 0.9973 83.312 120.9824)"><tspan x="0" y="0" fill="#58595B" font-family="'Arial'" font-size="9">Travel bundle:</tspan><tspan x="0" y="10" fill="#58595B" font-family="'Arial'" font-size="9">Top 10 remote</tspan><tspan x="0" y="20" fill="#58595B" font-family="'Arial'" font-size="9">work gadgets</tspan></text>
 	<path fill="none" stroke="#939598" stroke-width="2" stroke-miterlimit="10" d="M85.136,146.856
 		c1.295,2.047,8.877-0.081,12.413-0.04c3.529,0.038,4.279,0.692,7.653,0.177c1.718-0.263,2.302-0.997,4.201-1.183
 		c1.758-0.173,4.035,0.315,5.886,0.283c6.332-0.11,13.182-0.722,19.05-1.49c2.662-0.349,5.685-0.632,8.759-1.045

@@ -120,10 +120,10 @@
 	<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M75.432,154.375
 		c1.399-19.388,2.189-38.812,2.938-58.234c0.753-19.395,1.47-38.794,2.729-58.167c0.115-1.752,0.232-3.507,0.356-5.258
 		c0.08-1.148-0.025-2.813,0.651-3.827c1.074-1.605,4.323-1.277,5.956-1.226"/>
-	<text transform="matrix(0.9987 0.0504 -0.0504 0.9987 145.647 104.9297)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'MyriadPro-Bold'" font-size="6.4626">The Expert’s</tspan><tspan x="0" y="7.755" fill="#FFFFFF" font-family="'MyriadPro-Bold'" font-size="6.4626">Guide to</tspan><tspan x="0" y="15.51" fill="#FFFFFF" font-family="'MyriadPro-Bold'" font-size="6.4626">Working While</tspan><tspan x="0" y="23.265" fill="#FFFFFF" font-family="'MyriadPro-Bold'" font-size="6.4626">Traveling</tspan></text>
-	<text transform="matrix(0.9987 0.0504 -0.0504 0.9987 200.5488 99.7891)"><tspan x="0" y="0" fill="#58595B" font-family="'MyriadPro-Bold'" font-size="6.4626">Keep the desk job,</tspan><tspan x="0" y="7.756" fill="#58595B" font-family="'MyriadPro-Bold'" font-size="6.4626">ditch the desk.</tspan></text>
+	<text transform="matrix(0.9987 0.0504 -0.0504 0.9987 145.647 104.9297)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Arial'" font-size="6.4626">The Expert’s</tspan><tspan x="0" y="7.755" fill="#FFFFFF" font-family="'Arial'" font-size="6.4626">Guide to</tspan><tspan x="0" y="15.51" fill="#FFFFFF" font-family="'Arial'" font-size="6.4626">Working While</tspan><tspan x="0" y="23.265" fill="#FFFFFF" font-family="'Arial'" font-size="6.4626">Traveling</tspan></text>
+	<text transform="matrix(0.9987 0.0504 -0.0504 0.9987 200.5488 99.7891)"><tspan x="0" y="0" fill="#58595B" font-family="'Arial'" font-size="6.4626">Keep the desk job,</tspan><tspan x="0" y="7.756" fill="#58595B" font-family="'Arial'" font-size="6.4626">ditch the desk.</tspan></text>
 	
-		<text transform="matrix(0.9987 0.0504 -0.0504 0.9987 136.6133 54.5845)" fill="#58595B" font-family="'MyriadPro-Bold'" font-size="8.9404">New landing page design comp</text>
+		<text transform="matrix(0.9987 0.0504 -0.0504 0.9987 136.6133 54.5845)" fill="#58595B" font-family="'Arial'" font-size="8.9404">New landing page design comp</text>
 	<path fill="none" stroke="#493419" stroke-width="2" stroke-miterlimit="10" d="M142.714,82.892
 		c-0.088,1.849-2.697,55.542-2.892,57.333l52.173,2.632l2.892-57.334L142.714,82.892z"/>
 	<circle fill="#493419" cx="185.038" cy="93.705" r="4.578"/>
