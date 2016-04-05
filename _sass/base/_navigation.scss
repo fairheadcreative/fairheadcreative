@@ -1,0 +1,93 @@
+// Navigation rules
+
+.global-nav {
+  @include outer-container;
+  padding: .5em 1.5em 4em;
+
+  @include media(max-width em(850)) {
+    text-align: center;
+    font-size: .8em;
+    padding: .5em 0 2em;
+    margin: 0 -1.5em;
+  }
+
+  @include media(max-width em(550)) {
+    span { display: none; }
+
+    .global-nav__logo {
+      background-position: 0;
+      background-size: 202px;
+      width: 190px;
+    }
+  }
+}
+
+@include media(em(850)) {
+  .global-nav__logo {
+    float: left;
+    margin-top: .3em;
+  }
+  
+  .global-nav__links {
+    float: right;
+  }
+}
+
+.global-nav__links--item {
+  display: inline-block;
+  padding: .75em 0 0 1em;
+  a { color: white; }
+
+  &:first-child { padding-left: 0; }
+
+  @include media($medium-screen) {
+
+  }
+}
+
+.global-nav .button {
+  background: white;
+  color: $dark-gray;
+}
+
+.home .global-nav .button { color: $dark-blue; }
+.portfolio .global-nav .button { color: $pink; }
+.why .global-nav .button { color: $blue; }
+.blog .global-nav .button { color: $medium-gray; }
+
+.global-nav__logo {
+  background: url('../images/fairhead-creative-white.svg') no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 40px;
+  text-indent: -999em;
+  display: inline-block;
+}
+
+.global-footer {
+  margin: -2.5em 0 0 1.5em;
+  color: white;
+  opacity: .5;
+
+  a { color: white; }
+}
+
+.portfolio .global-footer,
+.blog .global-footer,
+.start .global-footer,
+.onboard .global-footer,
+.starterkit .global-footer,
+.policies .global-footer,
+.master-convert .global-footer,
+.master-email .global-footer {
+  color: $base-font-color;
+  text-align: center;
+  margin: -2.5em 0 1em;
+  clear: both;
+
+  a { color: $base-font-color; }
+}
+
+.start .global-footer {
+  color: white;
+}

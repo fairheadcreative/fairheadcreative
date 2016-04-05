@@ -1,0 +1,133 @@
+// Master page rules
+
+.numbered-list__item strong span {
+  color: $light-gray;
+}
+
+.numbered-list__item a strong:hover {
+  color: $blue;
+}
+
+.numbered-list__item strong span:after {
+  content: ' →';
+  display: inline;
+}
+
+.single-section-capture {
+  max-width: 34em;
+  padding: 2.5em;
+  margin: -2em auto 5em;
+  text-align: left;
+  border-radius: $base-border-radius;
+
+  .master-convert &,
+  .post & {
+    background: lighten($green, 35);
+    border: 1px solid lighten($green, 20);
+  }
+
+  .starterkit & {
+    background: lighten($medium-green, 35);
+    border: 1px solid lighten($medium-green, 20);
+
+    form { margin-top: 2em !important; }
+    form #EmailElement_0_label { display: block !important; }
+    form br { display: none !important; }
+  }
+
+  .master-email & {
+    background: lighten($yellow, 35);
+    border: 1px solid lighten($yellow, 20);
+  }
+
+  .single-section__heading {
+    color: white;
+    margin: -1.5em -1.45em 0;
+    padding: 1.5em 1.5em 1em;
+    border-radius: $base-border-radius $base-border-radius 0 0;
+    text-align: center;
+
+    .master-convert &,
+    .post & { background: $green; }
+    .master-email & { background: $yellow; }
+    .starterkit & { background: $medium-green; }
+  }
+
+  .capture-image {
+    padding-top: 1.5em;
+    @include span-columns(4);
+  }
+
+  .capture-description {
+    padding-top: 1.5em;
+    @include span-columns(7.5);
+    @include shift(.5);
+    @include omega;
+  }
+
+  h2 .guide {
+    display: block;
+  }
+
+  h2 .bonus {
+    display: inline-block;
+    font-size: .6em;
+    opacity: .7;
+  }
+
+  h3 {
+    font-size: 1.4em;
+    margin: .5em 0;
+    padding-top: .5em;
+    display: block;
+    clear: both;
+    text-align: center;
+
+    .master-convert &,
+    .post & { color: shade($green, 10); }
+    .master-email & { color: shade($yellow, 10); }
+  }
+
+  #EmailElement_0_label {
+    display: none !important;
+  }
+
+  .body-div {
+    background: transparent !important;
+    margin: 0 auto !important;
+  }
+
+  input[type="text"],
+  input[type="submit"] {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  input[type="text"] {
+    height: 40px !important;
+    margin-bottom: 0 !important;
+    text-indent: 10px !important;
+  }
+
+  input[type="submit"] {
+    background: $blue !important;
+    border: none !important;
+    border-top: 1px solid lighten($blue, 15) !important;
+    border-bottom: 1px solid shade($blue, 10) !important;
+    box-sizing: border-box !important;
+    height: 50px !important;
+    font-weight: bold !important;
+
+    .master-email & {
+      background: $green !important;
+      border-top: 1px solid lighten($green, 15) !important;
+      border-bottom: 1px solid shade($green, 10) !important;
+    }
+  }
+
+  input[type="submit"]:hover {
+    background-color: $pink !important;
+    border-top: 1px solid lighten($pink, 15) !important;
+    border-bottom: 1px solid shade($pink, 10) !important;
+  }
+}

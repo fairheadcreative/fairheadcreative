@@ -1,0 +1,135 @@
+---
+layout: layout-v4
+class: article
+version: v4
+---
+<div class="container group">
+  <div class="limiter">
+    <article>
+      {% if page.social %}<img class="hide" src="/uploads/{{ page.social }}" alt="" />{% endif %}
+      <header>
+        <h1>{{ page.title }}</h1>
+        <p class="meta">by Fairhead Creative</p>
+      </header>
+
+      <hr />
+
+      <div class="main">
+
+        {% if page.featured %}<img class="featured-image{% if page.version == 4 %} ver-4{% endif %}" src="/uploads/{{ page.featured }}" alt="Blog post featured image" />{% endif %}
+
+        {{ content }}
+
+        {% if page.freebie %}
+        <section class="inline-freebie">
+        {% if page.freebie-image %}<img class="freebie-image" src="/uploads/{{ page.freebie-image }}" alt="{{ page.freebie }}" width="200" />{% endif %}
+          <h3>Get your {{ page.freebie }}</h3>
+          <p class="description">{% if page.freebie-description %}{{ page.freebie-description }}{% else %}This article comes with a free download. Enjoy it, and let us know what you think!{% endif %}</p>
+          <p><a href="javascript:void(0);" class="button get-freebie" alt="" onclick="ga('send', 'event', 'Blog', 'Click', 'Download Open Inline {{ page.title }}')" />Download your freebie now</a></p>
+        </section>
+
+        {% else %}
+        <aside class="inline-freebie large-element inline-subscribe">
+          <h3>Attract more customers online with our newsletter</h3>
+          <p>Subscribe to our email newsletter for insider tips and free resources, all designed to give your business a competitive advantage online.</p>
+          <p><a href="javascript:void(0);" class="button get-freebie" alt="" onclick="ga('send', 'event', 'Blog', 'Click', 'Subscribe Inline')" />Give me access</a></p>
+        </aside>
+        {% endif %}
+
+        <section class="share"><div class="share-inner">
+        <a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://fairheadcreative.com{{ page.url }}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Facebook');">Share on Facebook</a> <a class="share-twitter" href="https://twitter.com/home?status=Reading {{ page.title }}: http://fairheadcreative.com{{ page.url }}{% if page.infographic %} [INFOGRAPHIC]{% endif %}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Twitter');">Share on Twitter</a> <a class="share-google" href="https://plus.google.com/share?url=http://fairheadcreative.com{{ page.url }}" target="_blank" onclick="ga('send', 'event', 'Blog', 'Click', 'Share Google');">Share on Google+</a></div></section>
+
+        <aside class="sidebar-item large-element">
+          <h3>Recommended reading</h3>
+          {% for post in site.posts %}
+          {% if post.recommended %}
+          <article>
+            <header>
+              <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+              <p class="meta">Published {{ post.date | date_to_string }}</p>
+            </header>
+            </article>
+          {% endif %}
+          {% endfor %}
+        </aside>
+
+      </div>
+
+      <section class="sidebar">
+        {% if page.class != 'blog' %}
+        <aside class="sidebar-item">
+          <h3>Attract more customers online with our newsletter</h3>
+          <p>Subscribe to our email newsletter for insider tips and free resources, all designed to give your business a competitive advantage online.</p>
+
+          <a href="javascript:void(0);" class="button get-freebie" alt="" onclick="ga('send', 'event', 'Blog', 'Click', 'Subscribe Side')" />Give me access</a>
+        </aside>
+        {% endif %}
+
+        {% if page.freebie %}
+        <aside class="sidebar-item">
+          <h3>Download this article's freebie</h3>
+          <p>Download your {{ page.freebie }} right away, it's free!</p>
+          <a href="javascript:void(0);" class="button get-freebie" alt="" onclick="ga('send', 'event', 'Blog', 'Click', 'Download Open Side {{ page.title }})" />Download it now</a>
+        </aside>
+        {% endif %}
+
+        <aside class="sidebar-item recommended">
+          <h3>Recommended reading</h3>
+          {% for post in site.posts %}
+          {% if post.recommended %}
+          <article>
+            <header>
+              <h4><a href="{{ post.url }}" onclick="ga('send', 'event', 'Blog', 'Click', 'Recommended Article');">{{ post.title }}</a></h4>
+              <p class="meta">Published {{ post.date | date_to_string }}</p>
+            </header>
+            </article>
+          {% endif %}
+          {% endfor %}
+        </aside>
+
+        {% if page.freebie %}
+        <section class="inline-freebie in-sidebar" style="display: none;">
+        {% if page.freebie-image %}<img class="freebie-image" src="/uploads/{{ page.freebie-image }}" alt="{{ page.freebie }}" width="200" />{% endif %}
+          <h3>Get your {{ page.freebie }}</h3>
+          <p><a href="javascript:void(0);" class="button get-freebie" alt="" onclick="ga('send', 'event', 'Blog', 'Click', 'Download Open Float {{ page.title }}')" />Download your freebie now</a></p>
+        </section>
+
+        {% else %}
+
+        <section class="inline-subscribe in-sidebar" style="display: none;">
+          <h3>Attract more customers online with our newsletter</h3>
+          <p>Subscribe to our email newsletter for insider tips and free resources, all designed to give your business a competitive advantage online.</p>
+          <p><a href="javascript:void(0);" class="button get-freebie" alt="" onclick="ga('send', 'event', 'Blog', 'Click', 'Subscribe Inline')" />Give me access</a></p>
+        </section>
+        {% endif %}
+      </section>
+
+    </article>
+  </div>
+</div>
+
+<div class="modal-wrapper" id="key-modal">
+  <div class="modal-overlay"></div>
+  <div class="modal">
+    <a href="javascript:void(0);" class="modal-close" onclick="ga('send', 'event', 'Blog', 'Click', 'Home Report Close');">&#10006</a>
+    {% if page.freebie %}
+    <h3>Where shall we send your {{ page.freebie }}?</h3>
+    <p>Enter your email address below and we'll send you your freebie right away:</p>
+    {% else %}
+    <h3>We're sharing actionable advice for owners of caring, creative & fun online businesses.</h3>
+    <p>Enter your email address below and we'll send you our new advice weekly:</p>
+    {% endif %}
+
+    <form action="//adamfairhead.us8.list-manage.com/subscribe/post-json?u=078c568914b24026a4a24cbc8&amp;id=56a7df1be0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address" />
+      {% if page.freebie-url %}<input type="text" value="{{ page.freebie-url }}" name="MMERGE1" class="hide" id="mce-MMERGE1" placeholder="Download link" />{% endif %}
+      <div style="position: absolute; left: -5000px;"><input type="text" name="b_078c568914b24026a4a24cbc8_56a7df1be0" tabindex="-1" value=""></div>
+      <input type="submit" value="Subscribe Now" name="subscribe" id="mc-embedded-subscribe" class="button" onclick="ga('send', 'event', 'Blog', 'Click', 'Download Confirm {{ page.title }}');" />
+    </form>
+
+    <div class="subscribe-result"></div>
+    <span class="subscribe-freebie" style="display: none;">{% if page.freebie-url %}<br />Here's your download link: <br /><a href="{{ page.freebie-url }}" target="_blank" class="button" onclick="ga('send', 'event', 'Blog', 'Click', 'Download AlreadySubscribed Confirm');">Download now</a>{% endif %}</span>
+  </div>
+</div>
+
+<!--<a class="take-survey" href="https://fairheadcreative.wufoo.com/forms/p1ue40hy1jv1xor/" target="_blank">Tell us what you want to read about next!</a>-->

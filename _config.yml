@@ -1,0 +1,12 @@
+baseurl: /
+permalink: /:title/
+paginate: 8
+paginate_path: "/blog/:num/"
+markdown: rdiscount
+relative_permalinks: false
+excerpt_separator: <!--more-->
+exclude: ["README.md","Gemfile","Gemfile.lock","CNAME","gruntfile.js","package.json","node_modules","js/layout","js/components/ouibounce.js","js/production.js",vendor,"Rakefile","Procfile","config.ru"]
+
+sass:
+  sass_dir: _sass
+  style: :compressed

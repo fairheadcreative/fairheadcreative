@@ -1,0 +1,858 @@
+---
+---
+// Includes
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import 'normalize';
+@import 'bourbon/bourbon';
+@import 'base/grid-settings';
+@import 'neat/neat';
+@import 'base/base';
+@import 'slick';
+
+
+// General
+
+.hide { display: none !important; }
+
+img { margin: 0 0 1em; }
+
+.centered {
+  margin: 0 auto;
+  float: none;
+}
+
+hr {
+  background: url('../images/divider.png') no-repeat;
+  max-width: 35em;
+  height: 4px;
+  border: none;
+  margin: -2em auto -0.5em;
+  display: block;
+}
+
+
+// Splash
+
+.splash {
+  text-align: center;
+  padding: 0 1.5em 5em;
+  position: relative;
+}
+
+.splash-overlaid {
+  padding-bottom: 8em;
+}
+
+.splash-home {
+  background-color: $dark-blue;
+  color: white;
+
+  .splash__title {
+    font-size: em(24);
+    margin: 0 auto .75em;
+
+    @include media($medium-screen) {
+      padding-top: 1.5em;
+      font-size: em(35);
+    }
+  }
+
+  .splash__lead {
+    @include media(max-width $medium-screen) {
+      font-size: 1em;
+    }
+  }
+}
+
+.splash-process {
+  background-color: white;
+  color: $base-font-color;
+
+  nav a { color: $base-font-color; }
+  .splash__title { color: $dark-gray; }
+  .global-nav__logo { background: url("../images/fairhead-creative-black.svg") no-repeat; }
+
+  nav .button {
+    background-color: $green;
+    color: white;
+    box-shadow: none;
+  }
+}
+
+.splash-post {
+  background-color: $green;
+  color: white;
+}
+
+.splash-why,
+.zurb .splash-story {
+  background-color: $blue;
+  color: white;
+}
+
+.splash-portfolio,
+.lifechurchtv .splash-story {
+  background-color: $dark-pink;
+  color: white;
+}
+
+body.start {
+  background-color: $medium-green;
+  color: white;
+
+  .global-nav {
+    opacity: .5;
+  }
+}
+
+body.starterkit {
+  background-color: white;
+  color: $base-font-color;
+
+  .splash {
+    background-color: $medium-green;
+    color: white;
+  }
+
+  .splash__feature {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .single-section__content ul li {
+    list-style: none;
+    margin-left: 0;
+  }
+}
+
+.splash-starterkit {
+  background-color: $medium-green;
+  color: white;
+}
+
+.splash-onboard {
+  background-color: $medium-green;
+  color: white;
+}
+
+.splash-master-convert {
+  background-color: $green;
+  color: white;
+}
+
+.splash-master-email {
+  background-color: $yellow;
+  color: white;
+}
+
+.splash-blog {
+  background-color: darken($medium-gray, 10);
+  color: white;
+}
+
+.splash__intro {
+  text-align: center;
+  letter-spacing: -0.03em;
+  margin: 0;
+
+  @include media($medium-screen) {
+    font-size: 1.5em;
+    margin: -1em 0 0;
+  }
+}
+
+.splash__title {
+  color: white;
+  max-width: em(400);
+  margin: 0 auto .5em;
+
+  @include media($medium-screen) {
+    margin: 0 auto .4em;
+  }
+}
+
+.splash__title--large {
+  font-size: 2em;
+
+  @include media($medium-screen) {
+    font-size: 4.3em;
+    letter-spacing: -0.04em;
+    line-height: .8em;
+  }
+}
+
+.splash__lead {
+  max-width: em(550);
+  margin: 0 auto;
+  opacity: .85;
+}
+
+.splash__lead-extra {
+  margin: .5em auto -0.5em;
+}
+
+.splash__arc {
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.overlay-splash {
+  position: relative;
+  margin-top: -4em;
+}
+
+
+// Single Sections
+
+.single-section {
+  @include outer-container;
+  padding: 0 1.5em 4em;
+  text-align: center;
+
+  .thin-container {
+    padding-top: 1em;
+  }
+}
+
+.single-section__figure {
+  margin-bottom: .5em;
+}
+
+.single-section__content {
+  max-width: em(550);
+  margin: 0 auto;
+  text-align: left;
+
+  strong { color: $dark-gray; }
+
+  ul {
+    margin-bottom: 1.5em;
+  }
+
+  ul li {
+    list-style: disc inside;
+    margin: 0 0 1em 1em;
+    font-size: 1.1em;
+  }
+}
+
+
+// Numbered lists
+
+.numbered-list {
+  margin-left: 3em;
+}
+
+.numbered-list__item {
+  counter-increment: item;
+  margin: 1.5em 0;
+
+  strong { display: block; }
+
+  ul {
+    padding-left: 1.5em;
+  }
+
+  ul li {
+    list-style: disc;
+    margin-top: .5em;
+  }
+
+  &:nth-child(4n-3) {
+    strong { color: $green; }
+    &:before { background: $green; }
+  }
+
+  &:nth-child(4n-2) {
+    strong { color: $pink; }
+    &:before { background: $pink; }
+  }
+
+  &:nth-child(4n-1) {
+    strong { color: $blue; }
+    &:before { background: $blue; }
+  }
+
+  &:nth-child(4n) {
+    strong { color: $yellow; }
+    &:before { background: $yellow; }
+  }
+
+    &:before {
+      float: left;
+      margin-left: -2.7em;
+      margin-top: -0.25em;
+      margin-right: 10px;
+      content: counter(item);
+      background: $dark-gray;
+      border-radius: 100%;
+      color: #fff;
+      width: 2em;
+      height: 2em;
+      line-height: 2em;
+      font-weight: bold;
+      text-align: center
+    }
+}
+
+
+// Checklists
+
+.check-list {
+  margin-bottom: 1em;
+}
+
+.check-list__item {
+  margin-bottom: .5em;
+}
+
+.check-list__item:before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 16px;
+  background: url('../images/check.svg') no-repeat;
+}
+
+
+@import 'home';
+@import 'masters';
+@import 'onboard';
+@import 'blog';
+@import 'portfolio';
+@import 'start';
+
+.group {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.group-top {
+  padding-top: 2em;
+}
+
+.container {
+  @include outer-container;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.why-figure-2 {
+  margin-bottom: -4em;
+}
+
+.why-figure-4 {
+  margin-bottom: .25em;
+}
+
+.home-start {
+  position: absolute;
+  padding-top: 3em;
+  top: 4em;
+  z-index: 2;
+  width: 100%;
+}
+
+.body-div img {
+  display: none !important;
+}
+
+.more {
+  color: #b7d4ab;
+
+  &:hover {
+    color: #b7d4ab;
+    text-decoration: underline;
+  }
+}
+
+.phone {
+  text-align: center;
+  color: white;
+  font-size: .8em;
+  padding: .75em;
+
+  @include media(max-width em(415)) {
+    span { display: none; }
+  }
+
+
+  .home & { background: darken($dark-blue, 7); }
+  .why &,
+  .story.zurb & { background: darken($blue, 7); }
+  .portfolio &,
+  .story.lifechurchtv & { background: shade($dark-pink, 7); }
+  .blog & { background: shade($medium-gray, 40); }
+  .start &,
+  .starterkit & { background: shade($medium-green, 10); }
+  .master-convert &,
+  .post & { background: shade($green, 7); }
+  .master-email & { background: shade($yellow, 7); }
+  .products & { background: #222; }
+}
+
+
+// Products page
+
+.products {
+  background: $off-white;
+}
+
+.splash-products {
+  background: #e8e8e8;
+  padding-bottom: 2em;
+
+  header {
+    position: relative;
+    margin: 0 -1.5em 2em;
+    background: #333;
+
+    @include media(em(850)) {
+      height: 70px;
+    }
+  }
+}
+
+.splash__nav {
+  position: relative;
+  z-index: 4;
+  margin-top: -1em;
+  font-size: .95em;
+}
+
+.splash__nav--item {
+  color: #222;
+  padding: 1em;
+  display: inline-block;
+  border-radius: $base-border-radius;
+
+  svg {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    background: #ddd;
+    color: #333;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.splash-squeeze {
+  padding-top: 4em;
+}
+
+.splash__figure {
+  max-width: 500px;
+}
+
+.splash__title span {
+  display: block;
+  font-size: .7em;
+}
+
+
+.share {
+  position: fixed;
+  bottom: 1.5em;
+  left: 1.5em;
+
+  a {
+    display: block;
+    width: 200px;
+    height: 44px;
+    text-indent: 50px;
+    line-height: 2.7;
+    margin: 0 0 1em;
+    background-repeat: no-repeat;
+    background-position: 4px 4px;
+    background-size: auto 36px;
+    border-radius: $base-border-radius;
+    @include transition(all 0s ease-in-out);
+
+    &:hover {
+      background-color: $green;
+      color: white;
+    }
+  }
+}
+
+.share__facebook { background-image: url('../images/webicon-facebook.svg'); }
+.share__twitter { background-image: url('../images/webicon-twitter.svg'); }
+.share__pinterest { background-image: url('../images/webicon-pinterest.svg'); }
+.share__linkedin { background-image: url('../images/webicon-linkedin.svg'); }
+
+.post .splash__title {
+  max-width: 15em;
+}
+
+$process-relate-bg: #80c838;
+$process-relate-header: #fff;
+$process-relate-text: #fff;
+$process-relate-accent: #ace96f;
+$process-strategy-bg: #e8faff;
+$process-strategy-header: #3d5054;
+$process-strategy-text: #638389;
+$process-strategy-accent: #bbe5f1;
+$process-strategy-text: #638389;
+$process-strategy-accent: #bbe5f1;
+$process-create-bg: #c4eef6;
+$process-create-header: #3d5054;
+$process-create-text: #638389;
+$process-create-accent: #94c3d0;
+$process-measure-bg: #f29b43;
+$process-measure-header: #fff;
+$process-measure-text: #fff;
+$process-measure-accent: #ffc285;
+$process-iterate-bg: #5c962f;
+$process-iterate-header: #fff;
+$process-iterate-text: #fff;
+$process-iterate-accent: #8fd459;
+
+.process {
+  .phone { display: none; }
+
+  .process-hero {
+    max-width: 400px;
+    margin-top: -20px;
+  }
+
+  .process-piece h2 { text-align: left; }
+
+  .single {
+    text-align: center;
+    margin-bottom: 3em;
+
+    figure {
+      max-width: 13em;
+      margin: 0 auto -1.5em;
+
+      svg text {
+        font-weight: 700;
+      }
+
+      @include media($medium-screen) {
+        max-width: 30em;
+        margin: 0 auto -2.5em;
+      }
+    }
+
+    p {
+      @extend h2;
+      color: $medium-gray;
+      margin: 0 auto 1.5em;
+
+      @include media(max-width $medium-screen) {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  h1 {
+    font-family: Lato;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: .4em;
+    font-size: 2.5em;
+
+    @include media($medium-screen) {
+      font-size: 3.5em;
+    }
+  }
+
+  .process-piece {
+    .container {
+      max-width: 54em;
+    }
+
+    figure {
+      margin: 0;
+      padding: 0;
+
+      @include media($medium-screen) {
+        @include span-columns(5);
+      }
+    }
+
+    article {
+      @include media($medium-screen) {
+        @include span-columns(6);
+        @include shift(1);
+        @include omega;
+      }
+    }
+
+    h2 {
+      @extend h2;
+      font-family: Lato;
+      font-size: 2.5em;
+      line-height: 1;
+      font-weight: 700;
+      margin-bottom: .5em;
+
+      &:before {
+        margin-right: 5px;
+
+        @include media($medium-screen) {
+          margin-left: -1em;
+        }
+      }
+    }
+
+    p, li {
+      font-size: 1.2em;
+    }
+
+    strong {
+      font-weight: normal;
+      border-radius: $base-border-radius;
+      padding: .1em .2em;
+    }
+
+    li {
+      margin-left: 1.25em;
+      margin-bottom: .5em;
+
+      &:before {
+        content: "• ";
+        margin-left: -1em;
+        margin-right: 4px;
+      }
+    }
+
+    ul {
+      margin: 1em 0;
+    }
+  }
+
+  #relate {
+    background: $process-relate-bg;
+    color: $process-relate-text;
+
+    figure {
+      margin-top: 80px;
+
+      @include media(max-width $medium-screen) {
+        width: 60%;
+        margin: -90px auto -20px;
+      }
+    }
+  
+    li:before {
+      color: $process-relate-accent; 
+    }
+
+    strong {
+      background: shade($process-relate-bg, 10);
+    }
+
+    h2 {
+      color: $process-relate-header;
+
+      &:before {
+        content: "1. ";
+        color: $process-relate-accent;
+      }
+    }
+  }
+
+  #strategy {
+    background: $process-strategy-bg;
+    color: $process-strategy-text;
+    overflow: hidden;
+
+    @include media(max-width $medium-screen) {
+      figure {
+        width: 60%;
+        margin: -190px auto -20px;
+      }
+    }
+
+    li:before {
+      color: $process-strategy-accent;
+    }
+
+    strong {
+      background: shade($process-strategy-bg, 10);
+    }
+
+    h2 {
+      color: $process-strategy-header;
+
+      &:before {
+        content: "2. ";
+        color: $process-strategy-accent;
+      }
+    }
+  }
+  
+  #create {
+    background: #acdde2 url('/images/process/create.svg') no-repeat left -40px;
+    background-size: 120% auto;
+    color: $process-create-text;
+
+    @include media(max-width $medium-screen) {
+      padding-top: 150px;
+    }
+
+    @include media($medium-screen) {
+      background-size: auto 100%;
+      background-color: $process-create-bg;
+      background-position: center bottom;
+    }
+
+    li:before {
+      color: $process-create-accent;
+    }
+
+    strong {
+      background: shade($process-create-bg, 10);
+    }
+
+    h2 {
+      color: $process-create-header;
+
+      &:before {
+        content: "3. ";
+        color: $process-create-accent;
+      }
+    }
+  }
+
+  #measure {
+    position: relative;
+    background: $process-measure-bg;
+    color: $process-measure-text;
+    overflow: hidden;
+
+    @include media(max-width $medium-screen) {
+      figure {
+        width: 310px;
+        margin: -230px auto -20px;
+      }
+    }
+
+    li:before {
+      color: $process-measure-accent;
+    }
+
+    figure {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    svg {
+      @include media($medium-screen) {
+        height: 500px;
+      }
+    }
+
+    article {
+      @include media(max-width $medium-screen) {
+        padding-top: 160px;
+      }
+
+      @include media($medium-screen) {
+        @include shift(6);
+      }
+    }
+
+    strong {
+      background: shade($process-measure-bg, 10);
+    }
+
+    h2 {
+      color: $process-measure-header;
+
+      &:before {
+        content: "4. ";
+        color: $process-measure-accent;
+      }
+    }
+  }
+
+  #iterate {
+    background: #5a7743 url('/images/process/iterate.svg') no-repeat center -20px;
+    background-size: 100% auto;
+    color: $process-iterate-text;
+
+    @include media($medium-screen) {
+      background-position: center top;
+      background-size: auto 100%;
+      padding-bottom: 12em;
+    }
+
+    @include media(max-width $medium-screen) {
+      article {
+        padding-top: 90px;
+      }
+    }
+
+    @include media($medium-screen) {
+      background-color: $process-iterate-bg;
+    }
+
+    li:before {
+      color: $process-iterate-accent;
+    }
+
+    strong {
+      background: darken($process-iterate-bg, 12);
+
+      @include media($medium-screen) {
+        background: shade($process-iterate-bg, 10);
+      }
+    }
+
+    h2 {
+      color: $process-iterate-header;
+
+      &:before {
+        content: "5. ";
+        color: $process-iterate-accent;
+      }
+    }
+  }
+
+  #motivate {
+    article {
+      @include media($medium-screen) {
+        @include shift(3);
+      }
+    }
+
+    h2 {
+      @include media($medium-screen) {
+        text-align: center;
+      }
+
+      &:before {
+        content: "6. ";
+        color: #aaa;
+      }
+    }
+
+    strong {
+      background: #eee;
+    }
+  }
+}
+
+.global-nav__links--item {
+  @include media(max-width em(379)) {
+    strong { display: none; }
+    em { font-style: normal; }
+  }
+
+  @include media(em(380)) {
+    em { display: none; }
+  }
+}

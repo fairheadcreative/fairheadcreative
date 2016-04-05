@@ -1,0 +1,45 @@
+// Onboard rules
+
+.questions div.body-div {
+  background: transparent !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+  text-align: left !important;
+}
+.questions input[type="text"],
+.questions textarea {
+  padding: .5em !important;
+}
+.questions .options.input {
+  width: 100% !important;
+  text-align: left !important;
+  margin-left: 6px;
+}
+.questions .options.input input[type="checkbox"],
+.questions .options.input label {
+  display: inline-block;
+  margin-top: .5em;
+}
+.questions .small-description {
+  margin-top: -10px;
+  opacity: .4;
+}
+
+.onboard .body-div {
+  input[type="submit"] {
+    background: $blue !important;
+    border: none !important;
+    border-top: 1px solid lighten($blue, 15) !important;
+    border-bottom: 1px solid shade($blue, 10) !important;
+    width: 97% !important;
+    box-sizing: border-box !important;
+    height: 50px !important;
+    font-weight: bold !important;
+  }
+
+  input[type="submit"]:hover {
+    background-color: $pink !important;
+    border-top: 1px solid lighten($pink, 15) !important;
+    border-bottom: 1px solid shade($pink, 10) !important;
+  }
+}

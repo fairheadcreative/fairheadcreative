@@ -1,0 +1,44 @@
+#{$all-buttons},
+.button {
+  appearance: none;
+  background-color: $green;
+  border-top: 1px solid lighten($green, 15);
+  border-bottom: 1px solid shade($green, 10);
+  border-radius: $base-border-radius;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1em 1em;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+
+  &:hover,
+  &:focus {
+    background-color: $pink;
+    border-top: 1px solid lighten($pink, 15);
+    border-bottom: 1px solid shade($pink, 10);
+    color: #fff;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $action-color;
+    }
+  }
+}
+
+.button.small {
+  padding: .5em .75em;
+  border: 0;
+}

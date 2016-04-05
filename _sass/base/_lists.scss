@@ -1,0 +1,58 @@
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+dl {
+  margin-bottom: $small-spacing;
+
+  dt {
+    font-weight: 600;
+    margin-top: $small-spacing;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+
+// List of 4 Items
+
+.four-list {
+  @include row;
+}
+
+.four-list__item {
+  text-align: center;
+  margin-bottom: 2em;
+
+  @include media(min-width $medium-screen max-width $large-screen) {
+    @include span-columns(6);
+    &:nth-child(2n) { @include omega; }
+  }
+
+  @include media($large-screen) {
+    text-align: left;
+    margin-bottom: 0;
+    @include span-columns(3);
+    &:nth-child(4n) { @include omega; }
+  }
+}
+
+.four-list__item--figure {
+  display: block;
+  color: $dark-gray;
+
+  @include media(max-width $large-screen) {
+    margin: 0 auto 1em;
+  }
+}
+
+.four-list__item--title {
+  display: block;
+  color: $dark-gray;
+  padding-bottom: .5em;
+}
