@@ -376,6 +376,8 @@ body.starterkit {
   font-size: .8em;
   padding: .75em;
 
+  a { color: white; }
+
   @include media(max-width em(415)) {
     span { display: none; }
   }
