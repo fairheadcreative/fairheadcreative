@@ -48,7 +48,14 @@
   #download {
     background: white;
 
-    h2 { color: #333; } 
+    h2 {
+      color: #333;
+
+      @include media(max-width em(500)) {
+        padding: 1em 2.5em 0;
+      }
+    }
+
     br { display: none !important; }
 
     input#SubmitElement_0_input {
@@ -170,6 +177,17 @@
 }
 
 .starterkit {
+  .open-capture.button {
+    text-align: center;
+    display: block;
+    margin: 0 auto 2em;
+    max-width: 15em;
+  }
+
+  .single-section-capture {
+    background: white;
+  }
+
   .global-nav { opacity: .5; }
 
   h1 { font-size: 2.4em; }
