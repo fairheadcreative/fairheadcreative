@@ -51,6 +51,12 @@
     h2 { color: #333; } 
     br { display: none !important; }
 
+    input#SubmitElement_0_input {
+      word-wrap: break-word !important;
+      white-space: normal !important;
+      height: auto !important;
+    }
+
     #NameElement_2 .inputContainer span {
       width: 49% !important;
       margin: 0 !important
@@ -58,6 +64,13 @@
 
     #EmailElement_0_label {
       display: block !important;
+    }
+
+    small {
+      text-align: center;
+      color: #aaa;
+      display: block;
+      margin-top: 1em;
     }
   }
 
@@ -92,6 +105,10 @@
 
   .start-offer {
     text-align: center;
+
+    @include media(max-width em(380)) {
+      a { font-size: .8em; }
+    }
 
     @include media(em(900)) {
       text-align: left;
