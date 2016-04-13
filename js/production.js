@@ -9,6 +9,20 @@ jQuery(function($) {
       $('.start-box-wrapper').addClass('fixed');
     }
   });
+
+  $(document).on('click', '.open-capture', function() {
+    $('.single-section-capture').show().addClass('animated bounceInUp');
+    $('.capture-bg').fadeIn();
+    $('.share, .global-footer').fadeOut();
+    return false;
+  });
+
+  $(document).on('click', '.close-capture', function() {
+    $('.single-section-capture').fadeOut().removeClass('animated bounceInUp');
+    $('.capture-bg').fadeOut();
+    $('.share, .global-footer').fadeIn();
+    return false;
+  });
 });
 
 /*

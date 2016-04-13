@@ -13,12 +13,55 @@
   display: inline;
 }
 
+.capture-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0,0,0,.75);
+  top: 0;
+}
+
+.close-capture {
+  position: absolute;
+  right: -0.5em;
+  top: -0.75em;
+  background: black;
+  color: white;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 100px;
+  font-size: 1.1em;
+  line-height: 1.35;
+
+  @include media(max-width em(600)) {
+    width: 23px;
+    height: 23px;
+    right: .5em;
+    top: .5em;
+  }
+
+  &:hover {
+    color: black;
+    background: white;
+  }
+}
+
 .single-section-capture {
+  position: fixed;
+  top: 2em;
+  left: 0;
+  right: 0;
   max-width: 34em;
-  padding: 2.5em;
+  padding: 1em;
   margin: -2em auto 5em;
   text-align: left;
   border-radius: $base-border-radius;
+
+  @include media($medium-screen) {
+    top: 4em;
+    padding: 2.5em;
+  }
 
   .master-convert &,
   .post & {
@@ -47,6 +90,23 @@
     border-radius: $base-border-radius $base-border-radius 0 0;
     text-align: center;
 
+    @include media(min-width em(600) max-height em(600)) {
+      margin: -1.7em -1.7em 0;
+      padding: .7em 1.5em .5em;
+      font-size: 1.5em;
+    }
+
+    @include media(max-width em(600)) {
+      margin: -1em -.88em 0;
+      padding: .7em .5em;
+      font-size: 1.2em;
+
+      .bonus {
+        display: block;
+        margin-top: .5em;
+      }
+    }
+
     .master-convert &,
     .post & { background: $green; }
     .master-email & { background: $yellow; }
@@ -56,6 +116,7 @@
   .capture-image {
     padding-top: 1.5em;
     @include span-columns(4);
+    @include media(max-height em(600)) { display: none; }
   }
 
   .capture-description {
@@ -63,6 +124,13 @@
     @include span-columns(7.5);
     @include shift(.5);
     @include omega;
+
+    @include media(max-height em(600)) {
+      width: 100%;
+      font-size: .8em;
+      text-align: center;
+      margin: 0;
+    }
   }
 
   h2 .guide {
