@@ -22,16 +22,25 @@
     }
   }
 
-  .start-arrow {
-    display: block;
-    background: url("../images/start-arrow.png") no-repeat;
-    background-size: contain;
-    width: 70px;
-    height: 70px;
-    z-index: 2;
-    position: absolute;
-    right: -75px;
-    margin-top: -40px;
+
+  @include media(max-width em(900)) {
+    .start-arrow {
+      display: none;
+    }
+  }
+
+  @include media(em(900)) {
+    .start-arrow {
+      display: block;
+      background: url("../images/start-arrow.png") no-repeat;
+      background-size: contain;
+      width: 70px;
+      height: 70px;
+      z-index: 2;
+      position: absolute;
+      right: -75px;
+      margin-top: -40px;
+    }
   }
 
   .splash__lead {
