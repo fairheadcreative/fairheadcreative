@@ -1,177 +1,208 @@
 // Start rules
 
 .start {
-  background: #fafafa;
+  background-color: #f4f4f4;
 
   .splash {
-    padding-bottom: 1em;
-    background: white;
+    background-color: $dark-blue;
+  }
 
-    header { display: none; }
+  .body-div input[type="submit"] {
+    background-color: #90cf5d !important;
+    border-top: 1px solid #b8e098 !important;
+    border-bottom: 1px solid #82ba54 !important;
 
-    @include media(em(900)) {
-      padding-top: 3em;
+    &:hover {
+      background-color: #e552ab !important;
+      border-top: 1px solid #ef95cb !important;
+      border-bottom: 1px solid #ce4a9a !important;
     }
   }
 
-  .global-nav__logo {
-    background: url('../images/fairhead-creative-black.svg') no-repeat;
-    background-size: contain;
-    margin: 1em auto 0;
-
-    @include media(max-width em(900)) {
-      float: none;
-    }
-
-    @include media(em(900)) {
-      margin-top: 1em;
-      display: block;
-    }
+  // Nav items
+  .phone,
+  .body-div span { display: none !important; }
+  .global-nav__links--item a { color: #bfcbd3; }
+  .global-nav__links--item .button {
+    background: #5b6a73;
+    box-shadow: none;
   }
 
-  .splash__title {
-    color: #333;
-    font-weight: 800;
-    line-height: 1.1;
-    padding-top: 1.5em;
-
-    @include media(em(600)) {
-      margin-left: auto;
-      max-width: 9em;
-    }
-
-    @include media(em(900)) {
-      margin-left: 0;
-    }
+  // Footer 
+  .footer-secondary {
+    display: none;
   }
 
-  #download {
-    background: white;
-
-    h2 {
-      color: #333;
-
-      @include media(max-width em(500)) {
-        padding: 1em 2.5em 0;
-      }
-    }
-
-    br { display: none !important; }
-
-    input#SubmitElement_0_input {
-      word-wrap: break-word !important;
-      white-space: normal !important;
-      height: auto !important;
-    }
-
-    #NameElement_2 .inputContainer span {
-      width: 49% !important;
-      margin: 0 !important
-    }
-
-    #EmailElement_0_label {
-      display: block !important;
-    }
-
-    small {
-      text-align: center;
-      color: #aaa;
-      display: block;
-      margin-top: 1em;
-    }
-  }
-
-  .splash__lead {
+  .footer-primary {
+    border-top: 1px solid #bbb;
     max-width: 40em;
-    margin-bottom: 2em;
+    margin: -2em auto 0;
+    color: #888;
+    padding-top: 1em;
+    text-align: center;
+    font-size: .8em;
+
+    a { color: #888; }
   }
 
-  .row {
-    @include row;
-    max-width: 60em;
-    margin: 0 auto;
-  }
+  @include media($medium-screen) {
+    .open-capture.button { display: none !important; }
 
-  .start-feature {
-    @include span-columns(6);
-
-    @include media(max-width em(900)) {
-      display: none;
+    .body-div {
+      width: 100% !important;
+      margin-left: -7px !important;
     }
 
-    img { max-width: 400px; }
-  }
-
-  .start-testimonials {
-    padding: 2em 1em;
-    text-align: center;
-    overflow: hidden;
-
-    img { max-width: em(960); }
-  }
-
-  .start-offer {
-    text-align: center;
-
-    @include media(max-width em(380)) {
-      a { font-size: .8em; }
+    .body-div table {
+      width: 33% !important;
+      float: left !important;
+      min-width: 0 !important;
+      display: inline-block !important;
     }
 
-    @include media(em(900)) {
-      text-align: left;
-      @include span-columns(6);
+    .body-div input[type="text"] {
+      border: none !important;
+      height: 50px !important;
+    }
+  }
+
+
+  // Titles
+  .splash__title {
+    font-size: 1.8em;
+    max-width: 11em;
+    margin-left: 0;
+    span { font-size: 1em; display: inline; }
+
+    @include media(min-width em(410) max-width em(450)) {
+      padding-top: 1em;
+    }
+
+    @include media(em(450)) {
+      font-size: 2.5em;
+    }
+
+    @include media(em(640)) {
       padding-top: 1em;
     }
   }
 
-  .start-offer__lead {
-    font-size: 1.2em;
+  .splash__lead {
+    color: white;
+    max-width: 25em;
+    margin-bottom: 2em;
+    margin-left: 0;
+
+    @include media(max-width em(550)) {
+      font-size: .9em;
+      padding-right: 1.5em;
+    }
   }
 
-  .numbered-list {
+  .single-section-capture {
+    position: relative;
+    padding: 0;
     text-align: left;
-    max-width: 27em;
+    z-index: 2;
+
+    @include media($medium-screen) {
+      margin-top: -5em;
+
+      small,
+      .close-capture,
+      .single-section__heading {
+        display: none;
+      }
+    }
+
+    @include media(max-width $medium-screen) {
+      display: none;
+      top: 5em;
+      left: 1em;
+      right: 1em;
+      position: fixed;
+      background: white;
+
+      small {
+        padding: .7em 1em 1em;
+        display: block;
+        text-align: center;
+        color: #aaa;
+      }
+
+      .close-capture {
+        top: -2em;
+        background: none;
+        right: 0;
+        opacity: .5; 
+      }
+
+      .single-section__heading {
+        color: #222;
+        font-weight: normal;
+        font-size: 1em;
+        max-width: 15em;
+        margin: .5em auto;
+      }
+    }
+  }
+
+
+
+  .row {
+    @include row;
+    max-width: 55em;
     margin: 0 auto;
-    padding-left: 3em;
+    padding: 0 0 0 1em;
+    margin: 0 -1.5em;
 
-    @include media(em(750)) {
-      margin-left: 0;
-      padding-left: 3em;
-      padding-right: 1em;
-      @include span-columns(6);
+    @include media(em(850)) {
+      margin: 0 auto;
     }
   }
 
-  .numbered-list__item {
-    &:nth-child(4n-3),
-    &:nth-child(4n-2),
-    &:nth-child(4n-1),
-    &:nth-child(4n) {
-      color: #b7d4ab;
-      strong { color: white; }
-      &:before { background: white; color: #549361; }
+  .start-feature {
+    width: 25%;
+    float: right;
+    overflow: hidden;
+    position: relative;
+
+    @include media(em(850)) {
+      right: -1.5em;
+      width: 40%;
+    }
+
+
+    img {
+      width: 320px;
+      max-width: 320px;
     }
   }
 
-  .start-box {
-    border-radius: $base-border-radius;
-    border: 2px solid darken($medium-green, 15);
-    margin: .4em auto 2em;
-    padding: 0 1em;
-    background: rgba(255,255,255,.9);
+  .start-testimonials { 
+    padding: 2em 1em;
+    text-align: center;
+    overflow: hidden;
 
-    @include media(em(750)) {
-      @include span-columns(6);
+    img { max-width: 30em; }
+
+    @include media($medium-screen) {
+      img { max-width: 40em; }
+    }
+  }
+
+  .start-offer {
+    text-align: left;
+    padding-top: 1em;
+    float: left;
+    width: 75%;
+
+    @include media(max-width em(800)) {
+      padding-right: 2em;
     }
 
-    h3 {
-      padding: 1.3em 0 0;
-      font-size: 1.3em;
-    }
-
-    p {
-      max-width: 40em;
-      opacity: 1;
+    @include media(em(800)) {
+      width: 55%;
     }
   }
 }

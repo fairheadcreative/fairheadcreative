@@ -5,6 +5,17 @@
   margin: 0 auto !important;
   width: 100% !important;
   text-align: left !important;
+
+  table {
+    margin-bottom: 1em !important;
+  }
+}
+.questions div.body-div br {
+  display: none !important;
+}
+.questions div.body-div .firstInput,
+.questions div.body-div .secondInput {
+  margin-bottom: 0 !important;
 }
 .questions input[type="text"],
 .questions textarea {
@@ -13,7 +24,24 @@
 .questions .options.input {
   width: 100% !important;
   text-align: left !important;
-  margin-left: 6px;
+  margin-left: 6px !important;
+  margin-top: .25em !important;
+
+  br {
+    display: none !important;
+  }
+
+  label {
+    padding-left: 25px !important;
+    display: block !important;
+    margin-top: 0 !important;
+  }
+  
+  input {
+    position: absolute !important;
+    margin: 0 !important;
+  }
+
 }
 .questions .options.input input[type="checkbox"],
 .questions .options.input label {
