@@ -7,6 +7,37 @@
     background-color: $dark-blue;
   }
 
+  .body-div {
+    clear: both !important;
+  }
+
+  .start-quote {
+    color: #bfcbd3;
+    font-size: .875em;
+    font-style: italic;
+    padding-top: .5em;
+
+    span {
+      opacity: .7;
+    }
+  }
+
+  .start-arrow {
+    display: block;
+    background: url("../images/start-arrow.png") no-repeat;
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+    z-index: 2;
+    position: absolute;
+    right: -75px;
+    margin-top: -40px;
+  }
+
+  .splash__lead {
+    margin-bottom: 0 !important;
+  }
+
   .body-div input[type="submit"] {
     background-color: #90cf5d !important;
     border-top: 1px solid #b8e098 !important;
@@ -16,6 +47,24 @@
       background-color: #e552ab !important;
       border-top: 1px solid #ef95cb !important;
       border-bottom: 1px solid #ce4a9a !important;
+    }
+  }
+
+  .start-offer__list {
+    margin-left: 2.2em;
+    padding-top: 1em;
+  }
+
+  .start-offer__list li {
+    font-size: .9em;
+    color: #bfcbd3;
+    margin: 0 0 1.2em;
+
+    &:before {
+      background: #bfcbd3 !important;
+      color: #677780 !important;
+      font-size: .875em;
+      margin-top: -1px;
     }
   }
 
@@ -72,10 +121,10 @@
     font-size: 1.8em;
     max-width: 11em;
     margin-left: 0;
-    span { font-size: 1em; display: inline; }
+    line-height: 1;
+    span { font-size: .8em; display: inline; line-height: 1; }
 
     @include media(min-width em(410) max-width em(450)) {
-      padding-top: 1em;
     }
 
     @include media(em(450)) {
@@ -83,7 +132,6 @@
     }
 
     @include media(em(640)) {
-      padding-top: 1em;
     }
   }
 
@@ -106,7 +154,8 @@
     z-index: 2;
 
     @include media($medium-screen) {
-      margin-top: -5em;
+      position: relative;
+      top: 15px;
 
       small,
       .close-capture,
@@ -192,6 +241,7 @@
   }
 
   .start-offer {
+    position: relative;
     text-align: left;
     padding-top: 1em;
     float: left;
