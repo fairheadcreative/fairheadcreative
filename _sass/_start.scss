@@ -42,7 +42,7 @@
       height: 70px;
       z-index: 2;
       position: absolute;
-      right: -75px;
+      right: -85px;
       margin-top: -40px;
     }
   }
@@ -56,16 +56,23 @@
     border-top: 1px solid #b8e098 !important;
     border-bottom: 1px solid #82ba54 !important;
 
-    &:hover {
+    //&:hover {
       background-color: #e552ab !important;
       border-top: 1px solid #ef95cb !important;
       border-bottom: 1px solid #ce4a9a !important;
+    //}
+    &:hover {
+      background-color: shade(#e552ab, 5) !important;
     }
   }
 
   .start-offer__list {
     margin-left: 2.2em;
     padding-top: 1em;
+
+    @include media(max-width $medium-screen) {
+      font-size: .9em;
+    }
   }
 
   .start-offer__list li {
@@ -246,7 +253,10 @@
     text-align: center;
     overflow: hidden;
 
-    img { max-width: 30em; }
+    img {
+      max-width: 30em;
+      margin-bottom: 0;
+    }
 
     @include media($medium-screen) {
       img { max-width: 40em; }
@@ -261,7 +271,7 @@
     width: 75%;
 
     @include media(max-width em(800)) {
-      padding-right: 2em;
+      padding-right: 1em;
     }
 
     @include media(em(800)) {
