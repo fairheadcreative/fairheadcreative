@@ -3,6 +3,12 @@
 .start {
   background-color: #f4f4f4;
 
+  .numbered-list__item em {
+    font-style: normal;
+    font-weight: 700;
+    color: #333;
+  }
+
   .splash {
     background-color: $dark-blue;
 
