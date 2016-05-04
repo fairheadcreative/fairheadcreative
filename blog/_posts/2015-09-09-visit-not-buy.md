@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: branch
 title: 24 Reasons Your Website Prospects Aren't Buying
 permalink: blog/reasons-your-website-prospects-arent-buying/
 featured: 2015-09-09-visit-not-buy/featured-user-testing.jpg
@@ -21,7 +21,7 @@ There are two things that need addressing for your target audience to start buyi
 And only one of them is your website. This is assuming you’ve got a solid offer, and you’re addressing the right audience.
 
 Let’s go through each section. First, your website.
-<!--more-->
+
 ## Part 1: Things to address on your website
 
 ### 1. Bad design

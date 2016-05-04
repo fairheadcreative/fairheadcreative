@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: branch
 title: You Know You’re Thinking About Your Customers Not Yourself If…
 permalink: blog/think-about-your-customers/
 featured: 2015-07-08-customers/feature-customers.jpg
@@ -106,4 +106,4 @@ Whether you’re running a business full of heart, or if your business has lost 
 * Focus on their success
 * Break the rules sometimes if it benefits your customers
 
-Which of these bullets do you think you’ll benefit from the most? Which bullet do you think is the worst offender? Share them in the private comment box below! We’d love to read them.
+Which of these bullets do you think you’ll benefit from the most? Which bullet do you think is the worst offender?

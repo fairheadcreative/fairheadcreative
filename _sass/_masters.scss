@@ -67,6 +67,7 @@
   }
 
   .master-convert &,
+  .branch-loose &,
   .post & {
     background: lighten($green, 35);
     border: 1px solid lighten($green, 20);
@@ -111,6 +112,7 @@
     }
 
     .master-convert &,
+    .branch-loose &,
     .post & { background: $green; }
     .master-email & { background: $yellow; }
     .starterkit & { background: $medium-green; }

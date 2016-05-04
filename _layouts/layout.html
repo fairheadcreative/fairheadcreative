@@ -8,6 +8,7 @@
   <meta name="author" content="Fairhead Creative LLC" />
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="/css/screen.css" />
+  {% if page.style %}<link rel="stylesheet" href="/uploads/{{ page.style }}" />{% endif %}
   <link href="https://plus.google.com/+fairheadcreative" rel="publisher" />
   <meta property="og:url" content="http://fairheadcreative.com{{ page.url }}" />
   <meta property="og:type" content="article" />

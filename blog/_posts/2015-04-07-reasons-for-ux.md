@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: branch
 title: 5 Reasons Your Business Needs User Experience
 permalink: blog/reasons-your-business-needs-user-experience/
 recommended: true

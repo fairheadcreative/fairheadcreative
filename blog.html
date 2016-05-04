@@ -23,7 +23,7 @@ permalink: /blog/
     <div class="master__excerpt">
       <p><strong>Even if your business has hardly any online leads.</strong></p>
       <p>See how we do it for our clients. If you're ready to turn your online leads into buyers, then please, read on.</p>
-      <p><span class="pretend-a">Read this guide →</span></p>
+      <p><span class="pretend-a">Access this collection →</span></p>
     </div>
   </a>
 
@@ -36,7 +36,7 @@ permalink: /blog/
     <div class="master__excerpt">
       <p><strong>Guide them to a sale as if you were sending them by hand.</strong></p>
       <p>Imagine giving every lead custom emails, predicting every action &amp; offering real value. Automatically.</p>
-      <p><span class="pretend-a">Read this guide →</span></p>
+      <p><span class="pretend-a">Access this collection →</span></p>
     </div>
   </a>
 
@@ -53,4 +53,20 @@ permalink: /blog/
       <p><a href="#">(Still writing this guide)</a></p>
     </div>
   </article>-->
+</section>
+
+<h2 class="blog-section-title">Recent Posts</h2>
+
+<section class="group container thin-container">
+  {% for post in site.posts limit: 12 %}
+  <a href="{{ post.url }}" class="branch card">
+    <header class="master__heading">
+      <img src="/uploads/{{ post.featured }}">
+    </header>
+
+    <div class="master__excerpt">
+      <h3>{{ post.title }}</h3>
+    </div>
+  </a>
+  {% endfor %}
 </section>

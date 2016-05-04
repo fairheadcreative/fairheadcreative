@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: branch
 title: How You Can Use User Testing to Quickly Find Weaknesses In Your Website
 permalink: blog/user-testing/
 recommended: true
@@ -47,7 +47,7 @@ All you need for User Testing is time to prepare the test, and the knowledge of 
 I've broken down your options into three tiers, and you can hop between them as you please. Each option has a different level of involvement expected of you, from most to least. After we cover them, I'll show you what to do with the data you receive from your testing, and how to apply it to your business.
 
 ### Option 1: The Fan Club method
-User Testing involves people's time. Most people will respond well to financial compensation for their efforts. For this particular method, we'll need to make use of your product's fans. If you don't have any of these, and would like to know how to get some, [let's talk about it over email](/contact/).
+User Testing involves people's time. Most people will respond well to financial compensation for their efforts. For this particular method, we'll need to make use of your product's fans. If you don't have any of these, and would like to know how to get some, [let's talk about it over email](/start/).
 
 Some of your real fans will jump at the chance of being able to have a live call with you. You're the owner of one of their favorite products, after all. Just to be able say they did. They'll be happy to tell you their thoughts about your product.
 
@@ -158,6 +158,6 @@ Hopefully, you now feel equipped to go out there and introduce User Testing into
 
 Now you know what it is, how to make it happen, and how to analyze the data you receive and how to act on that data, I'd love to hear about what sorts of tests you've conducted and how they went. Other businesses would benefit from hearing your stories, too.
 
-[Email me about how your User Testing experiences have gone](/contact/), or what ideas you have for future tests. There's fantastic information trapped inside of you, too, that your fellow readers would benefit from learning.
+[Email me about how your User Testing experiences have gone](/start/), or what ideas you have for future tests. There's fantastic information trapped inside of you, too, that your fellow readers would benefit from learning.
 
 Now, go download that free gift!

@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: branch
 title: 5 Important Techniques Virgin Hotels Can Teach You About Improving Your Website
 permalink: blog/important-techniques-virgin-hotels-website/
 featured: 2015-07-28-virgin-hotels/feature-virgin.jpg
@@ -153,12 +153,12 @@ Automate some of your early engagement steps for your customers. If your prospec
 
 I’ve enjoyed watching the launch of Virgin Hotels unfold, and I’m delighted to see the correlations we can draw between the world of hotels and the world of the web.
 
-I hope you can take one of these techniques and integrate them into your website, whether by yourself or with the help of a <a href="/report/">web partner like ourselves</a>. Let’s summarize:
+I hope you can take one of these techniques and integrate them into your website, whether by yourself or with the help of a <a href="/start/">web partner like ourselves</a>. Let’s summarize:
 
-1. Take control of your perception
-2. Focus on your differences
-3. Paint the painting, getting the details right
-4. Develop your team’s culture
-5. Go the extra mile
+* Take control of your perception
+* Focus on your differences
+* Paint the painting, getting the details right
+* Develop your team’s culture
+* Go the extra mile
 
-What techniques did you spot Virgin Hotels take that could be applied to the web? Which of these techniques are you most excited to try? Let us know in our private comment form below, where we’ll be able to talk with you privately and openly about these techniques, and how you could integrate them with your website.
+What techniques did you spot Virgin Hotels take that could be applied to your website?

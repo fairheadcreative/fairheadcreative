@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: branch
 title: How To Find Out If Your Budget Is Right For Your SaaS Business
 permalink: blog/right-budget-for-your-business/
 featured: 2015-05-04-budget-right/feature-budget-right.jpg

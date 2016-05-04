@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: branch
 title: Top 50 Winning Tweaks Your Website Needs This Week
 permalink: blog/winning-website-tweaks/
 recommended: true

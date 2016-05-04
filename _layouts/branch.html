@@ -1,0 +1,70 @@
+---
+layout: layout
+class: blog branch-loose
+---
+  <h1 class="splash__title">{{ page.title }}</h1>
+  <p class="splash__lead">By Fairhead Creative</p>
+
+  <svg class="splash__arc" xmlns="http://www.w3.org/2000/svg" width="264.891" height="8.333" viewBox="0 0 264.891 8.333" preserveAspectRatio="none"><path fill="#fff" d="M530 169.333"/><path fill="#fff" d="M0 5.346S90.703 0 132.184 0h.523c41.48 0 132.184 5.346 132.184 5.346v3.318H0V5.346z"/></svg>
+</div>
+
+<section class="single-section">
+  <div class="single-section__content group-top">
+    <img class="featured" src="/uploads/{{ page.featured }}">
+    {{ content }}
+
+{% if page.freebie %}
+    <img class="freebie-image" src="/uploads/{{ page.freebie-image }}">
+    <h3>Download your {{ page.freebie }}.</h3>
+    <p>{{ page.freebie-description }}</p>
+    <a class="button" href="{{ page.freebie-url }}" target="_blank">Download now, no opt-in required</a>
+
+{% endif %}
+  </div>
+</section>
+
+
+<section class="single-section">
+  <h2 class="single-section__heading">Next steps</h2>
+
+  <div class="single-section__content">
+    <p>There’s a lot of stuff to do to make your web presence work.</p>
+    <p>A lot of it may be entirely new to you.</p>
+    <p>You can’t just wing this stuff. Well, you can, but you’ll discover very quickly how ineffective that is.</p>
+    <p>But - if you have all this spelled out for you, step-by-step, <strong>you can see exactly how to make this work.</strong></p>
+    <p>We’ve created that step-by-step guide for you.</p>
+    <p>It’s yours already. No charge. <a href="#download" class="open-capture">All you need to do is download it.</a></p>
+    <p>If you’re not sure it’ll be worth it, or if you think it’ll just be one long pitch, that’s understandable.</p>
+    <p>There’s a lot of that in our industry.</p>
+    <p><strong>The good news is, it’s not a pitch. It’s a guide.</strong></p>
+    <p>If you didn’t know already, <em>we’re here to help difference makers make a difference.</em> <strong>That’s it.</strong></p>
+    <p>So <a href="#download" class="open-capture">download it now</a>, while it’s still available, and let us know if you have any questions. We’re here to help you succeed.</p>
+    <p><a href="#download" class="open-capture button">Download your guide</a></p>
+  </div>
+</section>
+
+<div class="capture-bg" style="display:none;"></div>
+<section class="single-section-capture" id="download" style="display:none;">
+  <a href="javascript:void(0);" class="close-capture">&times;</a>
+  <h2 class="single-section__heading"><strong class="guide">Free How-To Guide:</strong> "Turn Your Visitors Into Customers" <strong class="bonus">+ 4 Bonus Action Plans</strong></h2>
+  <div class="capture-image"><img src="/images/convert-download.png" /></div>
+  <div class="capture-description">
+   <p>This premium collection includes: instructional guides, examples, action plans and more.</p>
+   <p>We’re always upgrading and expanding on this collection, so enter your email address below so you’ll always have the latest, fullest version:</p>
+  </div>
+  <h3>Which email address are we sending it to?</h3>
+  <script type="text/javascript" src="http://app.fairheadcreative.com/?q=forms/getForm&i=116269&type=portable"></script>
+</section>
+
+<div class="share">
+  <a class="share__facebook" href="http://www.facebook.com/sharer/sharer.php?u=http%3A//fairheadcreative.com{{ page.url }}" onclick="return popitup('http://www.facebook.com/sharer/sharer.php?u=http%3A//fairheadcreative.com{{ page.url }}')">Share on Facebook</a>
+  <a class="share__twitter" href="https://twitter.com/home?status={{page.title}}%3A%20http%3A//fairheadcreative.com{{page.url}}%20%23marketing" onclick="return popitup('https://twitter.com/home?status={{page.title}}%3A%20http%3A//fairheadcreative.com{{page.url}}%20%23marketing')">Share on Twitter</a>
+</div>
+
+<script language="javascript" type="text/javascript">
+  function popitup(url) {
+  	newwindow=window.open(url,'name','height=250,width=450');
+  	if (window.focus) {newwindow.focus()}
+  	return false;
+  }
+</script>
