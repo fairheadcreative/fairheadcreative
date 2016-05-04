@@ -37,6 +37,11 @@
 .start {
   background: #677780;
 
+  .featured {
+    max-width: 394px;
+    margin-top: 30px;
+  }
+
   .global-nav {
     opacity: .3;
     @include transition(all .2s ease-in-out);
@@ -82,7 +87,7 @@
     color: white;
   }
 
-  .footer-secondary {
+  .global-footer {
     display: none;
   }
 
