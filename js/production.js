@@ -23,6 +23,20 @@ jQuery(function($) {
     $('.share, .global-footer').fadeIn();
     return false;
   });
+
+  $(document).on('click', '.open-subscribe', function() {
+    $('.single-section-subscribe').show().addClass('animated bounceInUp');
+    $('.capture-bg').fadeIn();
+    $('.share, .global-footer').fadeOut();
+    return false;
+  });
+
+  $(document).on('click', '.close-subscribe', function() {
+    $('.single-section-subscribe').fadeOut().removeClass('animated bounceInUp');
+    $('.capture-bg').fadeOut();
+    $('.share, .global-footer').fadeIn();
+    return false;
+  });
 });
 
 /*
