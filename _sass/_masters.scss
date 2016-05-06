@@ -218,13 +218,17 @@
 
 .corner-follow {
   position: fixed;
-  bottom: 3.5em;
+  bottom: 1.5em;
   right: 1.5em;
   background: #90cf5d;
   padding: 1em;
   max-width: 300px;
   border-radius: 3px;
   color: white;
+
+  @include media($medium-screen) {
+    bottom: 3.5em;
+  }
 
   &:hover {
     color: white;
