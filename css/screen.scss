@@ -458,7 +458,7 @@ body.starterkit {
   bottom: 1.5em;
   left: 1.5em;
 
-  @include media(max-width em(1000)) { display: none; }
+  @include media(max-width em(1000)) { display: none !important; }
 
   a {
     display: block;
