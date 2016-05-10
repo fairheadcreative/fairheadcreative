@@ -100,7 +100,7 @@ According to Branson:
 
 <blockquote>
   <p>Foster an inclusive, family-like atmosphere and a sense of playfulness, because your staff’s happiness will be critical to sustaining your company’s success.</p>
-  <cite>Richard Branson (<a href="http://www.entrepreneur.com/article/241444" target="_blank" rel="nofollow">source</a>)</cite>
+  <cite>Richard Branson (<a href="https://en.wikipedia.org/wiki/Richard_Branson" target="_blank" rel="nofollow">source</a>)</cite>
 </blockquote>
 
 Virgin has six values that denote “Virgin-ness”. Each Virgin business has to adhere to these values in order to match the brand’s culture:
@@ -129,7 +129,7 @@ International teams can fall victim to the “timezones don’t let us socialize
 ## Virgin Hotels Technique 5: The extra mile
 
 ![](/uploads/2015-07-28-virgin-hotels/image-5.jpg)
-*Image Credit: <a href="www.latimes.com" rel="nofollow" target="_blank">LATimes</a>*
+*Image Credit: <a href="http://www.latimes.com/" rel="nofollow" target="_blank">LATimes</a>*
 
 Virgin Hotels takes “the extra mile” quite literally: if you’ve got somewhere to be, they’ll ride you around town in a bright red Tesla Model S.
 
