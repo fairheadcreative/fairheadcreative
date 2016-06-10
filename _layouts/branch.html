@@ -23,7 +23,7 @@ class: blog branch-loose
   </div>
 </section>
 
-
+{% unless page.close == 'integrated' %}
 <section class="single-section">
   <h2 class="single-section__heading">Next steps</h2>
 
@@ -42,11 +42,12 @@ class: blog branch-loose
     <p><a href="#download" class="open-capture button">Download your guide</a></p>
   </div>
 </section>
+{% endunless %}
 
 <div class="capture-bg" style="display:none;"></div>
 <section class="single-section-capture" id="download" style="display:none;">
   <a href="javascript:void(0);" class="close-capture">&times;</a>
-  <h2 class="single-section__heading"><strong class="guide">Free How-To Guide:</strong> "Turn Your Visitors Into Customers" <strong class="bonus">+ 4 Bonus Action Plans</strong></h2>
+  <h2 class="single-section__heading">{% unless page.modal-title %}<strong class="guide">Free How-To Guide:</strong> "Turn Your Visitors Into Customers" <strong class="bonus">+ 4 Bonus Action Plans</strong>{% else %}{{ page.modal-title }}{% endunless %}</h2>
   <div class="capture-image"><img src="/images/convert-download.png" /></div>
   <div class="capture-description">
    <p>This premium collection includes: instructional guides, examples, action plans and more.</p>

@@ -256,3 +256,17 @@
 
 
 }
+
+.special-chef {
+  .group-top {
+    padding-top: 0;
+  }
+
+  .featured {
+    display: none;
+  }
+
+  .overlay-splash {
+    margin-top: -7em;
+  }
+}

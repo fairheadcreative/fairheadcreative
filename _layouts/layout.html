@@ -113,7 +113,7 @@
     <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6052451327553&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
   {% endif %}
 </head>
-<body{% if page.class %} class="{{ page.class }}"{% endif %}>
+<body{% if page.class %} class="{{ page.class }}{% if page.special %} special-{{ page.special }}{% endif %}"{% endif %}>
 
   {% unless page.squeeze %}
   {% unless page.class contains 'onboard' %}

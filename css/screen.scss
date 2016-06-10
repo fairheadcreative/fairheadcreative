@@ -230,6 +230,19 @@ body.starterkit {
     margin: 0 0 1em 1em;
     font-size: 1.1em;
   }
+
+  figure img {
+    border-radius: $base-border-radius;
+    box-shadow: 0 4px 4px rgba(0,0,0,.1);
+  }
+
+  figcaption {
+    text-align: center;
+    font-size: .9em;
+    font-style: italic;
+    color: #aaa;
+    margin-top: .5em;
+  }
 }
 
 
@@ -253,6 +266,14 @@ body.starterkit {
     list-style: disc;
     margin-top: .5em;
   }
+
+  h3 {
+    position: relative;
+    top: -3px;
+    margin-bottom: .6em;
+  }
+
+  p, li { font-size: 1em !important; }
 
   &:nth-child(4n-3) {
     strong { color: $green; }
