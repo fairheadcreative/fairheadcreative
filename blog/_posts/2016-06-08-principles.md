@@ -9,6 +9,8 @@ close: integrated
 modal-title: 'Essential Ingredients Cheatsheet + How-To Guide: Turn Your Visitors Into Customers'
 special: chef
 splash: overlay
+og-image: /uploads/2016-07-principles/facebook-ingredients.jpg
+twitter-image: /uploads/2016-07-principles/twitter-ingredients.jpg
 ---
 <section class="single-section overlay-splash">
   <img class="single-section__figure" src="/uploads/2016-05-07-principles/chef.svg" alt="">
