@@ -27,7 +27,7 @@ twitter-image: /uploads/2016-07-principles/twitter-ingredients.jpg
   Beyond nurturing leads into customers.
 
   <div class="callout">
-  <p><strong><a href="#download" class="open-capture">Download a printable cheatsheet of these 5 essential ingredients</a>, along with a bunch of other website success resources to achieve results from any one.</strong></p>
+  <p><strong><a href="#download" class="open-capture">Download a printable cheatsheet of these 5 essential ingredients</a>, along with a bunch of other website success resources to achieve results from day one.</strong></p>
   </div>
 
   We’ve come up with 5 essential ingredients of successful websites.
@@ -427,7 +427,7 @@ twitter-image: /uploads/2016-07-principles/twitter-ingredients.jpg
 
   There’s the little nuance you’re not totally clear on that could hold you back from everything else…
 
-  That’s why we created a **cheatsheet of the 5 essential ingredients, along with a bunch of other website success resources to achieve results from any one.**
+  That’s why we created a **cheatsheet of the 5 essential ingredients, along with a bunch of other website success resources to achieve results from day one.**
 
   It’s yours already. No charge. <a href="#download" class="open-capture">All you need to do is download it.</a>
 
