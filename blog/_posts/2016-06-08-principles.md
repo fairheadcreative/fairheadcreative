@@ -440,3 +440,5 @@ twitter-image: /uploads/2016-07-principles/twitter-ingredients.jpg
   <a href="#download" class="open-capture button">Download your guide</a>
   </div>
 </section>
+
+<img moz-do-not-send="true" src='http://link.fairheadcreative.com/qXNz'>
