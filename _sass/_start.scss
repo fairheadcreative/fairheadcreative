@@ -170,6 +170,19 @@
   }
 }
 
+.convert {
+  background: $green;
+
+  .start-box {
+    background: $green;
+    border: 3px solid lighten($green, 10);
+
+    @include media(em(680)) {
+      width: em(630);
+    }
+  }
+}
+
 .starterkit {
   .global-nav { opacity: .5; }
 
