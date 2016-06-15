@@ -170,16 +170,68 @@
   }
 }
 
-.convert {
-  background: $green;
+body.convert { 
+  background: white;
+
+  .splash__title {
+    color: #333;
+  }
+
+  .splash__lead {
+    max-width: 100%;
+  }
 
   .start-box {
-    background: $green;
-    border: 3px solid lighten($green, 10);
+    background: #eee;
+
+    p { color: #333; }
+
+    input[type="submit"] {
+      background-color: $pink !important;
+      border-top: 1px solid lighten($pink, 15) !important;
+      border-bottom: 1px solid shade($pink, 10) !important;
+    }
+
+    input[type="submit"]:hover {
+      background-color: shade($pink, 15) !important;
+      border-top: 1px solid shade($pink, 5) !important;
+      border-bottom: 1px solid shade($pink, 15) !important;
+    }
+
+    h3 {
+      font-size: 1em;
+      color: #333;
+
+      @include media(em(580)) {
+        float: left;
+        margin: 0 0 -0.5em 1em;
+      }
+
+      @include media(em(680)) {
+        margin: 0 0 -0.5em 1.5em;
+      }
+    }
 
     @include media(em(680)) {
       width: em(630);
     }
+
+    img {
+      margin-bottom: 1.5em;
+
+      @include media(em(580)) {
+        width: 130px;
+      }
+
+      @include media(em(680)) {
+        width: 250px;
+      }
+    }
+  }
+
+  .featured {
+    width: 100%;
+    max-width: 700px;
   }
 }
 
