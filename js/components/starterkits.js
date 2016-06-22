@@ -17,6 +17,21 @@ jQuery(function($) {
     return false;
   });
 
+  $(document).on('click', '.home-modal-open', function() {
+    $('.home-modal').removeClass('bounceOutDown').addClass('is-visible animated bounceInUp');
+    $('.home-modal-bg').addClass('is-visible');
+    return false;
+  });
+
+  $(document).on('click', '.home-modal-close', function() {
+    $('.home-modal').removeClass('bounceInUp').addClass('bounceOutDown');
+    setTimeout(function () { 
+      $('.home-modal').removeClass('is-visible');
+      $('.home-modal-bg').removeClass('is-visible');
+    }, 800); 
+    return false;
+  });
+
   $(document).on('click', '.close-capture', function() {
     $('.single-section-capture').fadeOut().removeClass('animated bounceInUp');
     $('.capture-bg').fadeOut();
