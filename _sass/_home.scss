@@ -142,39 +142,6 @@
   }
 }
 
-#faq {
-  position: relative;
-
-  img {
-    display: none;
-
-    @include media($medium-screen) {
-      display: block;
-      width: 40%;
-      height: 350px;
-      position: absolute;
-      right: 0;
-      bottom: 200px;
-    }
-  }
-
-  h2 {
-    text-align: left;
-
-    @include media($medium-screen) { width: 50%; }
-  }
-
-  dl {
-    @include media($medium-screen) { width: 40%; }
-  }
-
-  dt {
-    font-size: 1.2em;
-    color: $dark-gray;
-  }
-
-  dd { margin-bottom: 2em; }
-}
 
 .home h2 {
   font-size: em(33);

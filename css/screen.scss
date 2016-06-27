@@ -10,6 +10,7 @@
 @import 'base/base';
 @import 'slick';
 @import 'animate';
+@import 'fairsites';
 
 
 // General
@@ -957,7 +958,8 @@ $process-iterate-accent: #8fd459;
     float: right;
   }
 
-  .button { margin-top: .5em; }
+  .button-primary,
+  .button-secondary { margin-top: .5em; }
   p:last-of-type { margin-bottom: 0.75em; }
 }
 
@@ -1011,6 +1013,12 @@ $process-iterate-accent: #8fd459;
 small {
   font-size: .9em;
 
+  @include media(em(414)) { // iPhone 6 Plus
+    max-width: 25.5em;
+    display: block;
+    margin: 0 auto;
+  }
+
   a { text-decoration: underline; }
 }
 
@@ -1061,7 +1069,12 @@ small {
     font-size: 1.3em;
   }
 
-  .button { margin-top: .5em; }
+  .button-primary,
+  .button-secondary {
+    margin-top: .5em;
+    font-size: .95em;
+  }
+
   p:last-of-type { margin-bottom: 0.75em; }
 }
 
@@ -1132,6 +1145,12 @@ small {
     background-position: 15px 15px;
   }
 
+  @include media(max-width em(850)) {
+    width: 100%;
+  }
+}
+
+.button.button-tertiary {
   @include media(max-width em(850)) {
     width: 100%;
   }
@@ -1231,7 +1250,7 @@ small {
   @include transition(all .5s ease-in-out);
 
   &.is-visible {
-    z-index: 2;
+    z-index: 3;
     opacity: 1;
   }
 }
@@ -1248,7 +1267,7 @@ small {
   width: 515px;
 
   &.is-visible {
-    z-index: 3;
+    z-index: 4;
     opacity: 1;
   }
 
@@ -1380,4 +1399,30 @@ small {
       border-bottom: 1px solid shade($pink, 10) !important;
     }
   }
+}
+
+.button-tertiary {
+  @include transition(all 0s ease-in-out);
+  background: white;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-top-color: #ddd;
+  border-bottom-color: #ccc;
+  color: #222;
+  margin-top: 0;
+
+  &:hover {
+    color: #2874a4;
+    background: #fafafa;
+    border-top-color: #ddd;
+    border-bottom-color: #ccc;
+  }
+}
+
+.home .button-tertiary {
+  @include media(em(850)) { width: 221px; }
+}
+
+.home.fairsite .button-tertiary {
+  @include media(em(850)) { width: auto; }
 }
