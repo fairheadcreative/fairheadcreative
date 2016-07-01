@@ -171,8 +171,9 @@ h1.splash__title-alt {
 .feature-testimonial {
   text-align: center;
   max-width: 55em;
-  margin: 0 auto 300px;
+  margin: 0 auto;
 
+  &#siv { margin: 0 auto 300px; }
 
   @include media($medium-screen) {
     p { font-size: 1.5em; }

@@ -1426,3 +1426,20 @@ small {
 .home.fairsite .button-tertiary {
   @include media(em(850)) { width: auto; }
 }
+
+#simon p {
+  font-size: 1em;
+  max-width: 35em;
+  margin: 0 auto 1em;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.4;
+  color: #999
+}
+
+#simon cite {
+  background-image: url('/images/testimonial-simon.png');
+  background-size: 50px;
+  padding-top: 55px;
+  font-size: .8em;
+}
