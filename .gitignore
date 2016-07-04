@@ -5,6 +5,7 @@
 *.diff
 *.vi
 *~
+*.swp
 *.sass-cache
 .sass-cache
 .sass-cache/*
