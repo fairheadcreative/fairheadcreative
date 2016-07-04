@@ -1443,3 +1443,51 @@ small {
   padding-top: 55px;
   font-size: .8em;
 }
+
+#exiting {
+  position: fixed;
+  top: -4em;
+  left: 0;
+  right: 0;
+  background: #6ec0f4;
+  color: white;
+  font-size: .9em;
+  padding: 5em 1em 1em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  @include media(max-width em(650)) { display: none !important; }
+
+  &:after {
+    content: '';
+    display: block;
+    width: 350px;
+    height: 60px;
+    background: url('/images/exit-bg.png') center top no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 119px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    @include media(max-width em(990)) { top: 143px; }
+  }
+
+  p {
+    margin: 0;
+
+    @include media(max-width em(990)) {
+      max-width: 35em;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  .button {
+    margin-left: .5em;
+    padding: .5em .75em;
+    border-bottom: 1px solid #6f9f48;
+    border-left: 1px solid #7aaf4f;
+    border-right: 1px solid #7aaf4f;
+  }
+}

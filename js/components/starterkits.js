@@ -98,3 +98,14 @@ jQuery(function($) {
     return false;
   });
 });
+
+jQuery(function($) {
+  var _ouibounce = ouibounce(document.getElementById('exiting'), {
+    aggressive: true,
+    timer: 0,
+    callback: function() { $('#exiting').removeClass('animated bounceOutUp').addClass('animated bounceInDown'); }
+  });
+
+  $('body').on('click', function() { $('#exiting').removeClass('animated bounceInDown').addClass('animated bounceOutUp'); });
+  $('#exiting').on('click', function(e) { e.stopPropagation(); });
+});
