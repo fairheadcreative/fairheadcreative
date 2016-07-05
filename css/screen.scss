@@ -1491,3 +1491,24 @@ small {
     border-right: 1px solid #7aaf4f;
   }
 }
+
+.downloadable {
+  @extend .home-modal-bg;
+  opacity: 1;
+
+  .global-footer { display: none; }
+
+  header { background: white; }
+}
+
+.downloadable-content {
+  @extend .home-modal;
+  opacity: 1;
+  z-index: 4;
+  position: absolute;
+  top: 8em;
+
+  .inner {
+    @extend .home-modal-content;
+  }
+}
