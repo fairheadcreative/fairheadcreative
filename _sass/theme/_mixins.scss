@@ -1,0 +1,5 @@
+//theme-specific mixins
+
+@mixin transition($property:all, $duration:$base-duration, $timing:null){
+  transition: $property $duration $timing;
+}

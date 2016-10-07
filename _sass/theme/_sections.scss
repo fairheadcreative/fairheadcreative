@@ -1,0 +1,35 @@
+//section definitions
+
+section {
+  @include clearfix();
+}
+
+.section-bg-static,
+.section-bg-quote {
+  background-size: cover;
+}
+
+.section-bg-static {
+  min-height: 586px;
+}
+
+.section-bg-quote {
+  overflow: hidden;
+  
+  .container {
+    min-height: em(628);
+  }  
+}
+
+//secion background images list
+
+$bgimages: siv, doodle, charity, quiz;
+  
+@each $bgimage in $bgimages {
+
+  .bg-#{$bgimage} {
+    background-image: url(../images/content/bg-#{$bgimage}.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }    
+}

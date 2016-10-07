@@ -1,0 +1,45 @@
+//typography helpers
+
+.caps { text-transform: uppercase; }
+
+//text alignment
+
+.txt-left { text-align: left; }
+.txt-center { text-align: center; }
+.txt-right { text-align: right; }
+
+//floats
+.right { float: right !important; }
+.left { float: left !important; }
+.right-soft { float: right; }
+.left-soft { float: left; }
+
+//display overrides
+.block { display: block !important; }
+.inblock { display: inline-block !important; }
+.hide { display: none !important; }
+.hide-soft { display: none; }
+
+//line breaks for various screen widths
+
+.desktop-break {
+  display: none;
+  
+  @include media($large-screen) {
+    display: inline-block;
+  }
+}
+
+.sub-desktop-break {
+  display: inline-block;
+  
+  @include media($large-screen) {
+    display: none;
+  }
+}
+
+//background and text colors
+
+.bg-white-shaded { background-color: $white-shaded; }
+
+.txt-light-gray { color: $light-gray; }

@@ -1,0 +1,65 @@
+.hero {
+  position: relative;
+  text-align: center;
+  
+  h1,
+  h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1;
+    
+    small { 
+      font-weight: 700; 
+      text-transform: uppercase;
+    }
+  }
+}
+
+.hero-home {
+  @extend .hero;
+  background: $blue url(../images/content/home-hero.jpg) no-repeat right 20% center;
+  background-size: contain;
+  
+  color: $dark-blue;
+  
+  .container { min-height: em(620); }
+  
+  .content-hero {
+    width: em(400);
+    @include position(absolute, 50% null null null);
+    @include transform(translateY(-45%));
+    
+    h1 {
+      font-size: 2em; 
+      line-height: .85;
+      margin-bottom: .85em;
+    }
+    
+    .button-darkblue {
+      margin-top: .75em;
+    }
+  }
+}
+
+//quiz call to action
+.section-cta-quiz {
+  background-color: $blue;
+  background-image: url(../images/content/bg-quiz.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom em(-162) center;
+  background-size: em(310);
+  min-height: em(700); 
+  color: $dark-blue;
+  
+  p {
+    line-height: 1.1;
+    
+    strong {
+      line-height: 1.2;
+    }
+    
+    .button-darkblue {
+      margin-top: .75em;
+    }
+  }
+}

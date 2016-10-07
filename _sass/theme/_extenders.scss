@@ -1,0 +1,9 @@
+//all the top extender classes go here - these are not to be used on specific elements, only extended
+
+.tighter-3x3 {  
+    float: left;
+    display: block;
+    margin-right: 5.35765%;
+    width: 29.76157%;
+    @include omega(3n);
+}

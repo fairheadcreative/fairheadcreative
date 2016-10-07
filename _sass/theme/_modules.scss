@@ -1,0 +1,60 @@
+//featureset grid - usually 3x3
+
+.grid-featureset {
+  @include outer-container();
+  margin-bottom: $base-spacing/2;
+  padding-top: $base-spacing*4;
+  
+  .feature {
+    @extend .tighter-3x3;
+    color: $light-gray;
+    
+    &:hover {
+      color: $dark-gray;
+    }
+    
+    p { 
+      font-size: $base-font-size*.9; 
+    }
+    
+    figure {
+      height: em(114);
+      
+      img {
+        max-width: em(200);
+      }
+    }
+  }
+  
+  .feature-frame {
+    @extend .tighter-3x3;
+    border: 2px solid lighten($light-gray, 20);
+    background: $white;
+    
+    h3 {
+      color: $dark-gray;
+      text-transform: uppercase;
+    }
+    
+    p {
+      color: $dark-gray;
+    }
+  }
+}
+
+//reference set grid - usually 2x2
+.grid-referenceset {
+  @include outer-container();
+  padding: 0 $base-spacing*3.5;
+  
+  .reference {
+    @include span-columns(6);
+    @include omega(2n);
+    color: $light-gray;
+    padding: $base-spacing*1.5 $base-spacing*2.5 $base-spacing;
+    
+    p {
+      font-size: .9em;
+    }
+  }
+}

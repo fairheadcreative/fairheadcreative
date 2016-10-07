@@ -1,0 +1,206 @@
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.global-nav {  
+  position: relative;
+  
+  .global-nav-menu {  
+    width: 100%;
+    background: $white;
+    z-index: 10;
+    @include clearfix();
+    box-shadow: 0 4px 4px rgba(0,0,0,.1);
+  }
+  
+  .global-nav-submenu {
+    $submenu-height: $base-spacing*7;
+    position: absolute;
+    left: 0;
+    background: $dark-blue;
+    width: 100%;
+    height: $submenu-height;
+    z-index: -1;
+    top: -$submenu-height;    
+    @include transition($base-duration*2, ease-out);
+    
+    &:after {
+      content: "";
+      display: block;
+      background: $dark-blue;
+      width: 110%;
+      position: absolute;
+      height: $base-spacing*10;
+      z-index: -1;
+      bottom: -$base-spacing*2;
+      box-shadow: 0 4px 4px rgba(0,0,0,.1);      
+      @include transition($base-duration*2, ease-out);
+    }
+    
+    &.is-active {
+      top: 100%;
+    }
+    
+    &.is-about {      
+      &:after { transform: rotate(2deg); }      
+    }
+    
+    &.is-services {
+      &:after { transform: rotate(-2deg); }    
+    }
+    
+    .nav-dropdown-content {
+      opacity: 0;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      padding: $large-spacing 0;      
+      @include transition($base-duration*2, ease-out);
+      
+      &.is-active {
+        opacity: 1;
+      }
+      
+      li {
+        @include span-columns(4);
+        
+        a {
+          display: block;
+          
+          .nav-icon {
+            display: inline-block;
+            max-width: $base-spacing*3;
+            
+            img {
+              width: 100%;
+            }
+          }
+          
+          .nav-title {
+            color: $white;
+            text-transform: uppercase;
+            display: inline-block;
+            width: 100%;
+            line-height: 1;
+          }
+          
+          .nav-lead {
+            font-style: italic;
+            display: inline-block;
+            width: 100%;
+            font-size: $base-font-size*.9;
+          }
+        }
+      }
+    }
+  }
+    
+  .menu-content {
+    @include outer-container;
+    margin: 0 auto;
+    padding: 0 $base-spacing;
+  } 
+
+  .global-nav-logo {
+    width: em(160);
+    height: em(34);
+    text-indent: -999em;
+    display: inline-block;
+    background: url('../images/fairhead-creative-blue.svg') no-repeat;
+    background-size: contain;
+    margin-top: $small-spacing;
+    float: left;
+  }
+
+  .global-nav-links {
+    
+    .global-nav-item {
+      float: left; 
+      display: block;
+      position: relative;
+      
+      &:last-child,
+      &:nth-last-child(2) {
+        float: right;
+      }
+      
+      .nav-dropdown-title,
+      a {
+        color: $light-gray;
+        cursor: pointer;
+        padding: $large-spacing $base-spacing $large-spacing $large-spacing; 
+        line-height: 1;
+        text-transform: uppercase;
+        display: inline-block;        
+        @include transition(color);
+        
+        &.nav-highlight {
+          color: darken($blue, 20);
+        }
+        
+        &:hover {
+          color: $dark-gray;
+        }
+      }  
+      
+      .nav-dropdown-title {
+        position: relative;
+        
+        .icon-toggle {
+          display: block;
+          position: absolute;
+          height: $small-spacing;
+          width: $small-spacing/1.5;
+          right: 0;
+          top: $base-spacing*1.85;          
+          @include transition($base-duration);
+          
+          &:before,
+          &:after {
+            position:absolute;
+            display:block;
+            content:"";
+            border: $small-spacing/3 solid transparent;//adjust size
+          }
+          
+          &:before {
+            top:0;
+            border-top-color: $light-gray;
+          }
+          
+          &:after {
+            top: -$small-spacing/6; //adjust thickness
+            border-top-color: $white;
+          }
+        }
+        
+        &:hover {
+          .icon-toggle {
+            &:before {
+              border-top-color: $dark-gray;
+            }
+          }
+        }
+        
+        &.is-active {
+          color: $dark-gray;
+          
+          .icon-toggle {
+            -webkit-transform: rotate(180deg) translateY($base-spacing/2);
+            transform: rotate(180deg) translateY($base-spacing/2);
+          
+            &:before {
+              top:0;
+              border-top-color: $dark-gray;
+            }
+          }
+        }
+      }
+    }
+  } 
+}

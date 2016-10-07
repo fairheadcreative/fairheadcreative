@@ -1,0 +1,46 @@
+.global-footer {
+  background: $dark-blue;
+  color: $white;
+  padding: $small-spacing*7 0 $base-spacing*8;
+  position: relative;
+  
+  h3 {
+    text-transform: uppercase;
+  }
+  
+  a {
+    color: $white;
+  }
+  
+  .footer-links {
+    @include span-columns(2.6666);
+  }
+  
+  .footer-form {
+    @include span-columns(3.9999);
+  }
+}
+
+.footer-sub {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: $darkest-blue;
+  color: lighten($dark-blue, 20);
+  
+  li { 
+    float: left;
+    margin-right: $base-spacing;
+    
+    a,
+    .sub-foot-text {
+      display: inline-block;
+      padding: $base-spacing;
+    }
+    
+  }
+  
+  a {
+    color: lighten($dark-blue, 20);
+  }
+}

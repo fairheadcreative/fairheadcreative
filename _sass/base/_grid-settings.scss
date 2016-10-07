@@ -5,8 +5,14 @@
 // $max-width: 1200px;
 
 // Neat Breakpoints
-$medium-screen: 600px;
-$large-screen: 900px;
+$tiny-screen: 320px;
+$small-screen: 480px;
+$medium-screen: 640px;
+$large-screen: 980px;
+$full-width: em(1200); //declared in ems because of full page scaling on x-large screens
+$x-large-screen: 1440px;
+
+$max-width: $full-width;
 
 $medium-screen-up: new-breakpoint(min-width $medium-screen 4);
 $large-screen-up: new-breakpoint(min-width $large-screen 8);
