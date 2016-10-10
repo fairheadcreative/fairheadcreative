@@ -35,14 +35,18 @@
   }
 }
 
-.button-darkblue {
+.button-dark-blue {
   @extend .button;
   background-color: $dark-blue;
   color: $white;
 
   &:hover,
   &:focus {
-    background-color: lighten($dark-blue, 10);
+    background-color: $light-blue;
+  }
+  
+  .quiz .section-cta-quiz p & {
+    margin-top: 1.75em;
   }
 }
 

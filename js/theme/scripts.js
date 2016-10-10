@@ -1,3 +1,15 @@
+//set global variables
+var winHeight = $(window).height();
+var layout = {
+  singleSection: function(){
+      if( winHeight > $('.section-fullscreen').height()){
+      $('.section-fullscreen').addClass('fixed-bottom');
+    }else{
+      $('.section-fullscreen').removeClass('fixed-bottom');
+    };
+  }
+};
+
 (function(){
 
   //menu item activator
@@ -7,7 +19,7 @@
     $('[data-menu-item], [data-menu-target]').removeClass('is-active');
     $(this).addClass('is-active');
     $('[data-menu-item="'+getTarget+'"]').addClass('is-active');
-    $('[data-activate-item="'+getActivateTarget+'"]').attr('class', 'global-nav-submenu');
+    $('[data-activate-item="'+getActivateTarget+'"]').attr('class', 'nav-global-submenu');
     $('[data-activate-item="'+getActivateTarget+'"]').addClass('is-active is-'+getTarget);
   });
   
@@ -18,5 +30,13 @@
       $('[data-open-outside="true"]').removeClass('is-active');
     }
   });
+  
+  //set body size for fixed full-screen sections
+  layout.singleSection();
     
 })();
+
+$(window).on('resize', function (){
+  winHeight = $(window).height();
+  layout.singleSection();
+});

@@ -1,0 +1,24 @@
+<section class="section-cta-quiz {% if page.class contains 'single-section' %}section-fullscreen{% endif %}">
+  <div class="container promo-block">
+   
+    {% if page.class contains 'single-section' %}
+    <nav class="txt-center">
+      <a class="nav-logo" href="/">Fairhead Creative Web Design Company <span class="svg-logo">{% include svg/logo-full.svg %}</span></a>
+    </nav>    
+    {% else %}
+    <h2 class="title-section">So.</h2>
+    {% endif %}
+    
+    {% if page.class contains 'single-section' %}
+    <h2 class="title-single-section">Is your website making your business <br class="desktop-break">maximum sales and impact?</h2>
+    {% else %}
+    <p class="lead-section">Is your website making your business <br class="desktop-break">maximum sales and impact?</p>
+    {% endif %}
+    
+    <p class="lead-section"><strong>Take the quiz to instantly see which of these <br class="desktop-break">5 you're actually struggling:</strong></p>
+    <p>
+      <a href="" class="button-dark-blue">Take quiz now</a><br>
+      <small class="caps">No email required</small>
+    </p>
+  </div>
+</section>

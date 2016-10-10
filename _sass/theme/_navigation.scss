@@ -6,10 +6,10 @@
   z-index: 10;
 }
 
-.global-nav {  
+.nav-global {  
   position: relative;
   
-  .global-nav-menu {  
+  .nav-global-menu {  
     width: 100%;
     background: $white;
     z-index: 10;
@@ -17,7 +17,7 @@
     box-shadow: 0 4px 4px rgba(0,0,0,.1);
   }
   
-  .global-nav-submenu {
+  .nav-global-submenu {
     $submenu-height: $base-spacing*7;
     position: absolute;
     left: 0;
@@ -106,20 +106,9 @@
     padding: 0 $base-spacing;
   } 
 
-  .global-nav-logo {
-    width: em(160);
-    height: em(34);
-    text-indent: -999em;
-    display: inline-block;
-    background: url('../images/fairhead-creative-blue.svg') no-repeat;
-    background-size: contain;
-    margin-top: $small-spacing;
-    float: left;
-  }
-
-  .global-nav-links {
+  .nav-global-links {
     
-    .global-nav-item {
+    .nav-global-item {
       float: left; 
       display: block;
       position: relative;
@@ -140,7 +129,7 @@
         @include transition(color);
         
         &.nav-highlight {
-          color: darken($blue, 20);
+          color: $blue;
         }
         
         &:hover {
@@ -203,4 +192,44 @@
       }
     }
   } 
+}
+
+.nav-logo {
+  width: em(160);
+  height: em(34);
+  text-indent: -999em;
+  display: inline-block;
+  //background: url('../images/fairhead-creative-blue.svg') no-repeat;
+  background-size: contain;
+  margin-top: $small-spacing;
+  float: left;
+  position: relative;
+  
+  .txt-center & {
+    float: none;
+  }
+  
+  .svg-logo {
+    position: absolute;
+    right: 0;
+    text-indent: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .nav-global & {
+    svg path {
+      fill: $blue;
+    }
+  }
+  
+  .quiz & {
+    width: em(220);
+    height: em(44);
+    margin-bottom: $base-spacing*2.5;
+    
+    svg path {
+      fill: $dark-blue;
+    }
+  }
 }

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Article">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Article" {% if page.background %}class="bg-{{page.background}}"{% endif %}>
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -115,14 +115,18 @@
 </head>
 <body{% if page.class %} class="{{ page.class }}{% if page.special %} special-{{ page.special }}{% endif %}"{% endif %}>
 
+  {% unless page.class contains 'single-section' %}
   <header class="page-header">
-    {% include nav-main.html %}
+      {% include nav-main.html %}
   </header>
+  {% endunless %}
 
   {{ content }}
   
+  {% unless page.class contains 'single-section' %}  
   {% include footer.html %}
-
+  {% endunless %}
+ 
   <script src="/js/production.min.js"></script>
 
   <script>

@@ -17,7 +17,7 @@
 
 .hero-home {
   @extend .hero;
-  background: $blue url(../images/content/home-hero.jpg) no-repeat right 20% center;
+  background: $light-blue url(../images/content/home-hero.jpg) no-repeat right 20% center;
   background-size: contain;
   
   color: $dark-blue;
@@ -35,7 +35,7 @@
       margin-bottom: .85em;
     }
     
-    .button-darkblue {
+    .button-dark-blue {
       margin-top: .75em;
     }
   }
@@ -43,13 +43,17 @@
 
 //quiz call to action
 .section-cta-quiz {
-  background-color: $blue;
+  background-color: $light-blue;
   background-image: url(../images/content/bg-quiz.jpg);
   background-repeat: no-repeat;
   background-position: bottom em(-162) center;
   background-size: em(310);
   min-height: em(700); 
   color: $dark-blue;
+  
+  .quiz & {
+    min-height: em(740);
+  }
   
   p {
     line-height: 1.1;
@@ -58,7 +62,7 @@
       line-height: 1.2;
     }
     
-    .button-darkblue {
+    .button-dark-blue {
       margin-top: .75em;
     }
   }

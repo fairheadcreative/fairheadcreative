@@ -41,5 +41,15 @@
 //background and text colors
 
 .bg-white-shaded { background-color: $white-shaded; }
+.bg-light-blue { background-color: $light-blue; }
 
 .txt-light-gray { color: $light-gray; }
+
+//positioning
+.absolute { position: absolute; }
+.relative { position: relative; }
+.fixed-bottom {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+}
