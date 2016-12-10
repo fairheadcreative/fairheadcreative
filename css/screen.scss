@@ -1518,7 +1518,8 @@ small {
 
 ._form_26,
 ._form_28,
-._form_30 {
+._form_30,
+._form_32 {
   padding: 0 1.5em;
   margin: 0;
   width: 100%;
@@ -1559,3 +1560,15 @@ small {
 
 ._form_28 ._submit,
 ._form_30 ._submit { margin-top: .75em; }
+._form_32 { padding: 0 0 1em 0; }
+
+@include media($medium-screen) {
+  ._form_32 { padding: 0 1em 2em 0; }
+
+  .start .start-box > div {
+    max-width: 300px;
+    margin-top: 13px;
+    width: 100%;
+    text-align: left;
+  }
+}
