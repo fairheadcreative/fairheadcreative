@@ -9,6 +9,7 @@ module.exports = function(grunt) {
           'js/components/ouibounce.js',
           'js/components/starterkits.js',
           'js/components/slick.js',
+          'js/components/home.js',
           'js/layout/*.js'
         ],
         dest: 'js/production.js',
