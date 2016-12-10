@@ -162,5 +162,3 @@ I hope you can take one of these techniques and integrate them into your website
 * Go the extra mile
 
 What techniques did you spot Virgin Hotels take that could be applied to your website?
-
-<img moz-do-not-send="true" src='http://link.fairheadcreative.com/qXNB'>

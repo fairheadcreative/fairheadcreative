@@ -26,12 +26,12 @@ arc: 6396AA
 
   *"Content upgrades".*
 
-  If Content Marketing is hot right now, Content Upgrades are even hotter. They focus on promoting extra value for your readers. 
+  If Content Marketing is hot right now, Content Upgrades are even hotter. They focus on promoting extra value for your readers.
 
   **Except, most of the time, they do the opposite.**
 
   But here’s a bold suggestion. What if we left ‘hot’ behind, and went for a way cooler (literally) idea?
-  
+
   Enter: Iceberg Upgrades.
   </div>
 </section>
@@ -47,10 +47,10 @@ arc: 6396AA
   You know icebergs, right? Tiny bit of ice poking out of the sea, with the rest underwater?
 
   Most content upgrades are tethered to a blog post. The post covers the topic at hand, then does one of two things:
- 
+
   - holds back a portion of content behind, or
   - offers a small PDF with additional of extra thoughts/notes
-  
+
   Both are behind an 'email wall' (where you ask for their email address in exchange for the PDF), *because you want their email address.*
 
   Unlike an iceberg, *there's not much going on beneath the surface.*
@@ -60,31 +60,31 @@ arc: 6396AA
   <h3 class="numered-list__item--title">You know: it’s to get email addresses</h3>
 
   In fairness, you likely created the upgrade because you were told it was a great way of collecting email addresses.
-  
+
   This is the intention behind the vast majority of content upgrades online right now.
-  
-  It is not 'wrong' per-say, but it's getting a little dated, and savvy visitors are all but immune to at this point. 
+
+  It is not 'wrong' per-say, but it's getting a little dated, and savvy visitors are all but immune to at this point.
   </li>
   <li class="numbered-list__item">
   <h3 class="numered-list__item--title">They know: it’s to get email addresses</h3>
 
   Readers know. They’ve probably seen it before - you’re after their email address.
-  
+
   Regardless of your motive, they assume the upgrade is ‘enough’ to warrant an email address.
-  
+
   Hopefully.
   </li>
   <li class="numbered-list__item">
   <h3 class="numered-list__item--title">Time was all spent on the post. The upgrade was an afterthought.</h3>
 
   The best marketers know that writing a blog post is not a task one takes lightly.
-  
+
   The best blog posts often demand a lot of thought, research and attention so that it truly serves needs of the reader. Ideally.
 
   Then, once complete, an upgrade was quickly rustled up.
 
   The marketer's intention was *getting something rather than giving*, and their attention was not focused on the content.
-  
+
   Our "serve, don't sell" mantra clearly highlights why this is upside down.
 
   *(Encase you're wondering where this is all going, no: the Iceberg Upgrade technique isn't "spend more time on your upgrades")*
@@ -93,9 +93,9 @@ arc: 6396AA
   <h3 class="numered-list__item--title">Does this sound like you?</h3>
 
   If it does, you have yourself a 'content upgrade’ - and it’s something many of the best content marketers recommend having.
-  
+
   Assuming the motives were right, this is a great first step.
-  
+
   Now, let’s explore *taking things to the next level, with Iceberg Upgrades*: the strategic ‘serve don’t sell’ version of a content upgrade.
   </li>
   </ol>
@@ -111,7 +111,7 @@ arc: 6396AA
   As we’ve covered, most upgrades tend to be light on value, and honesty…sort of selfish.
 
   They expect people to give up their email addresses, in exchange for ‘value’.
-  
+
   But the ‘value' isn’t really all that valuable. The ‘upgrade’ isn’t much of an upgrade at all!
 
   So, what’s an Iceberg Upgrade, and how’s it different to a regular content upgrade?
@@ -121,7 +121,7 @@ arc: 6396AA
   <h3 class="numered-list__item--title">It goes deeper, beneath the surface</h3>
 
   Iceberg Upgrades are ‘real' upgrades.
-  
+
   The blog post they belong to is good, *but the upgrade is better.*
 
   Not just ‘better’, but 10x better.
@@ -140,7 +140,7 @@ arc: 6396AA
   Iceberg Upgrades are 10x better, but they don't take 10x time to create. In some cases, *they may even take less time to create than typical content upgrades.*
 
   For an Iceberg Upgrade to truly be an Iceberg Upgrade, it needs to exist as part of a strategic content plan. A tactical play won’t be sustainable.
-  
+
   In section 3, you’ll see an example of the sort of content plan Iceberg Upgrades require.
   </li>
   <li class="numbered-list__item">
@@ -248,7 +248,7 @@ arc: 6396AA
 
   <ol class="numbered-list">
   <li class="numbered-list__item">
-  <h3 class="numered-list__item--title">Strategize your desired outcome</h3> 
+  <h3 class="numered-list__item--title">Strategize your desired outcome</h3>
 
   Start by creating an overall strategy of your content.
 
@@ -305,14 +305,14 @@ arc: 6396AA
   <div class="single-section__content">
 
   When it comes to creating a successful content strategy, one of the main goals of that strategy is to provide as much value to readers as possible.
-  
+
   *We can’t imagine ever achiving that without the Iceberg Upgrade technique.*
 
   True, it can be tough to take action on a new, non-linear, strategic technique like this.
 
   It requires a new way of looking at, and creating your content.
 
-  No small task! Especially when you're under pressure to deliver results. Trying something new can be challenging - but with such rewards hiding beneath the surface, marketers seem to only be scratching the surface of the icerbeg with current tactics. 
+  No small task! Especially when you're under pressure to deliver results. Trying something new can be challenging - but with such rewards hiding beneath the surface, marketers seem to only be scratching the surface of the icerbeg with current tactics.
 
   If you'd like to go deeper with the Iceberg Upgrade technique, <a href="#download" class="open-capture">we've created a complete guide to assist you.</a> We've created it to help you achieve results from day one, in line with all that we've discusses in this article: *it comes from a place of service.*
 
@@ -323,5 +323,3 @@ arc: 6396AA
   <a href="#download" class="open-capture button">Download your guide</a>
   </div>
 </section>
-
-<img moz-do-not-send="true" src='http://link.fairheadcreative.com/qXNj'>

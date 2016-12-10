@@ -68,7 +68,7 @@ Focus on serving. That way, whatever they say, you know you were trying to serve
 I’ve run tests on pricing with Fairhead Creative in the past. This business favors a guiding hand over a pricing matrix. Our clients often look to us to help them determine their best path forward - the best bang for their buck.
 
 Yours may be different, you’ll know where your customers fall.  Either way, when I’m thinking about my customers, I’m thinking about how much value I ADD for my customers. "What’s the most we can do for them with what they have available?” “How far can we carry them to success in our relationship together?”
- 
+
 If I’m not thinking about them, it becomes a different set of questions entirely. Instead it becomes, “How much value can I GET out of our customers?” That’s a totally different conversation, one that makes you ponder how far you can ‘squeeze’ before you’re rejected. That’s not a conversation you want to be having.
 
 If you’re focused on the value, then pricing isn’t so tough - simply learn their situation and help them get the best value they possibly can.
@@ -107,5 +107,3 @@ Whether you’re running a business full of heart, or if your business has lost 
 * Break the rules sometimes if it benefits your customers
 
 Which of these bullets do you think you’ll benefit from the most? Which bullet do you think is the worst offender?
-
-<img moz-do-not-send="true" src='http://link.fairheadcreative.com/qXNR'>

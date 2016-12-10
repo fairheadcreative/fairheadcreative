@@ -1516,7 +1516,9 @@ small {
 
 // AC Fixes
 
-._form_26 {
+._form_26,
+._form_28,
+._form_30 {
   padding: 0 1.5em;
   margin: 0;
   width: 100%;
@@ -1554,3 +1556,6 @@ small {
     }
   }
 }
+
+._form_28 ._submit,
+._form_30 ._submit { margin-top: .75em; }

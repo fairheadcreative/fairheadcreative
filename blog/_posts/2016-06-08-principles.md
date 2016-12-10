@@ -226,7 +226,7 @@ twitter-image: /uploads/2016-07-principles/twitter-ingredients.jpg
   If you answered 'yes' to any of those questions, it's entirely possible that you have a 'look at me' design.
 
   Remember, Look at me" is decoration, not design. It distracts visitors. "Look at this" is design, not decoration. *It leads visitors.*
-  
+
   </li>
   </ol>
   </div>
@@ -250,7 +250,7 @@ twitter-image: /uploads/2016-07-principles/twitter-ingredients.jpg
 
   <ol class="numbered-list">
   <li class="numbered-list__item">
-  <h3 class="numered-list__item--title">Rarely ever used</h3> 
+  <h3 class="numered-list__item--title">Rarely ever used</h3>
 
   For some reason, this is often seen as optional.
 
@@ -273,7 +273,7 @@ twitter-image: /uploads/2016-07-principles/twitter-ingredients.jpg
   <img class="picture" src="/uploads/2016-05-07-principles/principles-email-2.svg">
 
   A good example of this could be "subscribe for updates".
-  
+
   *Who needs more ‘updates’ in their lives?* Valuable content I can’t see myself living without, on the other hand, I’ll subscribe to.
 
   It’s worth asking the question: Just how valuable is the content you’re putting out there?
@@ -314,7 +314,7 @@ twitter-image: /uploads/2016-07-principles/twitter-ingredients.jpg
   In truth, you should see your *website as a service.*
 
   This essential website ingredient is about *serving people to the best of your ability.*
-  
+
   If, for example, a visitor wants to buy from you, but hates videos, why send them videos?
 
   If you have a visitor that stinks using the computer, why not send him/her an SMS message instead?
@@ -357,7 +357,7 @@ twitter-image: /uploads/2016-07-principles/twitter-ingredients.jpg
   <img class="picture" src="/uploads/2016-05-07-principles/abraham.jpg">
   <figcaption>50 Shades of Jay. <a href="http://www.abraham.com/50shades/" rel="nofollow" target="_blank">Link to page.</a></figcaption>
   </figure>
-  
+
   It's all freely available for his audience to experience, without ever requiring a transaction.
 
   He gives the good stuff, so that visitors can experience it for themselves.
@@ -391,9 +391,9 @@ twitter-image: /uploads/2016-07-principles/twitter-ingredients.jpg
   <div class="single-section__content">
 
   We’re in business to help difference makers make a difference.
-  
+
   If you've been around here long, you'll be intimately aware of that.
-  
+
   Everything we do, we do to reach / engage / serve difference makers. Our clients know they’re playing a part in furthering that mission. That they're helping other difference makers like them.
 
   They also know that we donate profits to charities making a difference around the world.
@@ -440,5 +440,3 @@ twitter-image: /uploads/2016-07-principles/twitter-ingredients.jpg
   <a href="#download" class="open-capture button">Download your guide</a>
   </div>
 </section>
-
-<img moz-do-not-send="true" src='http://link.fairheadcreative.com/qXNz'>

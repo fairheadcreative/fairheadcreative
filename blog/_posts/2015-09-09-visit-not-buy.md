@@ -223,5 +223,3 @@ But taking action isn’t easy. That’s why I’ve prepared an action plan for 
 Download it now, and email us with the form below to let us know how it goes.
 
 Speaking of how it goes, which of these points do you think your website struggles with the most right now? Are any points news to you? Let us know in the form!
-
-<img moz-do-not-send="true" src='http://link.fairheadcreative.com/qXNA'>
