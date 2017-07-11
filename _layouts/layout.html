@@ -7,6 +7,11 @@
   <meta name="robots" content="{% unless page.noindex == true %}index, follow{% else %}noindex, nofollow{% endunless %}" />
   <meta name="author" content="Fairhead Creative LLC" />
   <title>{{ page.title }}</title>
+
+  {% if page.class contains 'home' %}
+  <meta http-equiv="refresh" content="0; url=https://builtforimpact.net/" />
+  {% endif %}
+
   <link rel="stylesheet" href="/css/screen.css" />
   {% if page.style %}<link rel="stylesheet" href="/uploads/{{ page.style }}" />{% endif %}
   <link href="https://plus.google.com/+fairheadcreative" rel="publisher" />
